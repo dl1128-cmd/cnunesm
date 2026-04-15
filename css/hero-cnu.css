@@ -5,6 +5,9 @@
  * Loaded after style.css to amplify the opening impression.
  * ========================================================================= */
 
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
 :root {
   /* 전용색상: 군청색 (Ultramarine / Pantone 287C 근사) */
   --cnu-blue: #003F87;
@@ -29,23 +32,25 @@ html[data-theme="dark"] {
 }
 
 /* =========================================================================
- * Typography — 학술적 고급스러움: Noto Serif KR 기반
+ * Typography — 모던한 깔끔함: Pretendard 기반
  * ========================================================================= */
 :root {
-  --font-sans-kr: 'Noto Sans KR', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-serif-kr: 'Noto Serif KR', 'Fraunces', 'Times New Roman', serif;
-  --font-display: 'Noto Serif KR', 'Fraunces', serif;
+  --font-sans-kr: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Inter', sans-serif;
+  --font-serif-kr: 'Noto Serif KR', serif;
+  --font-display: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
   font-family: var(--font-sans-kr);
-  font-feature-settings: "palt", "kern";
+  font-feature-settings: "palt", "kern", "ss01";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4 {
-  font-family: var(--font-serif-kr);
-  letter-spacing: -0.02em;
-  font-weight: 700;
+  font-family: var(--font-display);
+  letter-spacing: -0.035em;
+  font-weight: 800;
 }
 
 /* ============================== HERO ==================================== */
@@ -93,14 +98,15 @@ html[data-theme="dark"] .hero.hero-cnu .hero-eyebrow { color: #8FC0FF; }
 
 .hero.hero-cnu .hero-title-ko,
 .hero.hero-cnu .hero-title-en {
-  font-family: var(--font-serif-kr);
-  font-weight: 700;
-  font-size: clamp(3rem, 8.5vw, 8.5rem);
-  line-height: 1.05;
-  letter-spacing: -0.03em;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(3rem, 9vw, 9rem);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
   margin: 0;
   color: var(--c-text);
   word-break: keep-all;
+  font-feature-settings: "ss01";
 }
 
 .hero.hero-cnu h1 .line {
@@ -109,9 +115,13 @@ html[data-theme="dark"] .hero.hero-cnu .hero-eyebrow { color: #8FC0FF; }
 
 .hero.hero-cnu h1 .accent {
   color: var(--cnu-blue);
-  font-style: italic;
-  font-family: var(--font-serif-kr);
-  font-weight: 500;
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  background: linear-gradient(120deg, var(--cnu-blue) 0%, var(--cnu-blue-tint) 60%, var(--cnu-gold) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 html[data-theme="dark"] .hero.hero-cnu h1 .accent {
@@ -125,7 +135,8 @@ html[data-theme="dark"] .hero.hero-cnu h1 .accent {
   color: var(--c-text-light);
   max-width: 680px;
   margin: 0.5rem 0 0;
-  font-weight: 400;
+  font-weight: 450;
+  letter-spacing: -0.015em;
   word-break: keep-all;
 }
 
@@ -207,7 +218,9 @@ html[data-theme="dark"] .hero.hero-cnu h1 .accent {
 /* ============================== NAV brand tint ========================== */
 .site-header .nav-brand {
   color: var(--cnu-blue) !important;
-  font-family: var(--font-serif-kr);
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.03em;
 }
 html[data-theme="dark"] .site-header .nav-brand { color: #8FC0FF !important; }
 .site-header .nav-brand .dot { color: var(--cnu-gold); }
@@ -236,10 +249,10 @@ html[data-theme="dark"] .page-header {
 }
 html[data-theme="dark"] .page-header .eyebrow { color: #8FC0FF; }
 .page-header h1 {
-  font-family: var(--font-serif-kr);
+  font-family: var(--font-display);
   font-size: clamp(2.8rem, 6vw, 5.2rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  font-weight: 800;
+  letter-spacing: -0.045em;
   line-height: 1;
   margin: 0;
   color: var(--c-text);
@@ -254,9 +267,9 @@ html[data-theme="dark"] .page-header .eyebrow { color: #8FC0FF; }
 
 /* ============================== SECTION titles ========================== */
 .section-title h2 {
-  font-family: var(--font-serif-kr);
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.04em;
 }
 .section-title .eyebrow {
   color: var(--cnu-blue);
@@ -279,10 +292,10 @@ html[data-theme="dark"] .section-title .eyebrow { color: #8FC0FF; }
 }
 html[data-theme="dark"] .pi-inline-text .eyebrow { color: #8FC0FF; }
 .pi-inline-text h2 {
-  font-family: var(--font-serif-kr);
+  font-family: var(--font-display);
   font-size: clamp(2.5rem, 5vw, 4.2rem);
-  font-weight: 700;
-  letter-spacing: -0.025em;
+  font-weight: 800;
+  letter-spacing: -0.04em;
   line-height: 1.05;
   margin: 0 0 1rem;
 }
@@ -356,10 +369,10 @@ html[data-theme="dark"] .research-snap-visual {
   font-weight: 600;
 }
 .research-snap-content h2 {
-  font-family: var(--font-serif-kr);
+  font-family: var(--font-display);
   font-size: clamp(2.2rem, 4.5vw, 3.8rem);
-  font-weight: 700;
-  letter-spacing: -0.025em;
+  font-weight: 800;
+  letter-spacing: -0.04em;
   line-height: 1.08;
   margin: 0 0 1.2rem;
 }
@@ -443,8 +456,9 @@ html[data-theme="dark"] .btn-outline {
   box-shadow: 0 8px 28px rgba(0, 63, 135, 0.12);
 }
 .topic-card h3 {
-  font-family: var(--font-serif-kr);
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.03em;
   color: var(--cnu-blue);
 }
 html[data-theme="dark"] .topic-card h3 { color: #8FC0FF; }
@@ -473,7 +487,7 @@ html[data-theme="dark"] .topic-card .kw {
 }
 .join-card h3,
 .join-card p { color: #fff; }
-.join-card h3 { font-family: var(--font-serif-kr); }
+.join-card h3 { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.035em; }
 .join-card .btn-primary {
   background: var(--cnu-gold);
   color: var(--cnu-blue-deep);
@@ -493,5 +507,5 @@ html[data-theme="dark"] .topic-card .kw {
 }
 
 /* ============================== Footer brand ============================ */
-.site-footer h4 { color: var(--cnu-blue); font-family: var(--font-serif-kr); }
+.site-footer h4 { color: var(--cnu-blue); font-family: var(--font-display); font-weight: 700; letter-spacing: -0.02em; }
 html[data-theme="dark"] .site-footer h4 { color: #8FC0FF; }
