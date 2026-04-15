@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Team · NESM</title>
+  <title>Gallery · NESM</title>
   <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
-  <meta property="og:title" content="Team · NESM Lab (Hoon-Hee Ryu)" />
-  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gallery · NESM Lab (Hoon-Hee Ryu)" />
+  <meta property="og:type" content="article" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
@@ -17,10 +17,10 @@
 <header class="site-header">
   <nav class="nav">
     <a href="index.html" class="nav-brand"><span data-lab-short>NESM</span></a>
-        <ul class="nav-links">
+    <ul class="nav-links">
       <li><a href="research.html" data-i18n="nav.research">Research</a></li>
       <li><a href="publications.html" data-i18n="nav.publications">Publications</a></li>
-      <li><a href="member.html" class="active" data-i18n="nav.member">Team</a></li>
+      <li><a href="member.html" data-i18n="nav.member">Team</a></li>
       <li><a href="board.html" data-i18n="nav.board">News</a></li>
       <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
       <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
@@ -32,36 +32,34 @@
     </div>
   </nav>
 </header>
+
 <main>
-  <section class="page-header">
-    <div class="container">
-      <div class="eyebrow">NESM &middot; Team</div>
-      <h1 data-i18n="member.title">Team.</h1>
-      <p style="max-width: 640px;">차세대 이차전지 소재 연구에 진지한 관심이 있는 대학원생 · 학부연구원을 상시 모집합니다.</p>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      <div id="members-root"></div>
-      <div class="join-card" style="max-width:720px;margin:4rem auto 0">
-        <h3>현재 모집 중 &middot; Now Recruiting</h3>
-        <p>석사 · 박사 · 학부연구원을 모집하고 있습니다. 관심 있는 분은 <a href="mailto:hryu@cnu.ac.kr"><strong>hryu@cnu.ac.kr</strong></a> 로 메일 주시거나 <a href="contact.html">Contact 페이지</a>를 방문해주세요.</p>
-        <a href="contact.html" class="btn btn-primary">Contact →</a>
-      </div>
-    </div>
-  </section>
+  <div id="gallery-detail-root"></div>
 </main>
+
+<div id="lightbox" class="lightbox" hidden>
+  <button class="lightbox-close" aria-label="close">✕</button>
+  <button class="lightbox-prev" aria-label="previous">‹</button>
+  <button class="lightbox-next" aria-label="next">›</button>
+  <figure class="lightbox-figure">
+    <img id="lightbox-img" alt="" />
+    <figcaption id="lightbox-caption"></figcaption>
+  </figure>
+</div>
+
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div><h4 data-lab-short>NESM</h4><p data-lab-name></p><p data-lab-affiliation></p></div>
-      <div><h4>Sitemap</h4><ul><li><a href="research.html">Research</a></li><li><a href="publications.html">Publications</a></li><li><a href="member.html">Team</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Sitemap</h4><ul><li><a href="research.html">Research</a></li><li><a href="publications.html">Publications</a></li><li><a href="member.html">Team</a></li><li><a href="gallery.html">Gallery</a></li></ul></div>
       <div><h4>External</h4><ul><li><a href="https://scholar.google.com/citations?user=lNPP4wIAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a></li></ul></div>
-      <div><h4>Contact</h4><ul><li><a href="mailto:" data-contact-email></a></li><li><a href="contact.html">Visit us</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="mailto:" data-contact-email></a></li></ul></div>
     </div>
     <div class="footer-bottom" data-i18n="footer.copyright"></div>
   </div>
 </footer>
+
 <script src="js/main.js?v=20260416u"></script>
-<script src="js/members.js?v=20260416u"></script>
-</body></html>
+<script src="js/gallery-detail.js?v=20260416u"></script>
+</body>
+</html>
