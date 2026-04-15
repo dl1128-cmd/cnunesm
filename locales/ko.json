@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Home",
+    "pi": "PI",
+    "research": "Research",
+    "publications": "Publications",
+    "member": "Team",
+    "board": "News",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "연구실 활동 사진 모음",
+    "empty": "등록된 사진이 없습니다.",
+    "read_more": "자세히 보기 →",
+    "back": "← Gallery",
+    "prev": "← 이전",
+    "next": "다음 →"
+  },
+  "home": {
+    "tagline": "에너지 저장의 한계를 다시 쓴다",
+    "cta_research": "연구 보기",
+    "cta_join": "함께 하기",
+    "what_we_do": "Research",
+    "highlights": "Recent Highlights",
+    "people": "People",
+    "view_all": "전체 보기"
+  },
+  "member": {
+    "title": "Team",
+    "professor": "Principal Investigator",
+    "postdoc": "Postdoc",
+    "phd": "Ph.D. Students",
+    "ms": "M.S. Students",
+    "undergraduate": "Undergraduate",
+    "alumni": "Alumni"
+  },
+  "research": {
+    "title": "Research",
+    "overview": "개요",
+    "topics": "연구 주제",
+    "facilities": "보유 장비",
+    "representative_papers": "대표 논문"
+  },
+  "publications": {
+    "title": "Publications",
+    "top_picks": "Selected",
+    "journal": "Journal",
+    "conference": "Conference",
+    "book_patent": "Book / Patent",
+    "all_years": "All",
+    "citations": "Cites"
+  },
+  "board": {
+    "title": "News",
+    "news": "News",
+    "notice": "Notice",
+    "seminar": "Seminar"
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "Email",
+    "address": "Address",
+    "office": "Office",
+    "phone": "Phone",
+    "location": "Location",
+    "inquiry": "Inquiry",
+    "join_us_title": "Join NESM Lab",
+    "join_us_desc": "차세대 이차전지 소재 연구에 진지한 관심이 있는 분을 환영합니다."
+  },
+  "footer": {
+    "copyright": "© 2026 NESM Lab · Chungnam National University. All rights reserved."
+  },
+  "common": {
+    "lang_toggle": "EN",
+    "read_more": "Read More",
+    "loading": "Loading...",
+    "theme_toggle": "Toggle Theme"
+  }
+}

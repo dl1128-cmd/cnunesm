@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Home",
+    "pi": "PI",
+    "research": "Research",
+    "publications": "Publications",
+    "member": "Team",
+    "board": "News",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Lab life & activities",
+    "empty": "No photos yet.",
+    "read_more": "Read more →",
+    "back": "← Gallery",
+    "prev": "← Previous",
+    "next": "Next →"
+  },
+  "home": {
+    "tagline": "Rewriting the limits of energy storage.",
+    "cta_research": "Explore Research",
+    "cta_join": "Join NESM",
+    "what_we_do": "Research",
+    "highlights": "Recent Highlights",
+    "people": "People",
+    "view_all": "View All"
+  },
+  "member": {
+    "title": "Team",
+    "professor": "Principal Investigator",
+    "postdoc": "Postdoc",
+    "phd": "Ph.D. Students",
+    "ms": "M.S. Students",
+    "undergraduate": "Undergraduate",
+    "alumni": "Alumni"
+  },
+  "research": {
+    "title": "Research",
+    "overview": "Overview",
+    "topics": "Research Topics",
+    "facilities": "Facilities",
+    "representative_papers": "Representative Papers"
+  },
+  "publications": {
+    "title": "Publications",
+    "top_picks": "Selected",
+    "journal": "Journal",
+    "conference": "Conference",
+    "book_patent": "Book / Patent",
+    "all_years": "All",
+    "citations": "Cites"
+  },
+  "board": {
+    "title": "News",
+    "news": "News",
+    "notice": "Notice",
+    "seminar": "Seminar"
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "Email",
+    "address": "Address",
+    "office": "Office",
+    "phone": "Phone",
+    "location": "Location",
+    "inquiry": "Inquiry",
+    "join_us_title": "Join NESM Lab",
+    "join_us_desc": "We welcome motivated students passionate about next-generation battery materials."
+  },
+  "footer": {
+    "copyright": "© 2026 NESM Lab · Chungnam National University. All rights reserved."
+  },
+  "common": {
+    "lang_toggle": "KO",
+    "read_more": "Read More",
+    "loading": "Loading...",
+    "theme_toggle": "Toggle Theme"
+  }
+}

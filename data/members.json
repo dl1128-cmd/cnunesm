@@ -1,0 +1,18 @@
+[
+  {
+    "id": "pi-hoonhee-ryu",
+    "role": "professor",
+    "name_en": "Hoon-Hee Ryu",
+    "name_ko": "류훈희",
+    "title_en": "Principal Investigator · Assistant Professor",
+    "title_ko": "책임연구자 · 조교수",
+    "joined": "",
+    "photo": "",
+    "email": "hryu@cnu.ac.kr",
+    "summary_ko": "Ni-rich 층상 양극, 단결정 · 농도구배 양극, 차세대 이차전지 소재.",
+    "summary_en": "Ni-rich layered cathodes, single-crystal and concentration-gradient architectures, next-generation battery materials.",
+    "tags_en": ["Ni-rich Cathode", "Single Crystal", "Next-gen Battery"],
+    "tags_ko": ["Ni-rich 양극", "단결정", "차세대 전지"],
+    "scholar_link": "https://scholar.google.com/citations?user=lNPP4wIAAAAJ"
+  }
+]

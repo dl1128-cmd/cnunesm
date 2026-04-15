@@ -1,0 +1,20 @@
+[
+  {
+    "id": "n-2",
+    "date": "2026-04-03",
+    "category": "news",
+    "title_ko": "NESM Lab 4월 회식 @부산 🐟",
+    "title_en": "NESM Lab April Get-together @ Busan 🐟",
+    "body_ko": "전기화학회 춘계 학술발표회 참석 직후 부산에서 NESM Lab 4월 회식을 가졌습니다.",
+    "body_en": "NESM Lab held the April get-together in Busan right after attending the KECS Spring Meeting."
+  },
+  {
+    "id": "n-1",
+    "date": "2026-04-01",
+    "category": "news",
+    "title_ko": "2026년 한국전기화학회 춘계 학술발표회 참가 @BEXCO",
+    "title_en": "KECS Spring Meeting 2026 @ BEXCO",
+    "body_ko": "NESM Lab 이 2026년 한국전기화학회 춘계 학술발표회에 참가했습니다 (2026.04.01–03, BEXCO 부산).",
+    "body_en": "NESM Lab attended the 2026 Spring Meeting of the Korean Electrochemical Society (Apr 1–3, 2026, BEXCO, Busan)."
+  }
+]

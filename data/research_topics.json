@@ -1,0 +1,128 @@
+[
+  {
+    "id": "synthesis-characterization",
+    "order": 1,
+    "title_ko": "소재 합성 및 분석 (Synthesis & Characterization)",
+    "title_en": "Synthesis & Characterization",
+    "summary_ko": "고품질 배터리 양극·음극 소재를 직접 합성하고, 다양한 분석 기법을 통해 구조와 전기화학 특성을 규명합니다.",
+    "summary_en": "We synthesize high-quality cathode and anode materials for batteries and characterize their structures and electrochemical properties using a diverse suite of analytical techniques.",
+    "detail_body_ko": "차세대 이차전지의 성능 혁신은 결국 소재 합성의 정밀도에서 출발합니다. NESM Lab은 공침법(co-precipitation), 고체상(solid-state), 용융염(molten salt), mechanochemistry 등 다양한 합성 경로를 활용해 층상 산화물, 단결정, 농도구배 구조를 제어합니다.\n\n분석 측면에서는 XRD·HRTEM·STEM-EDS·XPS·synchrotron XAS 등을 통해 원자 수준의 구조-성능 상관관계를 규명하고, in-situ/operando 기법으로 실제 작동 조건의 거동을 관찰합니다.\n\n'합성-분석-피드백' 루프의 속도가 결국 연구실의 경쟁력이라고 봅니다.",
+    "detail_body_en": "Performance breakthroughs in next-generation batteries ultimately begin with the precision of materials synthesis. NESM Lab employs co-precipitation, solid-state, molten-salt, and mechanochemical routes to control layered oxides, single crystals, and concentration-gradient architectures.\n\nFor characterization we use XRD, HRTEM, STEM-EDS, XPS, and synchrotron XAS to reveal atomic-scale structure-property relationships, and in-situ/operando techniques to observe behavior under real operating conditions.\n\nThe speed of the 'synthesize-characterize-iterate' loop is, in our view, the lab's ultimate competitive edge.",
+    "keywords": ["Co-precipitation", "Single Crystal", "XRD", "STEM", "Operando"],
+    "svg": "<svg viewBox='0 0 260 160' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><circle cx='80' cy='80' r='38'/><circle cx='80' cy='80' r='24' opacity='0.5'/><circle cx='80' cy='80' r='10' fill='currentColor'/><line x1='130' y1='80' x2='170' y2='80'/><polyline points='165,74 172,80 165,86'/><rect x='180' y='50' width='60' height='60' rx='3'/><line x1='190' y1='65' x2='230' y2='65' opacity='0.5'/><line x1='190' y1='80' x2='230' y2='80' opacity='0.5'/><line x1='190' y1='95' x2='220' y2='95' opacity='0.5'/></svg>",
+    "representative_papers": [
+      {
+        "title": "New Class of Ni-Rich Cathode Materials Li[NixCoyB1−x−y]O2",
+        "venue": "Advanced Energy Materials",
+        "year": 2020
+      },
+      {
+        "title": "Microstructure-Controlled Ni-Rich Cathode Material by Microscale Compositional Partition",
+        "venue": "Advanced Energy Materials",
+        "year": 2019
+      }
+    ]
+  },
+  {
+    "id": "mechanistic-understanding",
+    "order": 2,
+    "title_ko": "열화 메커니즘 규명 (Mechanistic Understanding)",
+    "title_en": "Mechanistic Understanding",
+    "summary_ko": "배터리 소재가 장기 사이클·고전압·고온 환경에서 왜, 어떻게 열화되는지를 원자-나노-마이크로 스케일에서 규명하고 개선 방안을 제시합니다.",
+    "summary_en": "We investigate why and how battery materials degrade under prolonged cycling, high voltage, and elevated temperature — across atomic, nano, and microscales — and propose actionable improvements.",
+    "detail_body_ko": "Ni-rich 층상 양극은 에너지 밀도가 높지만 미세 균열(microcrack), 표면 재구성, 상전이가 수명을 제한하는 본질적 문제를 가지고 있습니다. NESM Lab은 이 열화 경로를 원자 수준에서 해석하고, 근표면 재구성 제어·미세구조 정제·도핑 전략으로 극복하는 방법을 연구합니다.\n\n대표적으로 Nature Energy 2024년 논문에서 '근표면 재구성(near-surface reconstruction)'을 고성능 Ni-rich 양극의 핵심 원리로 제시한 바 있으며, ACS Energy Letters 2023·2021년 논문을 통해 미세변형 완화·단결정 구조의 모폴로지-성능 관계를 체계화했습니다.\n\n'왜 망가지는가'를 알면 '어떻게 고치는가'가 따라옵니다.",
+    "detail_body_en": "Ni-rich layered cathodes offer high energy density but suffer from intrinsic limits — microcracking, surface reconstruction, and phase transitions — that constrain cycle life. NESM Lab interprets these degradation pathways at atomic resolution and develops countermeasures via near-surface reconstruction control, microstructural refinement, and doping strategies.\n\nOur 2024 Nature Energy paper established 'near-surface reconstruction' as a core principle for high-performance Ni-rich cathodes, and subsequent ACS Energy Letters papers (2023, 2021) systematized microstrain alleviation and morphology-performance relations of single-crystal structures.\n\nUnderstanding why things break is the prerequisite to knowing how to fix them.",
+    "keywords": ["Microcrack", "Surface Reconstruction", "Phase Transition", "Single Crystal", "Doping"],
+    "svg": "<svg viewBox='0 0 260 160' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><circle cx='130' cy='80' r='50' opacity='0.3'/><path d='M130 30 L 130 130' stroke-dasharray='4 4' opacity='0.5'/><path d='M80 80 L 180 80' stroke-dasharray='4 4' opacity='0.5'/><circle cx='130' cy='80' r='6' fill='currentColor'/><path d='M110 60 L 150 100' /><path d='M150 60 L 110 100' /><circle cx='105' cy='55' r='3' fill='currentColor'/><circle cx='155' cy='105' r='3' fill='currentColor'/><circle cx='155' cy='55' r='3' fill='currentColor'/><circle cx='105' cy='105' r='3' fill='currentColor'/></svg>",
+    "representative_papers": [
+      {
+        "title": "Near-surface reconstruction in Ni-rich layered cathodes for high-performance lithium-ion batteries",
+        "venue": "Nature Energy",
+        "year": 2024
+      },
+      {
+        "title": "Capacity fading of Ni-rich Li[NixCoyMn1-x-y]O2 (0.6 ≤ x ≤ 0.95) Cathodes",
+        "venue": "Chemistry of Materials",
+        "year": 2018
+      },
+      {
+        "title": "Microstructural Degradation of Ni-Rich Li[NixCoyMn1−x−y]O2 Cathodes During Accelerated Calendar Aging",
+        "venue": "Small",
+        "year": 2018
+      }
+    ]
+  },
+  {
+    "id": "advanced-cathode-lib",
+    "order": 3,
+    "title_ko": "LIB용 고성능 양극소재 (Advanced Cathode Materials for LIBs)",
+    "title_en": "Advanced Cathode Materials for LIBs",
+    "summary_ko": "리튬이온전지의 에너지 밀도·수명·안전성을 동시에 극대화하는 단결정 · 농도구배 · 나노로드 기반 Ni-rich 양극을 설계하고 실증합니다.",
+    "summary_en": "We design and demonstrate Ni-rich cathodes — single-crystal, concentration-gradient, and nanorod architectures — that simultaneously maximize energy density, cycle life, and safety for Li-ion batteries.",
+    "detail_body_ko": "전기차 보급 가속과 에너지저장장치(ESS) 확산은 양극소재에 더 높은 에너지 밀도와 긴 수명을 동시에 요구합니다. NESM Lab은 Ni 함량 90%+ 층상 산화물을 기반으로 단결정·농도구배·나노로드 미세구조를 설계해 이 상충 관계를 극복합니다.\n\n구체적으로 (1) 단결정 NCM/NCMA 양극의 결정 성장 제어와 벌크 안정성, (2) 농도구배(full gradient, core-shell) 설계로 표면 안전성 확보, (3) 나노로드 1차 입자 배열로 리튬 확산 경로 최적화, (4) W·B·Mo·Ce 등 도핑 전략 등 종합적 접근을 취합니다.\n\nACS Energy Letters 2025년 'Nanorod Cathodes: A Solution for Polycrystalline Cathodes'와 Chem. Rev. 2025년 'Single-Crystal vs Polycrystalline Cathodes' 리뷰가 본 축의 대표 성과입니다.",
+    "detail_body_en": "Accelerating EV adoption and grid-scale energy storage demand cathodes that simultaneously deliver higher energy density and longer life. NESM Lab designs Ni-rich (≥90% Ni) layered oxides in single-crystal, concentration-gradient, and nanorod microstructures to resolve this tension.\n\nOur approach combines (1) single-crystal NCM/NCMA cathodes with controlled grain growth and bulk stability, (2) full-gradient and core-shell designs for surface safety, (3) nanorod primary-particle architectures that optimize Li diffusion paths, and (4) doping strategies (W, B, Mo, Ce).\n\nRepresentative outputs include 'Nanorod Cathodes' in ACS Energy Letters (2025) and the 'Single-Crystal vs Polycrystalline Cathodes' review in Chemical Reviews (2025).",
+    "keywords": ["Ni-rich", "NCMA", "Single Crystal", "Concentration Gradient", "Nanorod"],
+    "svg": "<svg viewBox='0 0 260 160' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><rect x='30' y='50' width='60' height='60' rx='3'/><rect x='100' y='50' width='60' height='60' rx='3'/><rect x='170' y='50' width='60' height='60' rx='3'/><circle cx='60' cy='80' r='3' fill='currentColor'/><circle cx='45' cy='65' r='2' fill='currentColor' opacity='0.5'/><circle cx='75' cy='65' r='2' fill='currentColor' opacity='0.5'/><circle cx='45' cy='95' r='2' fill='currentColor' opacity='0.5'/><circle cx='75' cy='95' r='2' fill='currentColor' opacity='0.5'/><line x1='110' y1='60' x2='110' y2='100'/><line x1='120' y1='55' x2='120' y2='105'/><line x1='130' y1='60' x2='130' y2='100'/><line x1='140' y1='55' x2='140' y2='105'/><line x1='150' y1='60' x2='150' y2='100'/><circle cx='200' cy='80' r='8'/><circle cx='200' cy='80' r='14' opacity='0.5'/><circle cx='200' cy='80' r='20' opacity='0.3'/></svg>",
+    "representative_papers": [
+      {
+        "title": "Nanorod Cathodes: A Solution for Polycrystalline Cathodes in Next-Generation Lithium Batteries",
+        "venue": "ACS Energy Letters",
+        "year": 2025
+      },
+      {
+        "title": "Single-Crystal vs Polycrystalline Cathodes for Lithium-Ion Batteries",
+        "venue": "Chemical Reviews",
+        "year": 2025
+      },
+      {
+        "title": "Long-Lasting NCMA Cathodes via Simultaneous Microstructural Refinement",
+        "venue": "ACS Energy Letters",
+        "year": 2023
+      },
+      {
+        "title": "Reducing cobalt from lithium-ion batteries for the electric vehicle era",
+        "venue": "Energy & Environmental Science",
+        "year": 2021
+      },
+      {
+        "title": "Optimized Ni-Rich NCMA Cathode for Electric Vehicle Batteries",
+        "venue": "Advanced Energy Materials",
+        "year": 2021
+      }
+    ]
+  },
+  {
+    "id": "next-generation-batteries",
+    "order": 4,
+    "title_ko": "차세대 배터리 (Next-Generation Batteries)",
+    "title_en": "Next-Generation Batteries",
+    "summary_ko": "리튬이온전지 너머의 나트륨이온, 전고체, 고에너지 시스템을 위한 새로운 소재 설계 원리를 탐색합니다.",
+    "summary_en": "Beyond lithium-ion, we explore new materials design principles for sodium-ion, all-solid-state, and high-energy-density battery systems.",
+    "detail_body_ko": "리튬 자원의 편중, EV의 가격 압력, ESS의 대용량 요구는 '리튬 이후'를 준비하도록 만듭니다. NESM Lab은 다음 세 축을 차세대 배터리 연구 방향으로 설정합니다.\n\n첫째, 나트륨이온전지(SIB) — O3/P2 heterostructure, Ni-Mn 기반 양극, Sn 도핑 등 자원 경제성 있는 대안 소재를 연구합니다. Energy Storage Materials 2022, J. Phys. Chem. C 2021 논문을 통해 핵심 설계 원리를 제시한 바 있습니다.\n\n둘째, 전고체 전지(ASSB) — Chem. Eng. J. 2022 논문을 통해 hybrid electrolyte 접근법을 탐색했고, 양극 소재 측면에서 ASSB 적용 가능성을 지속적으로 평가합니다.\n\n셋째, 시스템 관점의 고에너지 설계 — 리튬이온 양극에서 축적된 '구조-성능' 통찰을 차세대 시스템으로 전이해 실용적 고에너지 배터리를 설계합니다.",
+    "detail_body_en": "Lithium supply concentration, EV cost pressure, and ESS capacity demands make 'beyond lithium' a pressing agenda. NESM Lab pursues three directions for next-generation batteries.\n\nFirst, sodium-ion batteries (SIBs) — we investigate O3/P2 heterostructures, Ni-Mn-based cathodes, and Sn doping as resource-economic alternatives. Key design principles have been established in Energy Storage Materials (2022) and J. Phys. Chem. C (2021).\n\nSecond, all-solid-state batteries (ASSBs) — our Chem. Eng. J. (2022) paper explored hybrid electrolyte approaches, and we continually evaluate cathode-side ASSB applicability.\n\nThird, system-level high-energy design — transferring structure-property insights from Li-ion cathodes to next-generation systems for practical high-energy battery design.",
+    "keywords": ["Na-ion", "O3/P2", "All-Solid-State", "Hybrid Electrolyte", "High Energy"],
+    "svg": "<svg viewBox='0 0 260 160' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M50 80 Q 90 40 130 80 T 210 80' /><path d='M50 90 Q 90 50 130 90 T 210 90' opacity='0.6'/><circle cx='50' cy='80' r='4' fill='currentColor'/><circle cx='130' cy='80' r='4' fill='currentColor'/><circle cx='210' cy='80' r='4' fill='currentColor'/><text x='45' y='110' font-size='10' fill='currentColor' stroke='none'>Li</text><text x='122' y='110' font-size='10' fill='currentColor' stroke='none'>Na</text><text x='200' y='110' font-size='10' fill='currentColor' stroke='none'>SS</text></svg>",
+    "representative_papers": [
+      {
+        "title": "Hierarchical O3/P2 heterostructured cathode materials for sodium-ion batteries",
+        "venue": "Energy Storage Materials",
+        "year": 2022
+      },
+      {
+        "title": "Understanding the Capacity Fading Mechanisms of O3-Type Na[Ni0.5Mn0.5]O2",
+        "venue": "Advanced Energy Materials",
+        "year": 2020
+      },
+      {
+        "title": "Enhanced Cycling Stability of O3-Type Na[Ni0.5Mn0.5]O2 Cathode through Sn Addition",
+        "venue": "J. Phys. Chem. C",
+        "year": 2021
+      },
+      {
+        "title": "All-solid-state lithium batteries featuring hybrid electrolytes",
+        "venue": "Chemical Engineering Journal",
+        "year": 2022
+      }
+    ]
+  }
+]

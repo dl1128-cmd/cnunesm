@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin · NESM</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=20260415t" />
+  <link rel="stylesheet" href="css/admin.css?v=20260415t" />
+</head>
+<body>
+
+<!-- Login screen -->
+<div id="login-screen" class="admin-login-screen">
+  <div class="admin-login-box">
+    <div class="admin-login-icon">🔒</div>
+    <h1>NESM Admin</h1>
+    <p class="admin-login-sub">관리자 비밀번호를 입력하세요</p>
+    <form id="login-form" autocomplete="off">
+      <input type="password" id="password-input" placeholder="비밀번호" autofocus />
+      <button type="submit" class="btn btn-primary">로그인</button>
+    </form>
+    <div id="login-error" class="admin-login-error"></div>
+    <div class="admin-login-hint">
+      첫 접속 시 기본 비밀번호는 <code>nesm2026</code> 입니다.<br />
+      로그인 후 <b>관리자 설정</b> 탭에서 반드시 변경하세요.
+    </div>
+    <a href="index.html" class="admin-login-back">← 공개 사이트로 돌아가기</a>
+  </div>
+</div>
+
+<!-- Admin dashboard -->
+<div id="dashboard" class="admin-dashboard hidden">
+  <header class="admin-header">
+    <div class="admin-header-inner">
+      <div class="admin-brand">
+        <span class="admin-lock">🔒</span>
+        <strong>NESM</strong> · Admin
+      </div>
+      <div class="admin-actions">
+        <a href="index.html" target="_blank" class="btn btn-ghost" title="공개 사이트 새 탭으로 열기">공개 사이트 ↗</a>
+        <button id="logout-btn" class="btn btn-outline">로그아웃</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Instructions banner -->
+  <div class="admin-banner">
+    <div class="admin-banner-inner">
+      <b>📌 업데이트 방법</b> — 편집 후 <b>저장</b> 버튼 클릭 시 새 JSON 파일이 다운로드됩니다. 다운로드된 파일을
+      <code>data/</code> 폴더의 같은 이름 파일과 교체하세요. 페이지 새로고침하면 반영됩니다.
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <nav class="admin-tabs">
+    <div class="admin-tabs-inner">
+      <button class="admin-tab active" data-tab="pi">🎓 PI</button>
+      <button class="admin-tab" data-tab="members">👥 Member</button>
+      <button class="admin-tab" data-tab="topics">🔬 Research</button>
+      <button class="admin-tab" data-tab="publications">📄 Publications</button>
+      <button class="admin-tab" data-tab="news">📣 News</button>
+      <button class="admin-tab" data-tab="gallery">🖼 Gallery</button>
+      <button class="admin-tab" data-tab="announcement">📢 공지 팝업</button>
+      <button class="admin-tab" data-tab="stats">📊 접속 통계</button>
+      <button class="admin-tab" data-tab="config">⚙️ 기본설정</button>
+      <button class="admin-tab" data-tab="settings">🔐 관리자 설정</button>
+    </div>
+  </nav>
+
+  <main class="admin-main">
+    <div id="tab-pi" class="admin-tab-panel active"></div>
+    <div id="tab-members" class="admin-tab-panel"></div>
+    <div id="tab-topics" class="admin-tab-panel"></div>
+    <div id="tab-publications" class="admin-tab-panel"></div>
+    <div id="tab-news" class="admin-tab-panel"></div>
+    <div id="tab-gallery" class="admin-tab-panel"></div>
+    <div id="tab-announcement" class="admin-tab-panel"></div>
+    <div id="tab-stats" class="admin-tab-panel"></div>
+    <div id="tab-config" class="admin-tab-panel"></div>
+    <div id="tab-settings" class="admin-tab-panel"></div>
+  </main>
+</div>
+
+<!-- Edit modal -->
+<div id="modal" class="admin-modal hidden">
+  <div class="admin-modal-backdrop"></div>
+  <div class="admin-modal-box">
+    <div class="admin-modal-header">
+      <h3 id="modal-title">편집</h3>
+      <button id="modal-close" class="admin-icon-btn" title="닫기">✕</button>
+    </div>
+    <div id="modal-body" class="admin-modal-body"></div>
+    <div class="admin-modal-footer">
+      <button id="modal-cancel" class="btn btn-ghost">취소</button>
+      <button id="modal-save" class="btn btn-primary">확인</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div id="toast" class="admin-toast"></div>
+
+<script src="js/admin.js?v=20260415t"></script>
+</body>
+</html>

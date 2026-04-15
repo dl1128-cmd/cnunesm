@@ -1,0 +1,49 @@
+{
+  "lab": {
+    "name_en": "Next-generation Energy Storage Materials Lab",
+    "name_ko": "차세대 에너지 저장 소재 연구실",
+    "short": "NESM",
+    "tagline_en": "Advanced cathode materials, single-crystal systems, and next-generation batteries.",
+    "tagline_ko": "고성능 양극소재 · 단결정 시스템 · 차세대 전지 연구",
+    "affiliation_en": "Department of Applied Chemical Engineering, Chungnam National University",
+    "affiliation_ko": "충남대학교 공과대학 응용화학공학과",
+    "hero_image": ""
+  },
+  "pi": {
+    "name_en": "Hoon-Hee Ryu",
+    "name_ko": "류훈희",
+    "title_en": "Assistant Professor",
+    "title_ko": "조교수",
+    "email": "hryu@cnu.ac.kr",
+    "scholar": "https://scholar.google.com/citations?user=lNPP4wIAAAAJ"
+  },
+  "metrics": {
+    "citations_total": 0,
+    "citations_recent5y": 0,
+    "h_index": 0,
+    "i10_index": 0,
+    "as_of": "2026-04"
+  },
+  "contact": {
+    "email": "hryu@cnu.ac.kr",
+    "address_ko": "대전광역시 유성구 대학로 99, 충남대학교",
+    "address_en": "99 Daehak-ro, Yuseong-gu, Daejeon 34134, Republic of Korea",
+    "address_detail_ko": "응용화학공학과 · 공과대학 1호관 462호",
+    "address_detail_en": "Department of Applied Chemical Engineering · Engineering Bldg. 1, Room 462",
+    "phone": "042-821-7683",
+    "maps_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3207.5!2d127.344!3d36.366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565498c6f04c2a7%3A0x9c9b7c9f5c9b3d9a!2z7Lap64Ko64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1700000000000"
+  },
+  "social": {
+    "scholar": "https://scholar.google.com/citations?user=lNPP4wIAAAAJ",
+    "researchgate": "",
+    "orcid": "",
+    "linkedin": "",
+    "github": ""
+  },
+  "recruiting": {
+    "active": true,
+    "message_en": "I'm looking for highly motivated graduate students and undergraduates passionate about next-generation battery materials.",
+    "message_ko": "차세대 이차전지 소재 연구에 열정이 있는 대학원생과 학부연구원을 상시 모집합니다."
+  },
+  "citations_history": []
+}

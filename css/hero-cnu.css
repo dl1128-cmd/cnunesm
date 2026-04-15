@@ -1,0 +1,323 @@
+/* =========================================================================
+ * NESM — Apple-inspired CNU Hero overrides
+ * Loaded after style.css to amplify the opening impression.
+ * ========================================================================= */
+
+:root {
+  --cnu-blue: #003A70;
+  --cnu-blue-tint: #1d5aa0;
+  --cnu-blue-soft: #e7edf5;
+}
+
+/* CNU accent color everywhere the template called on --c-accent */
+:root {
+  --c-accent: var(--cnu-blue);
+  --c-accent-2: var(--cnu-blue-tint);
+}
+html[data-theme="dark"] {
+  --c-accent: #7fb2ff;
+  --c-accent-2: #4a8fe0;
+}
+
+/* ============================== HERO ==================================== */
+.hero.hero-cnu {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8rem 6vw 6rem;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 80% 20%, rgba(0, 58, 112, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 80%, rgba(29, 90, 160, 0.06) 0%, transparent 50%),
+    var(--c-bg);
+}
+
+html[data-theme="dark"] .hero.hero-cnu {
+  background:
+    radial-gradient(ellipse at 80% 20%, rgba(127, 178, 255, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 80%, rgba(74, 143, 224, 0.08) 0%, transparent 50%),
+    var(--c-bg);
+}
+
+.hero.hero-cnu .hero-inner {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero.hero-cnu .hero-eyebrow {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c-text-light);
+  margin-bottom: 0.5rem;
+}
+
+.hero.hero-cnu .hero-title-ko,
+.hero.hero-cnu .hero-title-en {
+  font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 900;
+  font-size: clamp(3.5rem, 9.5vw, 9.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  margin: 0;
+  color: var(--c-text);
+}
+
+.hero.hero-cnu .hero-title-en {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.hero.hero-cnu h1 .line {
+  display: block;
+}
+
+.hero.hero-cnu h1 .accent {
+  color: var(--cnu-blue);
+  font-style: italic;
+  font-family: 'Fraunces', 'Noto Serif KR', serif;
+  font-weight: 500;
+}
+
+html[data-theme="dark"] .hero.hero-cnu h1 .accent {
+  color: #8fc0ff;
+}
+
+.hero.hero-cnu .hero-subtitle {
+  font-size: clamp(1.05rem, 1.4vw, 1.4rem);
+  line-height: 1.5;
+  color: var(--c-text-light);
+  max-width: 680px;
+  margin: 0.5rem 0 0;
+  font-weight: 400;
+}
+
+.hero.hero-cnu .hero-cta {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.hero.hero-cnu .hero-cta .btn-primary {
+  background: var(--cnu-blue);
+  color: #fff;
+  border-color: var(--cnu-blue);
+}
+
+.hero.hero-cnu .hero-cta .btn-primary:hover {
+  background: var(--cnu-blue-tint);
+  border-color: var(--cnu-blue-tint);
+}
+
+.hero.hero-cnu .hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.82rem;
+  color: var(--c-text-light);
+}
+
+.hero.hero-cnu .hero-meta .stat .n {
+  color: var(--c-text);
+  font-weight: 600;
+}
+
+.hero.hero-cnu .hero-meta .lbl {
+  margin-left: 0.25rem;
+  opacity: 0.75;
+}
+
+.hero.hero-cnu .hero-meta .sep {
+  opacity: 0.4;
+}
+
+.hero-scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--c-text-light);
+  opacity: 0.6;
+  animation: hero-hint-bob 2.4s ease-in-out infinite;
+}
+
+@keyframes hero-hint-bob {
+  0%, 100% { transform: translate(-50%, 0); opacity: 0.5; }
+  50% { transform: translate(-50%, 4px); opacity: 0.9; }
+}
+
+@media (max-width: 720px) {
+  .hero.hero-cnu { padding: 6rem 5vw 5rem; }
+  .hero.hero-cnu .hero-title-ko,
+  .hero.hero-cnu .hero-title-en {
+    font-size: clamp(2.8rem, 13vw, 4.5rem);
+  }
+  .hero-scroll-hint { display: none; }
+}
+
+/* ============================== ABOUT PI inline ========================= */
+.about-pi { padding-block: 7rem; }
+.pi-inline {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.pi-inline-text .eyebrow {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-text-light);
+  margin-bottom: 0.5rem;
+}
+.pi-inline-text h2 {
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin: 0 0 1rem;
+}
+.pi-inline-title {
+  font-size: 1.05rem;
+  color: var(--c-text-light);
+  margin: 0 0 1.5rem;
+}
+.pi-inline-bio {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--c-text);
+  max-width: 760px;
+  margin: 0 0 2rem;
+}
+.pi-inline-bio strong { color: var(--cnu-blue); font-weight: 600; }
+html[data-theme="dark"] .pi-inline-bio strong { color: #8fc0ff; }
+.pi-inline-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
+/* ============================== RESEARCH scroll-snap ==================== */
+.research-snap {
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  height: 100vh;
+}
+.research-snap-section {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  padding: 10vh 6vw;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--c-border);
+  position: relative;
+}
+.research-snap-section:nth-child(odd) {
+  background: var(--c-bg);
+}
+.research-snap-section:nth-child(even) {
+  background: var(--c-surface-2);
+}
+.research-snap-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.research-snap-visual {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cnu-blue);
+  opacity: 0.75;
+}
+.research-snap-visual svg {
+  width: 100%;
+  height: auto;
+  max-width: 420px;
+}
+html[data-theme="dark"] .research-snap-visual {
+  color: #8fc0ff;
+}
+.research-snap-content .eyebrow {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cnu-blue);
+  margin-bottom: 1rem;
+}
+html[data-theme="dark"] .research-snap-content .eyebrow { color: #8fc0ff; }
+.research-snap-content h2 {
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin: 0 0 1.2rem;
+}
+.research-snap-content p {
+  font-size: 1.08rem;
+  line-height: 1.65;
+  color: var(--c-text);
+  margin: 0 0 1.5rem;
+  max-width: 560px;
+}
+.research-snap-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.research-snap-keywords .kw {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.72rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--c-border);
+  border-radius: 999px;
+  color: var(--c-text-light);
+}
+
+.research-snap-summary { font-size: 1.2rem; line-height: 1.55; color: var(--c-text); margin: 0 0 1.5rem; }
+.research-snap-summary strong { font-weight: 600; }
+.research-snap-detail { font-size: 0.98rem; line-height: 1.7; color: var(--c-text-light); margin: 0 0 1.5rem; max-width: 620px; }
+.research-snap-papers ul { list-style: none; padding: 0; margin: 0.5rem 0 0; }
+.research-snap-papers li {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  padding: 0.45rem 0;
+  border-top: 1px solid var(--c-border);
+  color: var(--c-text);
+}
+.research-snap-papers li:first-child { border-top: none; padding-top: 0; }
+.research-snap-papers .pp-venue { color: var(--c-text-light); font-style: italic; }
+
+@media (max-width: 900px) {
+  .research-snap-inner {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem;
+    direction: ltr !important;
+  }
+  .research-snap-visual {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+  .research-snap-section { padding: 8vh 5vw; min-height: auto; }
+  .research-snap-content > * { direction: ltr !important; }
+}
