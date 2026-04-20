@@ -309,7 +309,105 @@ def _fetch_openalex_works(author_id: str) -> list[dict]:
     return works
 
 
+def _get_explicit_openalex_ids() -> list[str]:
+    """Return list of OpenAlex author IDs explicitly configured in config.pi.
+
+    Supports `pi.openalex_ids` (list) or `pi.openalex_id` (single string).
+    Returning multiple IDs is useful when OpenAlex has split one author into
+    several profiles (e.g. due to affiliation change).
+    """
+    config = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+    pi = config.get("pi") or {}
+    ids = pi.get("openalex_ids")
+    if isinstance(ids, list):
+        return [str(x) for x in ids if x]
+    single = pi.get("openalex_id")
+    if isinstance(single, str) and single:
+        return [single]
+    return []
+
+
+def _aggregate_authors(author_ids: list[str]) -> dict | None:
+    """Fetch each author's metadata + works, then merge into one dict."""
+    h_index = 0
+    i10_index = 0
+    citations_total = 0
+    citations_history: dict[int, int] = {}
+    seen_works: dict[str, dict] = {}  # id -> work (dedupe across authors)
+
+    for aid in author_ids:
+        author = _openalex_get(
+            f"https://api.openalex.org/authors/{aid}?mailto={MAILTO}"
+        )
+        if not author:
+            print(f"  OpenAlex: failed to fetch author {aid}")
+            continue
+        summary = author.get("summary_stats") or {}
+        # h-index / i10 don't sum cleanly across split profiles; take max
+        h_index = max(h_index, int(summary.get("h_index", 0) or 0))
+        i10_index = max(i10_index, int(summary.get("i10_index", 0) or 0))
+        citations_total += int(author.get("cited_by_count", 0) or 0)
+        for c in author.get("counts_by_year") or []:
+            y = int(c.get("year", 0) or 0)
+            if y:
+                citations_history[y] = (
+                    citations_history.get(y, 0)
+                    + int(c.get("cited_by_count", 0) or 0)
+                )
+        # Works (deduped by OpenAlex work ID)
+        for w in _fetch_openalex_works(aid):
+            wid = w.get("id", "") or w.get("doi", "") or w.get("title", "")
+            if wid and wid not in seen_works:
+                seen_works[wid] = w
+        print(f"  OpenAlex: aggregated {aid} -> running total "
+              f"{citations_total} cites, {len(seen_works)} works")
+
+    if not seen_works and citations_total == 0:
+        return None
+
+    history = sorted(
+        ({"year": y, "count": c} for y, c in citations_history.items()),
+        key=lambda x: x["year"],
+    )
+    current_year = time.gmtime().tm_year
+    citations_recent5y = sum(
+        h["count"] for h in history if h["year"] >= current_year - 4
+    )
+
+    papers = [
+        {
+            "title": w.get("title") or w.get("display_name", ""),
+            "year": w.get("publication_year"),
+            "citations": int(w.get("cited_by_count", 0) or 0),
+            "scholar_link": w.get("doi") or "",
+        }
+        for w in seen_works.values()
+    ]
+    # newest-first papers list
+    papers.sort(key=lambda p: (p.get("year") or 0), reverse=True)
+
+    return {
+        "updated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "user_id": "",
+        "openalex_id": ",".join(author_ids),
+        "citations_total": citations_total,
+        "citations_recent5y": citations_recent5y,
+        "h_index": h_index,
+        "i10_index": i10_index,
+        "citations_history": history,
+        "papers": papers,
+        "_source": "openalex",
+    }
+
+
 def try_openalex(author_name: str) -> dict | None:
+    # Prefer explicit IDs from config (most accurate, avoids homonyms /
+    # publication-vote pitfalls).
+    explicit = _get_explicit_openalex_ids()
+    if explicit:
+        print(f"  OpenAlex: using explicit ids from config: {explicit}")
+        return _aggregate_authors(explicit)
+
     if not author_name:
         print("  OpenAlex: no author name available, skipping.")
         return None
@@ -318,56 +416,7 @@ def try_openalex(author_name: str) -> dict | None:
     if not author_id:
         print(f"  OpenAlex: could not resolve author '{author_name}'.")
         return None
-
-    # Fetch author metadata for summary stats + per-year history
-    author = _openalex_get(
-        f"https://api.openalex.org/authors/{author_id}?mailto={MAILTO}"
-    )
-    if not author:
-        return None
-
-    summary = author.get("summary_stats") or {}
-    h_index = int(summary.get("h_index", 0) or 0)
-    i10_index = int(summary.get("i10_index", 0) or 0)
-    citations_total = int(author.get("cited_by_count", 0) or 0)
-
-    counts_by_year = author.get("counts_by_year") or []
-    citations_history = sorted(
-        ({"year": int(c["year"]), "count": int(c.get("cited_by_count", 0))}
-         for c in counts_by_year),
-        key=lambda x: x["year"],
-    )
-    current_year = time.gmtime().tm_year
-    citations_recent5y = sum(
-        h["count"] for h in citations_history
-        if h["year"] >= current_year - 4
-    )
-
-    works = _fetch_openalex_works(author_id)
-    papers = [
-        {
-            "title": w.get("title") or w.get("display_name", ""),
-            "year": w.get("publication_year"),
-            "citations": int(w.get("cited_by_count", 0) or 0),
-            "scholar_link": (w.get("doi") or "").replace(
-                "https://doi.org/", "https://doi.org/"
-            ),
-        }
-        for w in works
-    ]
-
-    return {
-        "updated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-        "user_id": "",
-        "openalex_id": author_id,
-        "citations_total": citations_total,
-        "citations_recent5y": citations_recent5y,
-        "h_index": h_index,
-        "i10_index": i10_index,
-        "citations_history": citations_history,
-        "papers": papers,
-        "_source": "openalex",
-    }
+    return _aggregate_authors([author_id])
 
 
 def main() -> None:

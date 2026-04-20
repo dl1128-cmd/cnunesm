@@ -15,7 +15,8 @@
     "title_en": "Assistant Professor",
     "title_ko": "조교수",
     "email": "hryu@cnu.ac.kr",
-    "scholar": "https://scholar.google.com/citations?user=3pg8AjQAAAAJ&hl=ko"
+    "scholar": "https://scholar.google.com/citations?user=3pg8AjQAAAAJ&hl=ko",
+    "openalex_ids": ["A5112620578", "A5035439306"]
   },
   "metrics": {
     "citations_total": 0,
