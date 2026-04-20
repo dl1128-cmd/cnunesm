@@ -1,0 +1,1212 @@
+{
+  "updated_at": "2026-04-20T05:00:53Z",
+  "user_id": "",
+  "citations_total": 22292,
+  "citations_recent5y": 0,
+  "h_index": 0,
+  "i10_index": 0,
+  "citations_history": [],
+  "papers": [
+    {
+      "title": "Capacity Fading of Ni-Rich Li[Ni<sub><i>x</i></sub>Co<sub><i>y</i></sub>Mn<sub>1–<i>x</i>–<i>y</i></sub>]O<sub>2</sub> (0.6 ≤ <i>x</i> ≤ 0.95) Cathodes for High-Energy-Density Lithium-Ion Batteries: Bulk or Surface Degradation?",
+      "year": 2018,
+      "citations": 1545,
+      "scholar_link": ""
+    },
+    {
+      "title": "Capacity Fading Mechanisms in Ni-Rich Single-Crystal NCM Cathodes",
+      "year": 2021,
+      "citations": 568,
+      "scholar_link": ""
+    },
+    {
+      "title": "Suppressing detrimental phase transitions <i>via</i> tungsten doping of LiNiO<sub>2</sub> cathode for next-generation lithium-ion batteries",
+      "year": 2019,
+      "citations": 253,
+      "scholar_link": ""
+    },
+    {
+      "title": "Beyond Doping and Coating: Prospective Strategies for Stable High-Capacity Layered Ni-Rich Cathodes",
+      "year": 2020,
+      "citations": 466,
+      "scholar_link": ""
+    },
+    {
+      "title": "Reducing cobalt from lithium-ion batteries for the electric vehicle era",
+      "year": 2021,
+      "citations": 303,
+      "scholar_link": ""
+    },
+    {
+      "title": "Hierarchical O3/P2 heterostructured cathode materials for advanced sodium-ion batteries",
+      "year": 2022,
+      "citations": 183,
+      "scholar_link": ""
+    },
+    {
+      "title": "Near-surface reconstruction in Ni-rich layered cathodes for high-performance lithium-ion batteries",
+      "year": 2023,
+      "citations": 202,
+      "scholar_link": ""
+    },
+    {
+      "title": "Ni-rich layered cathodes for lithium-ion batteries: From challenges to the future",
+      "year": 2023,
+      "citations": 211,
+      "scholar_link": ""
+    },
+    {
+      "title": "Degradation Mechanism of Ni-Enriched NCA Cathode for Lithium Batteries: Are Microcracks Really Critical?",
+      "year": 2019,
+      "citations": 399,
+      "scholar_link": ""
+    },
+    {
+      "title": "Degradation Mechanism of Highly Ni-Rich Li[Ni<sub><i>x</i></sub>Co<sub><i>y</i></sub>Mn<sub>1–<i>x</i>–<i>y</i></sub>]O<sub>2</sub> Cathodes with <i>x</i> &gt; 0.9",
+      "year": 2019,
+      "citations": 222,
+      "scholar_link": ""
+    },
+    {
+      "title": "Microstructure‐Controlled Ni‐Rich Cathode Material by Microscale Compositional Partition for Next‐Generation Electric Vehicles",
+      "year": 2019,
+      "citations": 291,
+      "scholar_link": ""
+    },
+    {
+      "title": "Extracting maximum capacity from Ni-rich Li[Ni<sub>0.95</sub>Co<sub>0.025</sub>Mn<sub>0.025</sub>]O<sub>2</sub>cathodes for high-energy-density lithium-ion batteries",
+      "year": 2018,
+      "citations": 255,
+      "scholar_link": ""
+    },
+    {
+      "title": "Understanding the Capacity Fading Mechanisms of O3‐Type Na[Ni<sub>0.5</sub>Mn<sub>0.5</sub>]O<sub>2</sub> Cathode for Sodium‐Ion Batteries",
+      "year": 2020,
+      "citations": 132,
+      "scholar_link": ""
+    },
+    {
+      "title": "High-Energy Ni-Rich Li[Ni<sub><i>x</i></sub>Co<sub><i>y</i></sub>Mn<sub>1<i>–x–y</i></sub>]O<sub>2</sub> Cathodes via Compositional Partitioning for Next-Generation Electric Vehicles",
+      "year": 2017,
+      "citations": 238,
+      "scholar_link": ""
+    },
+    {
+      "title": "Tungsten doping for stabilization of Li[Ni0.90Co0.05Mn0.05]O2 cathode for Li-ion battery at high voltage",
+      "year": 2019,
+      "citations": 185,
+      "scholar_link": ""
+    },
+    {
+      "title": "Microstructural Degradation of Ni‐Rich Li[Ni<i><sub>x</sub></i>Co<i><sub>y</sub></i>Mn<sub>1</sub><i><sub>−x−y</sub></i>]O<sub>2</sub> Cathodes During Accelerated Calendar Aging",
+      "year": 2018,
+      "citations": 120,
+      "scholar_link": ""
+    },
+    {
+      "title": "Li[Ni<sub>0.9</sub>Co<sub>0.09</sub>W<sub>0.01</sub>]O<sub>2</sub>: A New Type of Layered Oxide Cathode with High Cycling Stability",
+      "year": 2019,
+      "citations": 173,
+      "scholar_link": ""
+    },
+    {
+      "title": "New Class of Ni‐Rich Cathode Materials Li[Ni<i><sub>x</sub></i>Co<i><sub>y</sub></i>B<sub>1−</sub><i><sub>x</sub></i><sub>−</sub><i><sub>y</sub></i>]O<sub>2</sub> for Next Lithium Batteries",
+      "year": 2020,
+      "citations": 169,
+      "scholar_link": ""
+    },
+    {
+      "title": "Compositionally and structurally redesigned high-energy Ni-rich layered cathode for next-generation lithium batteries",
+      "year": 2018,
+      "citations": 167,
+      "scholar_link": ""
+    },
+    {
+      "title": "Morphology-Dependent Battery Performance of Ni-Rich Layered Cathodes: Single-Crystal versus Refined Polycrystal",
+      "year": 2022,
+      "citations": 99,
+      "scholar_link": ""
+    },
+    {
+      "title": "Optimized Ni‐Rich NCMA Cathode for Electric Vehicle Batteries",
+      "year": 2021,
+      "citations": 129,
+      "scholar_link": ""
+    },
+    {
+      "title": "A highly stabilized Ni-rich NCA cathode for high-energy lithium-ion batteries",
+      "year": 2020,
+      "citations": 245,
+      "scholar_link": ""
+    },
+    {
+      "title": "Long-Lasting Ni-Rich NCMA Cathodes via Simultaneous Microstructural Refinement and Surface Modification",
+      "year": 2023,
+      "citations": 122,
+      "scholar_link": ""
+    },
+    {
+      "title": "Microstructure-optimized concentration-gradient NCM cathode for long-life Li-ion batteries",
+      "year": 2021,
+      "citations": 117,
+      "scholar_link": ""
+    },
+    {
+      "title": "Optimization of molybdenum-doped Ni-rich layered cathodes for long-term cycling",
+      "year": 2023,
+      "citations": 74,
+      "scholar_link": ""
+    },
+    {
+      "title": "High-Energy Cathodes via Precision Microstructure Tailoring for Next-Generation Electric Vehicles",
+      "year": 2021,
+      "citations": 105,
+      "scholar_link": ""
+    },
+    {
+      "title": "Structural Stability of Single-Crystalline Ni-Rich Layered Cathode upon Delithiation",
+      "year": 2022,
+      "citations": 79,
+      "scholar_link": ""
+    },
+    {
+      "title": "MoS<sub>2</sub> Nanosheet Phototransistors with Thickness-Modulated Optical Energy Gap",
+      "year": 2012,
+      "citations": 1333,
+      "scholar_link": ""
+    },
+    {
+      "title": "Promoting grain growth in Ni-rich single-crystal cathodes for high-performance lithium-ion batteries through Ce doping",
+      "year": 2022,
+      "citations": 39,
+      "scholar_link": ""
+    },
+    {
+      "title": "Monocyte chemoattractant protein-1–induced angiogenesis is mediated by vascular endothelial growth factor-A",
+      "year": 2004,
+      "citations": 374,
+      "scholar_link": ""
+    },
+    {
+      "title": "Microstrain Alleviation in High-Energy Ni-Rich NCMA Cathode for Long Battery Life",
+      "year": 2020,
+      "citations": 120,
+      "scholar_link": ""
+    },
+    {
+      "title": "Microstructure Evolution of Concentration Gradient Li[Ni<sub>0.75</sub>Co<sub>0.10</sub>Mn<sub>0.15</sub>]O<sub>2</sub> Cathode for Lithium‐Ion Batteries",
+      "year": 2018,
+      "citations": 90,
+      "scholar_link": ""
+    },
+    {
+      "title": "Nano-rods in Ni-rich layered cathodes for practical batteries",
+      "year": 2024,
+      "citations": 70,
+      "scholar_link": ""
+    },
+    {
+      "title": "High-performance Ni-rich Li[Ni<sub>0.9–<i>x</i></sub>Co<sub>0.1</sub>Al<sub><i>x</i></sub>]O<sub>2</sub> cathodes <i>via</i> multi-stage microstructural tailoring from hydroxide precursor to the lithiated oxide",
+      "year": 2021,
+      "citations": 102,
+      "scholar_link": ""
+    },
+    {
+      "title": "Intrinsic weaknesses of Co-free Ni–Mn layered cathodes for electric vehicles",
+      "year": 2022,
+      "citations": 51,
+      "scholar_link": ""
+    },
+    {
+      "title": "Enhanced Cycling Stability of O3-Type Na[Ni<sub>0.5</sub>Mn<sub>0.5</sub>]O<sub>2</sub> Cathode through Sn Addition for Sodium-Ion Batteries",
+      "year": 2021,
+      "citations": 27,
+      "scholar_link": ""
+    },
+    {
+      "title": "High-Performance LiNiO<sub>2</sub> Cathodes with Practical Loading Cycled with Li metal Anodes in Fluoroethylene Carbonate-Based Electrolyte Solution",
+      "year": 2018,
+      "citations": 47,
+      "scholar_link": ""
+    },
+    {
+      "title": "Single-Crystal vs Polycrystalline Cathodes for Lithium-Ion Batteries",
+      "year": 2025,
+      "citations": 23,
+      "scholar_link": ""
+    },
+    {
+      "title": "All-solid-state lithium batteries featuring hybrid electrolytes based on Li+ ion-conductive Li7La3Zr2O12 framework and full-concentration gradient Ni-rich NCM cathode",
+      "year": 2022,
+      "citations": 30,
+      "scholar_link": ""
+    },
+    {
+      "title": "Ni-Rich Li[Ni<sub><i>x</i></sub>Mn<sub><i>y</i></sub>Co<sub>1–<i>x</i>–<i>y</i></sub>]O<sub>2</sub> Single Crystals as Superior Fast Charge Cathodes for Lithium-Ion Batteries",
+      "year": 2025,
+      "citations": 7,
+      "scholar_link": ""
+    },
+    {
+      "title": "Selective Diagnosis of Diabetes Using Pt-Functionalized WO<sub>3</sub> Hemitube Networks As a Sensing Layer of Acetone in Exhaled Breath",
+      "year": 2012,
+      "citations": 310,
+      "scholar_link": ""
+    },
+    {
+      "title": "Carbon dioxide mediated, reversible chemical hydrogen storage using a Pd nanocatalyst supported on mesoporous graphitic carbon nitride",
+      "year": 2014,
+      "citations": 243,
+      "scholar_link": ""
+    },
+    {
+      "title": "Nanorod Cathodes: A Solution for Polycrystalline Cathodes in Next-Generation Lithium Batteries",
+      "year": 2025,
+      "citations": 4,
+      "scholar_link": ""
+    },
+    {
+      "title": "The Effect of Virtual Reality on Preoperative Anxiety: A Meta-Analysis of Randomized Controlled Trials",
+      "year": 2020,
+      "citations": 86,
+      "scholar_link": ""
+    },
+    {
+      "title": "MoS<sub>2</sub> Nanosheets for Top‐Gate Nonvolatile Memory Transistor Channel",
+      "year": 2012,
+      "citations": 246,
+      "scholar_link": ""
+    },
+    {
+      "title": "Phospholipase C isozymes selectively couple to specific neurotransmitter receptors",
+      "year": 1997,
+      "citations": 307,
+      "scholar_link": ""
+    },
+    {
+      "title": "Multi‐Physical Field Simulation: A Powerful Tool for Accelerating Exploration of High‐Energy‐Density Rechargeable Lithium Batteries",
+      "year": 2023,
+      "citations": 25,
+      "scholar_link": ""
+    },
+    {
+      "title": "Microstructural Degradation: Microstructural Degradation of Ni‐Rich Li[Ni<i><sub>x</sub></i>Co<i><sub>y</sub></i>Mn<sub>1</sub><i><sub>−x−y</sub></i>]O<sub>2</sub> Cathodes During Accelerated Calendar Aging (Small 45/2018)",
+      "year": 2018,
+      "citations": 7,
+      "scholar_link": ""
+    },
+    {
+      "title": "Epigenetic modification is linked to Alzheimer's disease: is it a maker or a marker?",
+      "year": 2010,
+      "citations": 43,
+      "scholar_link": ""
+    },
+    {
+      "title": "Male‐specific alteration in excitatory post‐synaptic development and social interaction in pre‐natal valproic acid exposure model of autism spectrum disorder",
+      "year": 2013,
+      "citations": 208,
+      "scholar_link": ""
+    },
+    {
+      "title": "Advances in epigenetic glioblastoma therapy",
+      "year": 2017,
+      "citations": 96,
+      "scholar_link": ""
+    },
+    {
+      "title": "Comparison of acute responses of mice livers to short-term exposure to nano-sized or micro-sized silver particles",
+      "year": 2008,
+      "citations": 183,
+      "scholar_link": ""
+    },
+    {
+      "title": "Kriging interpolation methods in geostatistics and DACE model",
+      "year": 2002,
+      "citations": 107,
+      "scholar_link": ""
+    },
+    {
+      "title": "ZnO nanoparticles induce TNF-α expression via ROS-ERK-Egr-1 pathway in human keratinocytes",
+      "year": 2013,
+      "citations": 92,
+      "scholar_link": ""
+    },
+    {
+      "title": "Twofold van Hove singularity and origin of charge order in topological kagome superconductor CsV3Sb5",
+      "year": 2022,
+      "citations": 398,
+      "scholar_link": ""
+    },
+    {
+      "title": "Cathodes: Li[Ni<sub>0.9</sub>Co<sub>0.09</sub>W<sub>0.01</sub>]O<sub>2</sub>: A New Type of Layered Oxide Cathode with High Cycling Stability (Adv. Energy Mater. 44/2019)",
+      "year": 2019,
+      "citations": 8,
+      "scholar_link": ""
+    },
+    {
+      "title": "Enhanced Coulomb counting method with adaptive SOC reset time for estimating OCV",
+      "year": 2014,
+      "citations": 88,
+      "scholar_link": ""
+    },
+    {
+      "title": "Interface-Controlled Synthesis of Heterodimeric Silver–Carbon Nanoparticles Derived from Polysaccharides",
+      "year": 2014,
+      "citations": 76,
+      "scholar_link": ""
+    },
+    {
+      "title": "Neuroprotective effect of green tea extract in experimental ischemia-reperfusion brain injury",
+      "year": 2000,
+      "citations": 135,
+      "scholar_link": ""
+    },
+    {
+      "title": "HDAC6 deacetylates p53 at lysines 381/382 and differentially coordinates p53-induced apoptosis",
+      "year": 2017,
+      "citations": 81,
+      "scholar_link": ""
+    },
+    {
+      "title": "Deep vs. Awake Extubation and LMA Removal in Terms of Airway Complications in Pediatric Patients Undergoing Anesthesia: A Systemic Review and Meta-Analysis",
+      "year": 2018,
+      "citations": 51,
+      "scholar_link": ""
+    },
+    {
+      "title": "miR‐206 regulates brain‐derived neurotrophic factor in Alzheimer disease model",
+      "year": 2012,
+      "citations": 317,
+      "scholar_link": ""
+    },
+    {
+      "title": "Higher biofilm formation in multidrug-resistant clinical isolates of Staphylococcus aureus",
+      "year": 2008,
+      "citations": 139,
+      "scholar_link": ""
+    },
+    {
+      "title": "Efficacy of Erector Spinae Plane Block for Analgesia in Thoracic Surgery: A Systematic Review and Meta-Analysis",
+      "year": 2021,
+      "citations": 80,
+      "scholar_link": ""
+    },
+    {
+      "title": "Multifactorial intervention in diabetes care using real-time monitoring and tailored feedback in type 2 diabetes",
+      "year": 2015,
+      "citations": 131,
+      "scholar_link": ""
+    },
+    {
+      "title": "Myristicin-induced neurotoxicity in human neuroblastoma SK-N-SH cells",
+      "year": 2005,
+      "citations": 104,
+      "scholar_link": ""
+    },
+    {
+      "title": "Characteristics of distension-induced release of immunoreactive atrial natriuretic peptide in isolated perfused rabbit atria",
+      "year": 1988,
+      "citations": 70,
+      "scholar_link": ""
+    },
+    {
+      "title": "Visualization of myelination in GFP‐transgenic zebrafish",
+      "year": 2009,
+      "citations": 128,
+      "scholar_link": ""
+    },
+    {
+      "title": "Facilitated Olefin Transport by Reversible Olefin Coordination to Silver Ions in a Dry Cellulose Acetate Membrane",
+      "year": 2001,
+      "citations": 66,
+      "scholar_link": ""
+    },
+    {
+      "title": "White light emitting diodes realized by using an active packaging method with CdSe/ZnS quantum dots dispersed in photosensitive epoxy resins",
+      "year": 2008,
+      "citations": 66,
+      "scholar_link": ""
+    },
+    {
+      "title": "Activation of Glucagon-Like Peptide-1 Receptor Promotes Neuroprotection in Experimental Autoimmune Encephalomyelitis by Reducing Neuroinflammatory Responses",
+      "year": 2017,
+      "citations": 121,
+      "scholar_link": ""
+    },
+    {
+      "title": "Anesthetic considerations for urologic surgeries",
+      "year": 2019,
+      "citations": 26,
+      "scholar_link": ""
+    },
+    {
+      "title": "Neuronal SphK1 acetylates COX2 and contributes to pathogenesis in a model of Alzheimer’s Disease",
+      "year": 2018,
+      "citations": 101,
+      "scholar_link": ""
+    },
+    {
+      "title": "Influence of Toxicologically Relevant Metals on Human Epigenetic Regulation",
+      "year": 2015,
+      "citations": 81,
+      "scholar_link": ""
+    },
+    {
+      "title": "MERS-CoV outbreak following a single patient exposure in an emergency room in South Korea: an epidemiological outbreak study",
+      "year": 2016,
+      "citations": 336,
+      "scholar_link": ""
+    },
+    {
+      "title": "Extremely stable graphene electrodes doped with macromolecular acid",
+      "year": 2018,
+      "citations": 124,
+      "scholar_link": ""
+    },
+    {
+      "title": "Promoter CpG island hypermethylation during breast cancer progression",
+      "year": 2010,
+      "citations": 153,
+      "scholar_link": ""
+    },
+    {
+      "title": "Room-temperature triangular-lattice two-dimensional photonic band gap lasers operating at 1.54 μm",
+      "year": 2000,
+      "citations": 114,
+      "scholar_link": ""
+    },
+    {
+      "title": "Teriyaki sauce with carvacrol or thymol effectively controls Escherichia coli O157:H7, Listeria monocytogenes, Salmonella Typhimurium, and indigenous flora in marinated beef and marinade",
+      "year": 2017,
+      "citations": 63,
+      "scholar_link": ""
+    },
+    {
+      "title": "Sodium‐Ion Batteries: Understanding the Capacity Fading Mechanisms of O3‐Type Na[Ni<sub>0.5</sub>Mn<sub>0.5</sub>]O<sub>2</sub> Cathode for Sodium‐Ion Batteries (Adv. Energy Mater. 37/2020)",
+      "year": 2020,
+      "citations": 2,
+      "scholar_link": ""
+    },
+    {
+      "title": "Increased Plasma Nitric Oxide Metabolites in Suicide Attempters",
+      "year": 2006,
+      "citations": 91,
+      "scholar_link": ""
+    },
+    {
+      "title": "Nodal Staging of Rectal Cancer",
+      "year": 2011,
+      "citations": 72,
+      "scholar_link": ""
+    },
+    {
+      "title": "The Effects of Erector Spinae Plane Block in Terms of Postoperative Analgesia in Patients Undergoing Laparoscopic Cholecystectomy: A Meta-Analysis of Randomized Controlled Trials",
+      "year": 2020,
+      "citations": 41,
+      "scholar_link": ""
+    },
+    {
+      "title": "Concentration Gradient Cathodes: Microstructure‐Controlled Ni‐Rich Cathode Material by Microscale Compositional Partition for Next‐Generation Electric Vehicles (Adv. Energy Mater. 15/2019)",
+      "year": 2019,
+      "citations": 5,
+      "scholar_link": ""
+    },
+    {
+      "title": "OsCOL4 is a constitutive flowering repressor upstream of Ehd1 and downstream of OsphyB",
+      "year": 2010,
+      "citations": 185,
+      "scholar_link": ""
+    },
+    {
+      "title": "Effect of phthalates on the stability and performance of AgBF4-PVP membranes for olefin/paraffin separation.",
+      "year": 2001,
+      "citations": 59,
+      "scholar_link": ""
+    },
+    {
+      "title": "PRODIGY: A Phase III Study of Neoadjuvant Docetaxel, Oxaliplatin, and S-1 Plus Surgery and Adjuvant S-1 Versus Surgery and Adjuvant S-1 for Resectable Advanced Gastric Cancer",
+      "year": 2021,
+      "citations": 341,
+      "scholar_link": ""
+    },
+    {
+      "title": "Reversible olefin complexation by silver ions in dry poly(vinyl methyl ketone) membrane and its application to olefin/paraffin separations",
+      "year": 2000,
+      "citations": 47,
+      "scholar_link": ""
+    },
+    {
+      "title": "Oroxylin A increases BDNF production by activation of MAPK–CREB pathway in rat primary cortical neuronal culture",
+      "year": 2010,
+      "citations": 78,
+      "scholar_link": ""
+    },
+    {
+      "title": "Preoperative concurrent radiotherapy with capecitabine before total mesorectal excision in locally advanced rectal cancer",
+      "year": 2005,
+      "citations": 117,
+      "scholar_link": ""
+    },
+    {
+      "title": "HMG-CoA Reductase Inhibition Reduces Monocyte CC Chemokine Receptor 2 Expression and Monocyte Chemoattractant Protein-1–Mediated Monocyte Recruitment In Vivo",
+      "year": 2005,
+      "citations": 85,
+      "scholar_link": ""
+    },
+    {
+      "title": "Lidocaine vs. Other Local Anesthetics in the Development of Transient Neurologic Symptoms (TNS) Following Spinal Anesthesia: A Meta-Analysis of Randomized Controlled Trials",
+      "year": 2020,
+      "citations": 27,
+      "scholar_link": ""
+    },
+    {
+      "title": "Crystal structure of DsbDγ reveals the mechanism of redox potential shift and substrate specificity<sup>1</sup>",
+      "year": 2003,
+      "citations": 49,
+      "scholar_link": ""
+    },
+    {
+      "title": "Dimerization of pro-oncogenic protein Anterior Gradient 2 is required for the interaction with BiP/GRP78",
+      "year": 2012,
+      "citations": 56,
+      "scholar_link": ""
+    },
+    {
+      "title": "Development of a corrected average speed model for calculating carbon dioxide emissions per link unit on urban roads",
+      "year": 2014,
+      "citations": 26,
+      "scholar_link": ""
+    },
+    {
+      "title": "Metallic stent placement in the palliative treatment of malignant gastroduodenal obstructions: prospective evaluation of results and factors influencing outcome in 213 patients",
+      "year": 2007,
+      "citations": 194,
+      "scholar_link": ""
+    },
+    {
+      "title": "High temperature at veraison inhibits anthocyanin biosynthesis in berry skins during ripening in ‘Kyoho’ grapevines",
+      "year": 2020,
+      "citations": 55,
+      "scholar_link": ""
+    },
+    {
+      "title": "Inhibition of lipopolysaccharide-induced inducible nitric oxide synthase and cyclooxygenase-2 expression by xanthanolides isolated from Xanthium strumarium",
+      "year": 2008,
+      "citations": 54,
+      "scholar_link": ""
+    },
+    {
+      "title": "A Comparative Study of Topical 5-Aminolevulinic Acid Incubation Times in Photodynamic Therapy with Intense Pulsed Light for the Treatment of Inflammatory Acne",
+      "year": 2009,
+      "citations": 45,
+      "scholar_link": ""
+    },
+    {
+      "title": "Epigenomic Analysis of Aberrantly Methylated Genes in Colorectal Cancer Identifies Genes Commonly Affected by Epigenetic Alterations",
+      "year": 2011,
+      "citations": 152,
+      "scholar_link": ""
+    },
+    {
+      "title": "Formation of Silver Nanoparticles Induced by Poly(2,6-dimethyl-1,4-phenylene oxide)",
+      "year": 2001,
+      "citations": 53,
+      "scholar_link": ""
+    },
+    {
+      "title": "Value of complete metabolic response by 18F-fluorodeoxyglucose-positron emission tomography in oesophageal cancer for prediction of pathologic response and survival after preoperative chemoradiotherapy",
+      "year": 2007,
+      "citations": 117,
+      "scholar_link": ""
+    },
+    {
+      "title": "The Effects of Intraoperative Inspired Oxygen Fraction on Postoperative Pulmonary Parameters in Patients with General Anesthesia: A Systemic Review and Meta-Analysis",
+      "year": 2019,
+      "citations": 33,
+      "scholar_link": ""
+    },
+    {
+      "title": "Distinct TLR-mediated pathways regulate house dust mite–induced allergic disease in the upper and lower airways",
+      "year": 2012,
+      "citations": 151,
+      "scholar_link": ""
+    },
+    {
+      "title": "Common bile duct dilatation after cholecystectomy: a one-year prospective study",
+      "year": 2012,
+      "citations": 70,
+      "scholar_link": ""
+    },
+    {
+      "title": "Remote sensing and water quality indicators in the Korean West coast: Spatio-temporal structures of MODIS-derived chlorophyll-a and total suspended solids",
+      "year": 2017,
+      "citations": 85,
+      "scholar_link": ""
+    },
+    {
+      "title": "Extra-gain of HER2-positive cases through HER2 reassessment in primary and metastatic sites in advanced gastric cancer with initially HER2-negative primary tumours: Results of GASTric cancer HER2 reassessment study 1 (GASTHER1)",
+      "year": 2015,
+      "citations": 101,
+      "scholar_link": ""
+    },
+    {
+      "title": "Thrombin-activatable fluorescent peptide incorporated gold nanoparticles for dual optical/computed tomography thrombus imaging",
+      "year": 2017,
+      "citations": 101,
+      "scholar_link": ""
+    },
+    {
+      "title": "Iridium Complexes Containing Bis(imidazoline thione) and Bis(imidazoline selone) Ligands for Visible-Light-Induced Oxidative Coupling of Benzylamines to Imines",
+      "year": 2013,
+      "citations": 66,
+      "scholar_link": ""
+    },
+    {
+      "title": "Cancer-activated doxorubicin prodrug nanoparticles induce preferential immune response with minimal doxorubicin-related toxicity",
+      "year": 2021,
+      "citations": 143,
+      "scholar_link": ""
+    },
+    {
+      "title": "Trimeric Structure of PRL-1 Phosphatase Reveals an Active Enzyme Conformation and Regulation Mechanisms",
+      "year": 2004,
+      "citations": 82,
+      "scholar_link": ""
+    },
+    {
+      "title": "Caveolin-1 Increases Aerobic Glycolysis in Colorectal Cancers by Stimulating HMGA1-Mediated <i>GLUT3</i> Transcription",
+      "year": 2012,
+      "citations": 128,
+      "scholar_link": ""
+    },
+    {
+      "title": "Multi-layer electrode with nano-Li4Ti5O12 aggregates sandwiched between carbon nanotube and graphene networks for high power Li-ion batteries",
+      "year": 2014,
+      "citations": 56,
+      "scholar_link": ""
+    },
+    {
+      "title": "HDAC6 regulates sensitivity to cell death in response to stress and post-stress recovery",
+      "year": 2017,
+      "citations": 30,
+      "scholar_link": ""
+    },
+    {
+      "title": "Oleanolic acid attenuates MK-801-induced schizophrenia-like behaviors in mice",
+      "year": 2014,
+      "citations": 62,
+      "scholar_link": ""
+    },
+    {
+      "title": "Rectal bleeding and its management after irradiation for uterine cervical cancer",
+      "year": 2003,
+      "citations": 43,
+      "scholar_link": ""
+    },
+    {
+      "title": "MST1 functions as a key modulator of neurodegeneration in a mouse model of ALS",
+      "year": 2013,
+      "citations": 99,
+      "scholar_link": ""
+    },
+    {
+      "title": "Bavachalcone inhibits osteoclast differentiation through suppression of NFATc1 induction by RANKL",
+      "year": 2008,
+      "citations": 57,
+      "scholar_link": ""
+    },
+    {
+      "title": "The HDAC6 inhibitor ACY‑1215 enhances the anticancer activity of oxaliplatin in colorectal cancer cells",
+      "year": 2018,
+      "citations": 38,
+      "scholar_link": ""
+    },
+    {
+      "title": "Primary Central Nervous System Marginal Zone B-Cell Lymphoma of the Basal Ganglia Mimicking Low-Grade Glioma: A Case Report and Review of the Literature",
+      "year": 2008,
+      "citations": 41,
+      "scholar_link": ""
+    },
+    {
+      "title": "Prevalence of Malnutrition in Hospitalized Patients: a Multicenter Cross-sectional Study",
+      "year": 2017,
+      "citations": 136,
+      "scholar_link": ""
+    },
+    {
+      "title": "Anti-angiogenic and anti-tumor activity of Bavachinin by targeting hypoxia-inducible factor-1α",
+      "year": 2012,
+      "citations": 64,
+      "scholar_link": ""
+    },
+    {
+      "title": "Enhanced Cycling Stability of O3-Type Na[Ni₀.₅Mn₀.₅]O₂ Cathode through Sn Addition for Sodium-Ion Batteries",
+      "year": 2021,
+      "citations": 1,
+      "scholar_link": ""
+    },
+    {
+      "title": "Reactive polymer membranes containing cuprous complexes in olefin/paraffin separation",
+      "year": 2000,
+      "citations": 26,
+      "scholar_link": ""
+    },
+    {
+      "title": "Presence of immunoreactive atrial natriuretic peptide in follicular fluid, ovary and ovarian perfusates",
+      "year": 1989,
+      "citations": 33,
+      "scholar_link": ""
+    },
+    {
+      "title": "Phospholipid transfer function of PTPIP51 at mitochondria‐associated ER membranes",
+      "year": 2021,
+      "citations": 127,
+      "scholar_link": ""
+    },
+    {
+      "title": "Lateral approach liver hanging maneuver in laparoscopic anatomical liver resections",
+      "year": 2015,
+      "citations": 27,
+      "scholar_link": ""
+    },
+    {
+      "title": "Preparation of silver nanoparticle containing silica micro beads and investigation of their antibacterial activity",
+      "year": 2011,
+      "citations": 66,
+      "scholar_link": ""
+    },
+    {
+      "title": "Comparison of three heterochromatin protein 1 homologs in <i>Drosophila</i>",
+      "year": 2019,
+      "citations": 26,
+      "scholar_link": ""
+    },
+    {
+      "title": "A population-based approach indicates an overall higher patient mortality with peritoneal dialysis compared to hemodialysis in Korea",
+      "year": 2014,
+      "citations": 91,
+      "scholar_link": ""
+    },
+    {
+      "title": "Neurotoxic Effects of Local Anesthetics on Developing Motor Neurons in a Rat Model",
+      "year": 2021,
+      "citations": 23,
+      "scholar_link": ""
+    },
+    {
+      "title": "Regulation of Neutrophil Adhesion by Pituitary Growth Hormone Accompanies Tyrosine Phosphorylation of Jak2, p125FAK, and Paxillin",
+      "year": 2000,
+      "citations": 40,
+      "scholar_link": ""
+    },
+    {
+      "title": "Extraaxial Neurofibromas Versus Neurilemmomas: Discrimination with MRI",
+      "year": 2004,
+      "citations": 153,
+      "scholar_link": ""
+    },
+    {
+      "title": "Luteolin mediates the antidepressant-like effects of Cirsium japonicum in mice, possibly through modulation of the GABAA receptor",
+      "year": 2013,
+      "citations": 56,
+      "scholar_link": ""
+    },
+    {
+      "title": "Mitochondrial Double‐Stranded RNA in Exosome Promotes Interleukin‐17 Production Through Toll‐Like Receptor 3 in Alcohol‐associated Liver Injury",
+      "year": 2019,
+      "citations": 115,
+      "scholar_link": ""
+    },
+    {
+      "title": "Transcriptional repression of repeat-derived transcripts correlates with histone hypoacetylation at repetitive DNA elements in aged mice brain",
+      "year": 2011,
+      "citations": 27,
+      "scholar_link": ""
+    },
+    {
+      "title": "Qi Therapy as an Intervention to Reduce Chronic Pain and to Enhance Mood in Elderly Subjects: A Pilot Study",
+      "year": 2001,
+      "citations": 49,
+      "scholar_link": ""
+    },
+    {
+      "title": "Paradoxical induction of growth arrest and apoptosis by EGF via the up-regulation of PTEN by activating Redox factor-1/Egr-1 in human lung cancer cells",
+      "year": 2016,
+      "citations": 40,
+      "scholar_link": ""
+    },
+    {
+      "title": "Neuroprotective effects of salvianolic acid B on an Aβ25–35 peptide-induced mouse model of Alzheimer's disease",
+      "year": 2013,
+      "citations": 112,
+      "scholar_link": ""
+    },
+    {
+      "title": "The relationship between domain-specific physical activity and depressive symptoms in Korean adults: Analysis of the Korea National Health and Nutrition Examination Survey",
+      "year": 2022,
+      "citations": 41,
+      "scholar_link": ""
+    },
+    {
+      "title": "Thymic stromal lymphopoietin downregulates filaggrin expression by signal transducer and activator of transcription 3 (STAT3) and extracellular signal-regulated kinase (ERK) phosphorylation in keratinocytes",
+      "year": 2015,
+      "citations": 72,
+      "scholar_link": ""
+    },
+    {
+      "title": "Fermented milk of Lactobacillus helveticus IDCC3801 reduces beta-amyloid and attenuates memory deficit",
+      "year": 2010,
+      "citations": 51,
+      "scholar_link": ""
+    },
+    {
+      "title": "Isolation and Characterization of Psychrotrophic and Halotolerant Rhodococcus sp. YHLT-2",
+      "year": 2006,
+      "citations": 22,
+      "scholar_link": ""
+    },
+    {
+      "title": "Effect of nonradiative recombination on light emitting properties of two-dimensional photonic crystal slab structures",
+      "year": 2001,
+      "citations": 40,
+      "scholar_link": ""
+    },
+    {
+      "title": "Clinical Outcomes with Multikinase Inhibitors after Progression on First-Line Atezolizumab plus Bevacizumab in Patients with Advanced Hepatocellular Carcinoma: A Multinational Multicenter Retrospective Study",
+      "year": 2021,
+      "citations": 114,
+      "scholar_link": ""
+    },
+    {
+      "title": "Preparation of amino functionalized silica micro beads by dry method for supporting silver nanoparticles with antibacterial properties",
+      "year": 2011,
+      "citations": 58,
+      "scholar_link": ""
+    },
+    {
+      "title": "Low-divergence relativistic proton jet from a thin solid target driven by an ultra-intense circularly polarized Laguerre–Gaussian laser pulse",
+      "year": 2020,
+      "citations": 28,
+      "scholar_link": ""
+    },
+    {
+      "title": "Overexpression of Uncoupling Protein 2 in THP1 Monocytes Inhibits β <sub>2</sub> Integrin-Mediated Firm Adhesion and Transendothelial Migration",
+      "year": 2004,
+      "citations": 64,
+      "scholar_link": ""
+    },
+    {
+      "title": "NSC-87877, inhibitor of SHP-1/2 PTPs, inhibits dual-specificity phosphatase 26 (DUSP26)",
+      "year": 2009,
+      "citations": 65,
+      "scholar_link": ""
+    },
+    {
+      "title": "Increased sFlt-1 to PlGF Ratio in Women Who Subsequently Develop Preeclampsia",
+      "year": 2007,
+      "citations": 87,
+      "scholar_link": ""
+    },
+    {
+      "title": "Extracting maximum capacity from Ni-rich Li[Ni₀.₉₅Co₀.₀₂₅Mn₀.₀₂₅]O₂ cathodes for high-energy-density lithium-ion batteries",
+      "year": 2018,
+      "citations": 2,
+      "scholar_link": ""
+    },
+    {
+      "title": "A potent hydroxamic acid-based, small-molecule inhibitor A452 preferentially inhibits HDAC6 activity and induces cytotoxicity toward cancer cells irrespective of p53 status",
+      "year": 2017,
+      "citations": 21,
+      "scholar_link": ""
+    },
+    {
+      "title": "Use of phytic acid and hyper-salting to eliminate Escherichia coli O157:H7 from napa cabbage for kimchi production in a commercial plant",
+      "year": 2015,
+      "citations": 31,
+      "scholar_link": ""
+    },
+    {
+      "title": "Chronic exposure to ethanol of male mice before mating produces attention deficit hyperactivity disorder‐like phenotype along with epigenetic dysregulation of dopamine transporter expression in mouse offspring",
+      "year": 2014,
+      "citations": 98,
+      "scholar_link": ""
+    },
+    {
+      "title": "<i>Klebsiella pneumoniae</i>Co-Producing NDM-5 and OXA-181 Carbapenemases, South Korea",
+      "year": 2015,
+      "citations": 70,
+      "scholar_link": ""
+    },
+    {
+      "title": "Two Cytotoxic Sesquiterpene Lactones from the Leaves of<i>Xanthium strumarium</i>and their<i>in vitro</i>Inhibitory Activity on Farnesyltransferase<i />",
+      "year": 2003,
+      "citations": 69,
+      "scholar_link": ""
+    },
+    {
+      "title": "Predictive biomarkers for the efficacy of nivolumab as ≥ 3rd-line therapy in patients with advanced gastric cancer: a subset analysis of ATTRACTION-2 phase III trial",
+      "year": 2022,
+      "citations": 40,
+      "scholar_link": ""
+    },
+    {
+      "title": "Matrix Metalloproteinase-8 is a Novel Pathogenetic Factor in Focal Cerebral Ischemia",
+      "year": 2014,
+      "citations": 34,
+      "scholar_link": ""
+    },
+    {
+      "title": "Trichuris trichiura Infection Diagnosed by Colonoscopy: Case Reports and Review of Literature",
+      "year": 2009,
+      "citations": 68,
+      "scholar_link": ""
+    },
+    {
+      "title": "A452, an HDAC6‐selective inhibitor, synergistically enhances the anticancer activity of chemotherapeutic agents in colorectal cancer cells",
+      "year": 2018,
+      "citations": 25,
+      "scholar_link": ""
+    },
+    {
+      "title": "Effect of the size and surface charge of silica nanoparticles on cutaneous toxicity",
+      "year": 2013,
+      "citations": 99,
+      "scholar_link": ""
+    },
+    {
+      "title": "p53 regulates nuclear GSK-3 levels through miR-34-mediated Axin2 suppression in colorectal cancer cells",
+      "year": 2013,
+      "citations": 108,
+      "scholar_link": ""
+    },
+    {
+      "title": "Antimicrobial resistance profiles among Escherichia coli strains isolated from commercial and cooked foods",
+      "year": 2012,
+      "citations": 68,
+      "scholar_link": ""
+    },
+    {
+      "title": "An Open-Label, Randomized, Parallel, Phase II Trial to Evaluate the Efficacy and Safety of a Cremophor-Free Polymeric Micelle Formulation of Paclitaxel as First-Line Treatment for Ovarian Cancer: A Korean Gynecologic Oncology Group Study (KGOG-3021)",
+      "year": 2017,
+      "citations": 91,
+      "scholar_link": ""
+    },
+    {
+      "title": "ZnO nanoparticle induces apoptosis by ROS triggered mitochondrial pathway in human keratinocytes",
+      "year": 2014,
+      "citations": 28,
+      "scholar_link": ""
+    },
+    {
+      "title": "Antimicrobial activity and biocompatibility of the mixture of mineral trioxide aggregate and nitric oxide-releasing compound",
+      "year": 2020,
+      "citations": 14,
+      "scholar_link": ""
+    },
+    {
+      "title": "Fatty acid profiling and proteomic analysis of Salmonella enterica serotype Typhimurium inactivated with supercritical carbon dioxide",
+      "year": 2009,
+      "citations": 29,
+      "scholar_link": ""
+    },
+    {
+      "title": "Clinical features, genetics, and outcome of pediatric patients with hemophagocytic lymphohistiocytosis in <scp>K</scp>orea: report of a nationwide survey from <scp>K</scp>orea <scp>H</scp>istiocytosis <scp>W</scp>orking <scp>P</scp>arty",
+      "year": 2014,
+      "citations": 77,
+      "scholar_link": ""
+    },
+    {
+      "title": "CRIF1 Is Essential for the Synthesis and Insertion of Oxidative Phosphorylation Polypeptides in the Mammalian Mitochondrial Membrane",
+      "year": 2012,
+      "citations": 115,
+      "scholar_link": ""
+    },
+    {
+      "title": "Super-Expansion of Assembled Reduced Graphene Oxide Interlayers by Segregation of Al Nanoparticle Pillars for High-Capacity Na-Ion Battery Anodes",
+      "year": 2020,
+      "citations": 20,
+      "scholar_link": ""
+    },
+    {
+      "title": "ALS/FTLD-linked TDP-43 regulates neurite morphology and cell survival in differentiated neurons",
+      "year": 2013,
+      "citations": 29,
+      "scholar_link": ""
+    },
+    {
+      "title": "Impact of different running distances on muscle and lymphocyte DNA damage in amateur marathon runners",
+      "year": 2016,
+      "citations": 23,
+      "scholar_link": ""
+    },
+    {
+      "title": "Effect of Plasticizers on the Formation of Silver Nanoparticles in Polymer Electrolyte Membranes for Olefin/Paraffin Separation",
+      "year": 2002,
+      "citations": 36,
+      "scholar_link": ""
+    },
+    {
+      "title": "Snail reprograms glucose metabolism by repressing phosphofructokinase PFKP allowing cancer cell survival under metabolic stress",
+      "year": 2017,
+      "citations": 218,
+      "scholar_link": ""
+    },
+    {
+      "title": "Anthocyanin content in rice is related to expression levels of anthocyanin biosynthetic genes",
+      "year": 2007,
+      "citations": 52,
+      "scholar_link": ""
+    },
+    {
+      "title": "Synergistic Transdermal Delivery of Biomacromolecules Using Sonophoresis after Microneedle Treatment",
+      "year": 2018,
+      "citations": 28,
+      "scholar_link": ""
+    },
+    {
+      "title": "Severe reactive astrocytes precipitate pathological hallmarks of Alzheimer’s disease via H2O2− production",
+      "year": 2020,
+      "citations": 275,
+      "scholar_link": ""
+    },
+    {
+      "title": "Structural and Dynamic Features of Cold-Shock Proteins of <i>Listeria monocytogenes</i>, a Psychrophilic Bacterium",
+      "year": 2013,
+      "citations": 33,
+      "scholar_link": ""
+    },
+    {
+      "title": "Anti-Diabetic Effect of Alkaline-Reduced Water on OLETF Rats",
+      "year": 2006,
+      "citations": 58,
+      "scholar_link": ""
+    },
+    {
+      "title": "Fabrication and electrochemical characteristics of NCM-based all-solid lithium batteries using nano-grade garnet Al-LLZO powder",
+      "year": 2018,
+      "citations": 60,
+      "scholar_link": ""
+    },
+    {
+      "title": "Repeated Neonatal Propofol Administration Induces Sex-Dependent Long-Term Impairments on Spatial and Recognition Memory in Rats",
+      "year": 2015,
+      "citations": 43,
+      "scholar_link": ""
+    },
+    {
+      "title": "TRIM32 Protein Sensitizes Cells to Tumor Necrosis Factor (TNFα)-induced Apoptosis via Its RING Domain-dependent E3 Ligase Activity against X-linked Inhibitor of Apoptosis (XIAP)",
+      "year": 2011,
+      "citations": 63,
+      "scholar_link": ""
+    },
+    {
+      "title": "Electroless copper deposition on a pitch-based activated carbon fiber and an application for NO removal",
+      "year": 2008,
+      "citations": 22,
+      "scholar_link": ""
+    },
+    {
+      "title": "Effects of ginseol k-g3, an Rg3-enriched fraction, on scopolamine-induced memory impairment and learning deficit in mice",
+      "year": 2014,
+      "citations": 30,
+      "scholar_link": ""
+    },
+    {
+      "title": "Presence and release of immunoreactive atrial natriuretic peptide in granulosa cells of the pig ovarian follicle",
+      "year": 1992,
+      "citations": 27,
+      "scholar_link": ""
+    },
+    {
+      "title": "Rhenium oxide/sulfide binary phase flakes decorated on nanofiber support for enhanced activation of electrochemical conversion reactions",
+      "year": 2022,
+      "citations": 23,
+      "scholar_link": ""
+    },
+    {
+      "title": "Synthesis and Characterizations of Positive-Working Photosensitive Polyimides Having 4,5-Dimethoxy-o-Nitrobenzyl Side Group",
+      "year": 2008,
+      "citations": 11,
+      "scholar_link": ""
+    },
+    {
+      "title": "<scp>I</scp>nflammatory response of prostate epithelial cells to stimulation by <i>Trichomonas vaginalis</i>",
+      "year": 2013,
+      "citations": 39,
+      "scholar_link": ""
+    },
+    {
+      "title": "Immunostimulatory effects of polysaccharides isolated from young barley leaves (Hordeum vulgare L.) with dual activation of Th1 and Th2 in splenic T cells and cyclophosphamide-induced immunosuppressed mice",
+      "year": 2019,
+      "citations": 38,
+      "scholar_link": ""
+    },
+    {
+      "title": "Analysis of the heterochromatin protein 1 (HP1) interactome in Drosophila",
+      "year": 2014,
+      "citations": 28,
+      "scholar_link": ""
+    },
+    {
+      "title": "Adrenocortical oncocytoma displaying intense activity on 18F-FDG-PET: a case report and a literature review",
+      "year": 2008,
+      "citations": 30,
+      "scholar_link": ""
+    },
+    {
+      "title": "Fibrous Dysplasia with Barely Increased Uptake on Bone Scan",
+      "year": 2000,
+      "citations": 21,
+      "scholar_link": ""
+    },
+    {
+      "title": "The Effect of Perioperative Intravenous Iron on Hemoglobin in Surgical Patients: A Meta-Analysis",
+      "year": 2019,
+      "citations": 15,
+      "scholar_link": ""
+    },
+    {
+      "title": "Acetylcholinesterase and butyrylcholinesterase inhibitory activities of khellactone coumarin derivatives isolated from Peucedanum japonicum Thurnberg",
+      "year": 2020,
+      "citations": 59,
+      "scholar_link": ""
+    },
+    {
+      "title": "Plastic enzyme-linked immunosorbent assays (ELISA)-on-a-chip biosensor for botulinum neurotoxin A",
+      "year": 2007,
+      "citations": 59,
+      "scholar_link": ""
+    },
+    {
+      "title": "Charge order landscape and competition with superconductivity in kagome metals",
+      "year": 2022,
+      "citations": 97,
+      "scholar_link": ""
+    },
+    {
+      "title": "Gastroduodenal stent placement versus surgical gastrojejunostomy for the palliation of gastric outlet obstructions in patients with unresectable gastric cancer: a propensity score-matched analysis",
+      "year": 2015,
+      "citations": 36,
+      "scholar_link": ""
+    },
+    {
+      "title": "Cumulative smoking exposure, duration of smoking cessation, and peripheral arterial disease in middle-aged and older Korean men",
+      "year": 2011,
+      "citations": 88,
+      "scholar_link": ""
+    },
+    {
+      "title": "26.4 A 21fJ/conv-step 9 ENOB 1.6GS/S 2&amp;#x00D7; time-interleaved FATI SAR ADC with background offset and timing-skew calibration in 45nm CMOS",
+      "year": 2015,
+      "citations": 48,
+      "scholar_link": ""
+    },
+    {
+      "title": "Barrier-assisted vapor phase CVD of large-area MoS<sub>2</sub> monolayers with high spatial homogeneity",
+      "year": 2020,
+      "citations": 26,
+      "scholar_link": ""
+    }
+  ],
+  "_source": "openalex"
+}
