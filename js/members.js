@@ -94,8 +94,9 @@
 
     const joinedLine = m.joined ? `<span class="joined">since ${escapeHtml(m.joined)}</span>` : "";
 
+    const anchorId = isPI ? `id="pi"` : `id="m-${escapeAttr(m.id)}"`;
     return `
-      <${tag} class="member-card" data-role="${role}" ${href}>
+      <${tag} class="member-card" data-role="${role}" ${href} ${anchorId}>
         ${photoEl}
         <div class="name-row">
           <span class="name-ko">${escapeHtml(nameKo)}</span>

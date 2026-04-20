@@ -4,12 +4,14 @@
 
   document.addEventListener("site:ready", async () => {
     try {
-      const [topics, pubs, news] = await Promise.all([
+      const [topics, pubs, news, members] = await Promise.all([
         SiteUtils.loadJSON("data/research_topics.json"),
         SiteUtils.loadJSON("data/publications.json"),
-        SiteUtils.loadJSON("data/news.json")
+        SiteUtils.loadJSON("data/news.json"),
+        SiteUtils.loadJSON("data/members.json")
       ]);
       renderTopics(topics);
+      renderTeam(members);
       renderFeatured(pubs);
       renderNews(news);
       renderCitationsChart(SiteUtils.getConfig().citations_history || []);
@@ -20,6 +22,47 @@
   document.addEventListener("scholar:history", (e) => {
     if (e.detail && e.detail.length) renderCitationsChart(e.detail);
   });
+
+  function renderTeam(members) {
+    const host = document.getElementById("home-team");
+    if (!host) return;
+    const lang = SiteUtils.getLang();
+    const ROLE_ORDER = ["phd", "ms", "bs", "undergraduate"];
+    const ROLE_LABELS = {
+      phd:          { ko: "박사과정",    en: "Ph.D. Student" },
+      ms:           { ko: "석사과정",    en: "M.S. Student" },
+      bs:           { ko: "학부연구생",  en: "Undergraduate Researcher" },
+      undergraduate:{ ko: "학부연구생",  en: "Undergraduate Researcher" }
+    };
+    const students = members
+      .filter(m => m.role !== "professor")
+      .sort((a, b) => {
+        const ai = ROLE_ORDER.indexOf(a.role);
+        const bi = ROLE_ORDER.indexOf(b.role);
+        return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
+      });
+
+    host.innerHTML = students.map(m => {
+      const nameKo = escapeHtml(m.name_ko || "");
+      const nameEn = escapeHtml(m.name_en || "");
+      const roleLabel = ROLE_LABELS[m.role] ? (lang === "ko" ? ROLE_LABELS[m.role].ko : ROLE_LABELS[m.role].en) : escapeHtml(m.role);
+      const joinedYear = m.joined ? m.joined.slice(0, 4) : "";
+      const photoSrc = escapeAttr(m.photo || "");
+      const fallbackInitials = escapeAttr(initials(m.name_en || m.name_ko));
+      const photoEl = m.photo
+        ? `<img src="${photoSrc}" alt="${escapeAttr(m.name_en || m.name_ko)}" onerror="this.outerHTML='<div class=\\'team-card-initials\\'>${fallbackInitials}</div>'" />`
+        : `<div class="team-card-initials">${escapeHtml(initials(m.name_en || m.name_ko))}</div>`;
+      return `
+        <a class="team-card" href="member.html#m-${escapeAttr(m.id)}">
+          <div class="team-card-photo">${photoEl}</div>
+          <div class="team-card-body">
+            <div class="team-card-name-ko">${nameKo}</div>
+            <div class="team-card-name-en">${nameEn}</div>
+            <div class="team-card-role">${escapeHtml(roleLabel)}${joinedYear ? `<span class="team-card-year">${joinedYear}</span>` : ""}</div>
+          </div>
+        </a>`;
+    }).join("");
+  }
 
   function renderTopics(topics) {
     const host = document.getElementById("home-topics");
@@ -109,5 +152,12 @@
   function truncate(s, n) { return s && s.length > n ? s.slice(0, n - 1) + "…" : s; }
   function escapeHtml(s) {
     return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+  }
+  function escapeAttr(s) { return escapeHtml(s); }
+  function initials(name) {
+    if (!name) return "?";
+    const parts = name.trim().split(/\s+/);
+    if (parts.length >= 2) return (parts[0][0] + parts[1][0]).toUpperCase();
+    return parts[0].slice(0, 2).toUpperCase();
   }
 })();

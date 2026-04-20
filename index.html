@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=20260420v" />
+  <link rel="stylesheet" href="css/style.css?v=20260420b" />
   <link rel="stylesheet" href="css/hero-cnu.css?v=20260420v" />
 </head>
 <body>
@@ -75,6 +75,9 @@
   <section class="section about-pi reveal">
     <div class="container">
       <div class="pi-inline">
+        <a href="member.html#pi" class="pi-inline-photo" aria-label="PI 소개로 이동">
+          <img src="assets/images/pi/hoon-hee-ryu.jpg" alt="류훈희 교수" />
+        </a>
         <div class="pi-inline-text">
           <div class="eyebrow" data-i18n="member.professor">Principal Investigator</div>
           <h2><span data-pi-name>류훈희</span></h2>
@@ -86,7 +89,7 @@
             차세대 이차전지 소재 연구를 이끌고 있습니다.
           </p>
           <div class="pi-inline-actions">
-            <a href="https://scholar.google.com/citations?user=lNPP4wIAAAAJ" class="btn btn-ghost" target="_blank" rel="noopener">Google Scholar ↗</a>
+            <a href="https://scholar.google.com/citations?user=3pg8AjQAAAAJ&hl=ko" class="btn btn-ghost" target="_blank" rel="noopener">Google Scholar ↗</a>
             <a href="mailto:hryu@cnu.ac.kr" class="btn btn-ghost">hryu@cnu.ac.kr</a>
           </div>
         </div>
@@ -104,6 +107,20 @@
       <div id="home-topics" class="topic-grid"></div>
       <div class="text-center mt-12">
         <a href="research.html" class="btn btn-ghost" data-i18n="home.view_all">전체 보기 →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <div class="eyebrow">Who we are</div>
+        <h2>Team.</h2>
+        <p>NESM Lab을 함께 만들어가는 구성원들입니다.</p>
+      </div>
+      <div id="home-team" class="team-grid"></div>
+      <div class="text-center mt-12">
+        <a href="member.html" class="btn btn-ghost">전체 구성원 →</a>
       </div>
     </div>
   </section>
@@ -173,7 +190,7 @@
       <div>
         <h4>External</h4>
         <ul>
-          <li><a href="https://scholar.google.com/citations?user=lNPP4wIAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a></li>
+          <li><a href="https://scholar.google.com/citations?user=3pg8AjQAAAAJ&hl=ko" target="_blank" rel="noopener">Google Scholar ↗</a></li>
           <li><a href="https://plus.cnu.ac.kr/" target="_blank" rel="noopener">CNU ↗</a></li>
         </ul>
       </div>
@@ -190,7 +207,7 @@
 </footer>
 
 <script src="js/main.js?v=20260420v"></script>
-<script src="js/home.js?v=20260420v"></script>
+<script src="js/home.js?v=20260420b"></script>
 <script>
   document.addEventListener("site:ready", function(){
     var lang = window.SiteUtils && SiteUtils.getLang();
