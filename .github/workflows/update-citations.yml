@@ -19,13 +19,14 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install scholarly
+        run: pip install scholarly free-proxy
 
       - name: Fetch Scholar metrics
         run: python scripts/update_scholar.py
-        # Note: scholarly may get blocked by Google Scholar over time.
-        # If that happens, consider switching to serpapi (requires SERPAPI_KEY secret)
-        # or the free OpenAlex API as a fallback data source.
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        # Strategy chain: SerpAPI (if key set) -> scholarly+proxy -> OpenAlex
+        # If all fail, script exits 0 and preserves existing data.
 
       - name: Commit if changed
         run: |
