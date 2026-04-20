@@ -2,6 +2,7 @@
   {
     "id": "synthesis-characterization",
     "order": 1,
+    "image": "assets/images/research/synthesis.jpg",
     "title_ko": "소재 합성 및 분석 (Synthesis & Characterization)",
     "title_en": "Synthesis & Characterization",
     "summary_ko": "고품질 배터리 양극·음극 소재를 직접 합성하고, 다양한 분석 기법을 통해 구조와 전기화학 특성을 규명합니다.",
@@ -26,6 +27,7 @@
   {
     "id": "mechanistic-understanding",
     "order": 2,
+    "image": "assets/images/research/mechanism.jpg",
     "title_ko": "열화 메커니즘 규명 (Mechanistic Understanding)",
     "title_en": "Mechanistic Understanding",
     "summary_ko": "배터리 소재가 장기 사이클·고전압·고온 환경에서 왜, 어떻게 열화되는지를 원자-나노-마이크로 스케일에서 규명하고 개선 방안을 제시합니다.",
@@ -55,6 +57,7 @@
   {
     "id": "advanced-cathode-lib",
     "order": 3,
+    "image": "assets/images/research/cathode.jpg",
     "title_ko": "LIB용 고성능 양극소재 (Advanced Cathode Materials for LIBs)",
     "title_en": "Advanced Cathode Materials for LIBs",
     "summary_ko": "리튬이온전지의 에너지 밀도·수명·안전성을 동시에 극대화하는 단결정 · 농도구배 · 나노로드 기반 Ni-rich 양극을 설계하고 실증합니다.",
@@ -94,6 +97,7 @@
   {
     "id": "next-generation-batteries",
     "order": 4,
+    "image": "assets/images/research/next-gen.jpg",
     "title_ko": "차세대 배터리 (Next-Generation Batteries)",
     "title_en": "Next-Generation Batteries",
     "summary_ko": "리튬이온전지 너머의 나트륨이온, 전고체, 고에너지 시스템을 위한 새로운 소재 설계 원리를 탐색합니다.",

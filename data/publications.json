@@ -2,7 +2,7 @@
   {
     "id": "p2025-40",
     "type": "journal",
-    "top_pick": true,
+    "top_pick": false,
     "year": 2025,
     "title": "Nanorod Cathodes: A Solution for Polycrystalline Cathodes in Next-Generation Lithium Batteries",
     "authors": "H.-H. Ryu, Y.-K. Sun*",
@@ -41,7 +41,7 @@
   {
     "id": "p2024-37",
     "type": "journal",
-    "top_pick": false,
+    "top_pick": true,
     "year": 2024,
     "title": "Nano-rods in Ni-rich layered cathodes for practical batteries",
     "authors": "G.-T. Park, N.-Y. Park, H.-H. Ryu, H. H. Sun, J.-Y. Hwang, Y.-K. Sun*",
@@ -106,7 +106,7 @@
   {
     "id": "p2023-32",
     "type": "journal",
-    "top_pick": true,
+    "top_pick": false,
     "year": 2023,
     "title": "Long-Lasting NCMA Cathodes via Simultaneous Microstructural Refinement",
     "authors": "H.-H. Ryu, H.-W. Lim, G.-C. Kang, N.-Y. Park, Y.-K. Sun*",
@@ -275,7 +275,7 @@
   {
     "id": "p2021-19",
     "type": "journal",
-    "top_pick": true,
+    "top_pick": false,
     "year": 2021,
     "title": "Reducing cobalt from lithium-ion batteries for the electric vehicle era",
     "authors": "H.-H. Ryu, H. H. Sun, S.-T. Myung, C. S. Yoon, Y.-K. Sun*",
@@ -483,7 +483,7 @@
   {
     "id": "p2018-3",
     "type": "journal",
-    "top_pick": true,
+    "top_pick": false,
     "year": 2018,
     "title": "Capacity fading of Ni-rich Li[NixCoyMn1-x-y]O2 (0.6 ≤ x ≤ 0.95) Cathodes",
     "authors": "H.-H. Ryu, K.-J. Park, C. S. Yoon*, Y.-K. Sun*",

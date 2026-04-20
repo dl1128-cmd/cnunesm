@@ -3,10 +3,10 @@
   "name_ko": "류훈희",
   "title_en": "Ph.D., Assistant Professor",
   "title_ko": "조교수",
-  "affiliation_en": "Department of Applied Chemical Engineering, Chungnam National University",
-  "affiliation_ko": "충남대학교 공과대학 응용화학공학과",
+  "affiliation_en": "Department of Chemical Engineering and Applied Chemistry, Chungnam National University",
+  "affiliation_ko": "충남대학교 응용화학공학과",
   "email": "hryu@cnu.ac.kr",
-  "photo": "",
+  "photo": "assets/images/pi/hoon-hee-ryu.jpg",
   "cv": "",
   "links": [
     { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=lNPP4wIAAAAJ" },
@@ -14,8 +14,8 @@
   ],
   "bio_short_ko": "Ni-rich 층상 양극 · 단결정 소재 · 차세대 이차전지 연구.",
   "bio_short_en": "Ni-rich layered cathodes, single-crystal systems, and next-generation batteries.",
-  "bio_ko": "류훈희 교수는 충남대학교 공과대학 응용화학공학과 조교수로, 차세대 에너지 저장 소재 연구실(NESM Lab)을 이끌고 있습니다.\n\n이차전지 양극소재 분야에서 다수의 톱저널(Nat. Energy, Chem. Rev., Mater. Today, Energy Environ. Sci., ACS Energy Letters 등)에 논문을 발표해 왔으며, Ni-rich 층상 양극의 열화 메커니즘 규명과 단결정·농도구배 구조 설계를 통한 성능 혁신에 기여했습니다.\n\n현재 연구실은 (1) 배터리 소재 합성·분석법, (2) 열화 메커니즘 규명, (3) LIB용 고성능 양극소재, (4) 차세대 배터리의 네 축으로 연구를 전개하며, 탄소중립과 지속 가능한 에너지 미래에 기여하고자 합니다.\n\n※ 상세 학력·경력 정보는 업데이트 예정입니다.",
-  "bio_en": "Hoon-Hee Ryu is an Assistant Professor in the Department of Applied Chemical Engineering at Chungnam National University, leading the Next-generation Energy Storage Materials Lab (NESM Lab).\n\nHe has published extensively in top journals including Nature Energy, Chemical Reviews, Materials Today, Energy & Environmental Science, and ACS Energy Letters — contributing to the mechanistic understanding of Ni-rich layered cathodes and to performance innovations through single-crystal and concentration-gradient architectures.\n\nThe NESM Lab pursues four research pillars: (1) materials synthesis and characterization, (2) degradation mechanism analysis, (3) high-performance cathodes for Li-ion batteries, and (4) next-generation batteries — contributing toward carbon neutrality and a sustainable energy future.\n\n※ Detailed education and career history to be updated.",
+  "bio_ko": "류훈희 교수는 충남대학교 공과대학 응용화학공학과 조교수로, 차세대 에너지 저장 소재 연구실(NESM Lab)을 이끌고 있습니다.\n\n이차전지 양극소재 분야에서 다수의 톱저널(Nat. Energy, Chem. Rev., Mater. Today, Energy Environ. Sci., ACS Energy Letters 등)에 논문을 발표해 왔으며, Ni-rich 층상 양극의 열화 메커니즘 규명과 단결정·농도구배 구조 설계를 통한 성능 혁신에 기여했습니다.\n\n현재 연구실은 (1) 배터리 소재 합성·분석법, (2) 열화 메커니즘 규명, (3) LIB용 고성능 양극소재, (4) 차세대 배터리의 네 축으로 연구를 전개하며, 탄소중립과 지속 가능한 에너지 미래에 기여하고자 합니다.",
+  "bio_en": "Hoon-Hee Ryu is an Assistant Professor in the Department of Applied Chemical Engineering at Chungnam National University, leading the Next-generation Energy Storage Materials Lab (NESM Lab).\n\nHe has published extensively in top journals including Nature Energy, Chemical Reviews, Materials Today, Energy & Environmental Science, and ACS Energy Letters — contributing to the mechanistic understanding of Ni-rich layered cathodes and to performance innovations through single-crystal and concentration-gradient architectures.\n\nThe NESM Lab pursues four research pillars: (1) materials synthesis and characterization, (2) degradation mechanism analysis, (3) high-performance cathodes for Li-ion batteries, and (4) next-generation batteries — contributing toward carbon neutrality and a sustainable energy future.",
   "interests_en": [
     "Ni-rich Layered Cathodes",
     "Single-Crystal Cathodes",
@@ -32,26 +32,60 @@
   ],
   "education": [
     {
-      "period": "",
+      "period": "2016–2022",
       "degree_ko": "박사",
       "degree_en": "Ph.D.",
-      "field_ko": "에너지공학 (업데이트 예정)",
-      "field_en": "Energy Engineering (to be updated)",
+      "field_ko": "에너지공학",
+      "field_en": "Energy Engineering",
       "institution_ko": "한양대학교",
-      "institution_en": "Hanyang University, Korea"
+      "institution_en": "Hanyang University",
+      "advisor": "Prof. Yang-Kook Sun"
+    },
+    {
+      "period": "2012–2016",
+      "degree_ko": "학사",
+      "degree_en": "B.S.",
+      "field_ko": "에너지공학",
+      "field_en": "Energy Engineering",
+      "institution_ko": "한양대학교",
+      "institution_en": "Hanyang University"
     }
   ],
   "experience": [
     {
-      "period_ko": "현재",
-      "period_en": "Present",
+      "period_ko": "2024.09 – 현재",
+      "period_en": "2024.09 – Present",
       "role_ko": "조교수",
       "role_en": "Assistant Professor",
       "org_ko": "충남대학교 응용화학공학과",
       "org_en": "Chungnam National University · Dept. of Applied Chemical Engineering"
+    },
+    {
+      "period_ko": "2023.09 – 2024.08",
+      "period_en": "2023.09 – 2024.08",
+      "role_ko": "박사후연구원",
+      "role_en": "Post-doctoral Researcher",
+      "org_ko": "로렌스 버클리 국립연구소",
+      "org_en": "Lawrence Berkeley National Laboratory"
+    },
+    {
+      "period_ko": "2022.09 – 2023.08",
+      "period_en": "2022.09 – 2023.08",
+      "role_ko": "박사후연구원",
+      "role_en": "Post-doctoral Researcher",
+      "org_ko": "한양대학교",
+      "org_en": "Hanyang University"
     }
   ],
-  "awards": [],
+  "awards": [
+    {
+      "year": 2023,
+      "title_ko": "POSCO Science Fellowship",
+      "title_en": "POSCO Science Fellowship",
+      "org_ko": "포스코 TJ 박재단",
+      "org_en": "POSCO TJ Park Foundation"
+    }
+  ],
   "grants": [],
   "selected_publications": [
     "Nanorod Cathodes: A Solution for Polycrystalline Cathodes in Next-Generation Lithium Batteries — ACS Energy Letters (2025)",
@@ -62,11 +96,12 @@
     "Reducing cobalt from lithium-ion batteries for the electric vehicle era — Energy & Environmental Science (2021)",
     "Microstrain Alleviation in High-Energy Ni-Rich NCMA Cathode — ACS Energy Letters (2021)"
   ],
+  "research_focus_en": "Next-generation energy storage materials, with emphasis on Ni-rich layered cathodes for lithium-ion batteries",
   "office": {
     "building_ko": "공과대학 1호관",
     "building_en": "Engineering Building 1",
     "room": "462",
-    "phone": "042-821-7683"
+    "phone": "+82-42-821-6694 / +82-42-821-7683"
   },
   "metrics": {
     "citations_total": 0,
