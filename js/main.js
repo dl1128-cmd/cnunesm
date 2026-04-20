@@ -72,107 +72,75 @@
   }
 
   /* =========================================================================
-   * Scholar metrics auto-fetch
-   * Fetches Google Scholar HTML via CORS proxies and parses citations/h-index/i10.
-   * Cached in localStorage for 24h to reduce calls.
+   * Scholar metrics loader
+   * Primary: loads data/scholar_metrics.json (committed by GitHub Actions daily)
+   * Fallback: fetches from OpenAlex API if scholar_metrics.json is missing
+   * (Previous approach used CORS proxies to scrape Google Scholar directly,
+   *  which was unreliable due to rate-limiting and captchas.)
    * ========================================================================= */
-  const SCHOLAR_CACHE_KEY = "nesm:scholar:cache:v3"; // bump when schema changes
-  const SCHOLAR_CACHE_TTL = 24 * 60 * 60 * 1000; // 24h
+  const OPENALEX_CACHE_KEY = "nesm:openalex:cache:v1";
+  const OPENALEX_CACHE_TTL = 24 * 60 * 60 * 1000; // 24h
 
-  async function fetchScholarMetrics(scholarId) {
-    const url = `https://scholar.google.com/citations?user=${scholarId}&hl=en&cstart=0&pagesize=100`;
-    const proxies = [
-      "https://api.codetabs.com/v1/proxy?quest=" + encodeURIComponent(url),
-      "https://api.allorigins.win/raw?url=" + encodeURIComponent(url),
-      "https://corsproxy.io/?" + encodeURIComponent(url)
-    ];
-    for (const p of proxies) {
-      try {
-        const r = await fetch(p);
-        if (!r.ok) continue;
-        const html = await r.text();
-        const stats = [...html.matchAll(/<td class="gsc_rsb_std">(\d+)<\/td>/g)].map(m => parseInt(m[1]));
-        if (stats.length < 6) continue;
-
-        // Per-year citation chart — gsc_g_t for years (x-axis), gsc_g_al for counts (bars)
-        const years = [...html.matchAll(/<span class="gsc_g_t"[^>]*>(\d{4})<\/span>/g)].map(m => parseInt(m[1]));
-        const counts = [...html.matchAll(/<span class="gsc_g_al">(\d+)<\/span>/g)].map(m => parseInt(m[1]));
-        // Counts may be fewer than years (years with 0 cites are skipped in HTML).
-        // Reconstruct via title attribute on the anchor: <a class="gsc_g_a" ... title="N">
-        let history = [];
-        if (years.length && counts.length === years.length) {
-          history = years.map((y, i) => ({ year: y, n: counts[i] }));
-        } else if (years.length) {
-          // Try parsing each gsc_g_a with style left position to align with years
-          const bars = [...html.matchAll(/<a[^>]*class="gsc_g_a"[^>]*style="[^"]*left:(\d+)px[^"]*z-index:(\d+)[^"]*"[^>]*>\s*<span class="gsc_g_al">(\d+)<\/span>/g)];
-          // Map by z-index → reverse year index (Scholar uses z-index = year-index reversed)
-          const yearMap = {};
-          bars.forEach(b => {
-            const zi = parseInt(b[2]); // z-index
-            const n = parseInt(b[3]);
-            const yearIdx = years.length - zi;
-            if (yearIdx >= 0 && yearIdx < years.length) yearMap[years[yearIdx]] = n;
-          });
-          history = years.map(y => ({ year: y, n: yearMap[y] || 0 }));
+  async function loadScholarMetrics() {
+    try {
+      const res = await fetch("data/scholar_metrics.json?t=" + Date.now(), { cache: "no-store" });
+      if (res.ok) {
+        const data = await res.json();
+        // Normalize history field: Actions script uses "count", chart expects "n"
+        if (data.citations_history) {
+          data.citations_history = data.citations_history.map(h => ({
+            year: h.year,
+            n: h.count !== undefined ? h.count : h.n
+          }));
         }
-
-        // Per-paper citation counts — parse the publications table
-        const papers = [];
-        const rowRegex = /<tr class="gsc_a_tr">([\s\S]*?)<\/tr>/g;
-        let rowMatch;
-        while ((rowMatch = rowRegex.exec(html)) !== null) {
-          const row = rowMatch[1];
-          const titleMatch = row.match(/<a[^>]*class="gsc_a_at"[^>]*>([^<]+)<\/a>/);
-          const citeMatch = row.match(/<a[^>]*class="gsc_a_ac[^"]*"[^>]*>(\d+)<\/a>/);
-          const yearMatch = row.match(/class="gsc_a_h gsc_a_hc gs_ibl"[^>]*>(\d{4})</);
-          const linkMatch = row.match(/<a[^>]*class="gsc_a_at"[^>]*href="([^"]+)"/);
-          if (titleMatch) {
-            papers.push({
-              title: titleMatch[1].trim(),
-              citations: citeMatch ? parseInt(citeMatch[1]) : 0,
-              year: yearMatch ? parseInt(yearMatch[1]) : 0,
-              scholar_link: linkMatch ? ("https://scholar.google.com" + linkMatch[1].replace(/&amp;/g, "&")) : ""
-            });
-          }
-        }
-
-        return {
-          citations_total: stats[0],
-          citations_recent5y: stats[1],
-          h_index: stats[2],
-          i10_index: stats[4],
-          as_of: new Date().toISOString().slice(0, 7),
-          citations_history: history,
-          papers: papers
-        };
-      } catch {}
-    }
-    return null;
+        applyScholarMetrics(data);
+        return;
+      }
+    } catch { /* file may not exist yet */ }
+    // Fallback to OpenAlex if scholar_metrics.json is not available
+    await loadOpenAlexFallback();
   }
 
-  async function autoUpdateScholarMetrics() {
+  async function loadOpenAlexFallback() {
     const config = state.config;
-    if (!config?.pi?.scholar) return;
-    const scholarId = (config.pi.scholar.match(/user=([^&]+)/) || [])[1];
-    if (!scholarId) return;
-    // Check cache
+    if (!config?.pi?.name_en) return;
+    // Check localStorage cache first
     try {
-      const cached = JSON.parse(localStorage.getItem(SCHOLAR_CACHE_KEY) || "null");
-      if (cached && (Date.now() - cached.t) < SCHOLAR_CACHE_TTL) {
+      const cached = JSON.parse(localStorage.getItem(OPENALEX_CACHE_KEY) || "null");
+      if (cached && (Date.now() - cached.t) < OPENALEX_CACHE_TTL) {
         applyScholarMetrics(cached.data);
         return;
       }
     } catch {}
-    // Fetch fresh
-    const metrics = await fetchScholarMetrics(scholarId);
-    if (!metrics) return;
-    localStorage.setItem(SCHOLAR_CACHE_KEY, JSON.stringify({ t: Date.now(), data: metrics }));
-    applyScholarMetrics(metrics);
+    try {
+      const name = config.pi.name_en;
+      const url = `https://api.openalex.org/works?per-page=200&filter=author.search:${encodeURIComponent(name)}&mailto=scholar-bot@users.noreply.github.com`;
+      const res = await fetch(url);
+      if (!res.ok) return;
+      const data = await res.json();
+      const papers = (data.results || []).map(w => ({
+        title: w.title || w.display_name || "",
+        citations: w.cited_by_count || 0,
+        year: w.publication_year || 0,
+        scholar_link: ""
+      }));
+      const metrics = { papers: papers, _source: "openalex" };
+      localStorage.setItem(OPENALEX_CACHE_KEY, JSON.stringify({ t: Date.now(), data: metrics }));
+      applyScholarMetrics(metrics);
+    } catch { /* OpenAlex unavailable — silent */ }
+  }
+
+  async function autoUpdateScholarMetrics() {
+    await loadScholarMetrics();
   }
 
   function applyScholarMetrics(metrics) {
     if (!metrics) return;
-    Object.assign(state.config.metrics, metrics);
+    // Update numeric metrics on page
+    const metricKeys = ["citations_total", "citations_recent5y", "h_index", "i10_index"];
+    metricKeys.forEach(k => {
+      if (metrics[k] !== undefined) state.config.metrics[k] = metrics[k];
+    });
     document.querySelectorAll("[data-metric]").forEach(el => {
       const k = el.getAttribute("data-metric");
       const v = metrics[k];
@@ -185,10 +153,12 @@
     if (metrics.papers && metrics.papers.length) {
       document.dispatchEvent(new CustomEvent("scholar:papers", { detail: metrics.papers }));
     }
+    // Expose totals for other consumers
+    state.config.scholar_metrics = metrics;
+    document.dispatchEvent(new CustomEvent("scholar:totals", { detail: metrics }));
   }
 
   window.SiteUtils = window.SiteUtils || {};
-  window.SiteUtils.fetchScholar = fetchScholarMetrics;
   window.SiteUtils.fetchStat = async (key) => {
     try {
       const r = await fetch(`${STATS_BASE}/${key}`, { mode: "cors" });
@@ -397,12 +367,12 @@
     setTimeout(tryScroll, 250);
   }
 
-  window.SiteUtils = {
+  Object.assign(window.SiteUtils, {
     loadJSON,
     getLang: () => state.lang,
     getI18n: () => state.i18n,
     getConfig: () => state.config
-  };
+  });
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();

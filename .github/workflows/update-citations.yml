@@ -1,0 +1,36 @@
+name: Update Scholar Citations
+
+on:
+  schedule:
+    - cron: '0 18 * * *'   # daily 03:00 KST (UTC+9)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install scholarly
+
+      - name: Fetch Scholar metrics
+        run: python scripts/update_scholar.py
+        # Note: scholarly may get blocked by Google Scholar over time.
+        # If that happens, consider switching to serpapi (requires SERPAPI_KEY secret)
+        # or the free OpenAlex API as a fallback data source.
+
+      - name: Commit if changed
+        run: |
+          git config user.name "scholar-bot"
+          git config user.email "scholar-bot@users.noreply.github.com"
+          git add data/scholar_metrics.json
+          git diff --staged --quiet || git commit -m "chore: update scholar citations"
+          git push
