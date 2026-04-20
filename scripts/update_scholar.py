@@ -191,7 +191,76 @@ def _openalex_get(url: str) -> dict | None:
 
 
 def _resolve_openalex_author_id(author_name: str) -> str | None:
-    """Search authors by name and return the OpenAlex ID with the most works."""
+    """Identify the PI's OpenAlex author ID by majority-vote across our own
+    publications. Looks up several recent journal papers from publications.json
+    on OpenAlex and picks the author ID that appears most often.
+
+    This avoids the homonym problem of name-only search (e.g. "Hoon-Hee Ryu"
+    matching an unrelated researcher with more citations).
+
+    If publications.json is unavailable or no matches found, falls back to
+    name-based search restricted to candidates whose name strictly contains
+    the family name.
+    """
+    pub_path = pathlib.Path("data/publications.json")
+    title_candidates: list[str] = []
+    if pub_path.exists():
+        try:
+            pubs = json.loads(pub_path.read_text(encoding="utf-8"))
+            journal_pubs = [
+                p for p in pubs
+                if (p.get("type") in (None, "journal")) and p.get("title")
+            ]
+            # sort newest first, take up to 8 distinct titles
+            journal_pubs.sort(key=lambda p: p.get("year", 0) or 0, reverse=True)
+            for p in journal_pubs[:8]:
+                t = str(p.get("title", "")).strip()
+                if t and t not in title_candidates:
+                    title_candidates.append(t)
+        except Exception as exc:
+            print(f"  publications.json read failed: {exc}")
+
+    author_votes: dict[str, dict] = {}  # id -> {votes, name, works, cites}
+    for title in title_candidates:
+        # Use OpenAlex title search with high specificity
+        encoded = urllib.parse.quote(title[:220])
+        url = (
+            f"https://api.openalex.org/works?"
+            f"search={encoded}&per-page=3&mailto={MAILTO}"
+        )
+        data = _openalex_get(url)
+        if not data:
+            continue
+        # Take only the top hit (best title relevance)
+        results = data.get("results") or []
+        if not results:
+            continue
+        top = results[0]
+        # Vote for every author of this work
+        for ship in top.get("authorships") or []:
+            aobj = ship.get("author") or {}
+            aid = (aobj.get("id") or "").rsplit("/", 1)[-1]
+            if not aid:
+                continue
+            entry = author_votes.setdefault(aid, {
+                "votes": 0,
+                "name": aobj.get("display_name", ""),
+            })
+            entry["votes"] += 1
+
+    if author_votes:
+        # Pick author with the most appearances; break ties by lower works count
+        best_id = max(author_votes, key=lambda k: author_votes[k]["votes"])
+        votes = author_votes[best_id]["votes"]
+        name = author_votes[best_id]["name"]
+        if votes >= max(2, len(title_candidates) // 3):
+            print(f"  OpenAlex: identified '{name}' -> {best_id} "
+                  f"via {votes}/{len(title_candidates)} publication matches")
+            return best_id
+        print(f"  OpenAlex: top vote only {votes}/{len(title_candidates)}; "
+              "falling back to name search")
+
+    # Fallback: strict name search
     encoded = urllib.parse.quote(author_name)
     url = (
         f"https://api.openalex.org/authors?"
@@ -201,17 +270,21 @@ def _resolve_openalex_author_id(author_name: str) -> str | None:
     if not data:
         return None
     candidates = data.get("results", [])
+    family = (author_name.split()[-1] or "").lower()
+    candidates = [
+        c for c in candidates
+        if family and family in (c.get("display_name", "") or "").lower()
+    ]
     if not candidates:
         return None
-    # pick the most cited matching candidate
+    # Among strict matches, pick the most cited
     candidates.sort(key=lambda a: a.get("cited_by_count", 0), reverse=True)
     chosen = candidates[0]
-    full_id = chosen.get("id", "")  # e.g. https://openalex.org/A1234567890
+    full_id = chosen.get("id", "")
     short_id = full_id.rsplit("/", 1)[-1] if full_id else None
     if short_id:
-        print(f"  OpenAlex: resolved '{author_name}' -> {short_id} "
+        print(f"  OpenAlex: name-search resolved '{author_name}' -> {short_id} "
               f"({chosen.get('display_name', '')}, "
-              f"{chosen.get('works_count', 0)} works, "
               f"{chosen.get('cited_by_count', 0)} citations)")
     return short_id
 
