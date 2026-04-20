@@ -19,13 +19,15 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install scholarly free-proxy
+        run: |
+          pip install scholarly free-proxy playwright
+          python -m playwright install --with-deps chromium
 
       - name: Fetch Scholar metrics
         run: python scripts/update_scholar.py
         env:
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
-        # Strategy chain: SerpAPI (if key set) -> scholarly+proxy -> OpenAlex
+        # Strategy chain: SerpAPI (if key set) -> scholarly+proxy -> Playwright Scholar -> OpenAlex
         # If all fail, script exits 0 and preserves existing data.
 
       - name: Commit if changed

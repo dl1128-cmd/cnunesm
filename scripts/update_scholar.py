@@ -5,7 +5,10 @@ Runs in GitHub Actions (see .github/workflows/update-citations.yml).
 Strategy chain:
 1. Try SerpAPI if SERPAPI_KEY secret is set (most reliable).
 2. Try scholarly with free proxy (may be blocked by Google).
-3. Fallback to OpenAlex API (always works, but citation counts differ from Scholar).
+3. Try Playwright headless Chromium to scrape Google Scholar directly.
+   - Works well on local machines / residential IPs.
+   - May be blocked on GH Actions IP ranges; falls through to OpenAlex.
+4. Fallback to OpenAlex API (always works, but citation counts differ from Scholar).
 
 If all fail and a previous scholar_metrics.json exists, it is preserved.
 """
@@ -174,7 +177,156 @@ def try_scholarly(user_id: str) -> dict | None:
 
 
 # ---------------------------------------------------------------------------
-# Strategy 3: OpenAlex API (free, always works, no auth)
+# Strategy 3: Playwright headless Chromium (scrape Scholar directly)
+# Works on local/residential IPs; may be blocked on GH Actions runners.
+# ---------------------------------------------------------------------------
+def try_playwright_scholar(user_id: str) -> dict | None:
+    try:
+        from playwright.sync_api import sync_playwright  # type: ignore
+    except ImportError:
+        print("  Playwright: package not installed, skipping.")
+        return None
+
+    SCHOLAR_URL = (
+        f"https://scholar.google.com/citations?"
+        f"user={user_id}&hl=en&pagesize=100"
+    )
+    BROWSER_TIMEOUT_MS = 90_000
+
+    try:
+        with sync_playwright() as pw:
+            browser = pw.chromium.launch(
+                headless=True,
+                args=[
+                    "--disable-blink-features=AutomationControlled",
+                    "--no-sandbox",
+                ],
+            )
+            context = browser.new_context(
+                user_agent=(
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/125.0.0.0 Safari/537.36"
+                ),
+                locale="en-US",
+                viewport={"width": 1280, "height": 900},
+            )
+            context.set_default_timeout(BROWSER_TIMEOUT_MS)
+            page = context.new_page()
+
+            print(f"  Playwright: navigating to {SCHOLAR_URL[:80]}...")
+            page.goto(SCHOLAR_URL, wait_until="domcontentloaded")
+            time.sleep(1)  # allow JS rendering
+
+            # Detect captcha / bot wall
+            if page.query_selector("#gs_captcha_ccl") or page.query_selector(
+                "form#captcha-form"
+            ):
+                print("  Playwright: CAPTCHA detected, bailing out.")
+                browser.close()
+                return None
+
+            # Wait for the metrics table
+            page.wait_for_selector("#gsc_rsb_st", timeout=15_000)
+
+            # --- Parse metrics table ---
+            stat_cells = page.query_selector_all("#gsc_rsb_st td.gsc_rsb_std")
+            if len(stat_cells) < 6:
+                print(f"  Playwright: expected 6 stat cells, got {len(stat_cells)}.")
+                browser.close()
+                return None
+
+            def _int(el) -> int:
+                txt = (el.text_content() or "").strip().replace(",", "")
+                return int(txt) if txt.isdigit() else 0
+
+            citations_total = _int(stat_cells[0])
+            citations_recent5y = _int(stat_cells[1])
+            h_index = _int(stat_cells[2])
+            h_index_recent = _int(stat_cells[3])
+            i10_index = _int(stat_cells[4])
+            i10_index_recent = _int(stat_cells[5])
+
+            # --- Parse citations-per-year graph ---
+            year_els = page.query_selector_all(".gsc_g_t")
+            count_els = page.query_selector_all(".gsc_g_al")
+            citations_history = []
+            for y_el, c_el in zip(year_els, count_els):
+                y_txt = (y_el.text_content() or "").strip()
+                c_txt = (c_el.text_content() or "").strip().replace(",", "")
+                if y_txt.isdigit():
+                    citations_history.append({
+                        "year": int(y_txt),
+                        "count": int(c_txt) if c_txt.isdigit() else 0,
+                    })
+
+            # --- Load all papers (click "Show more" up to 5 times) ---
+            for _ in range(5):
+                btn = page.query_selector("#gsc_bpf_more")
+                if not btn:
+                    break
+                if btn.get_attribute("disabled") is not None:
+                    break
+                btn.click()
+                time.sleep(1.5)
+                # Re-check for captcha after clicking
+                if page.query_selector("#gs_captcha_ccl"):
+                    print("  Playwright: CAPTCHA after 'Show more', stopping pagination.")
+                    break
+
+            # --- Parse paper list ---
+            paper_rows = page.query_selector_all("#gsc_a_b tr.gsc_a_tr")
+            papers = []
+            for row in paper_rows:
+                title_el = row.query_selector(".gsc_a_at")
+                title = (title_el.text_content() or "").strip() if title_el else ""
+                # Scholar link
+                href = title_el.get_attribute("href") if title_el else ""
+                if href and not href.startswith("http"):
+                    href = "https://scholar.google.com" + href
+                # Authors + venue (gray text)
+                gray_els = row.query_selector_all(".gs_gray")
+                authors = (gray_els[0].text_content() or "").strip() if len(gray_els) > 0 else ""
+                venue = (gray_els[1].text_content() or "").strip() if len(gray_els) > 1 else ""
+                # Year
+                year_el = row.query_selector(".gsc_a_y span")
+                year_txt = (year_el.text_content() or "").strip() if year_el else ""
+                year_val = int(year_txt) if year_txt.isdigit() else None
+                # Citations
+                cite_el = row.query_selector(".gsc_a_ac")
+                cite_txt = (cite_el.text_content() or "").strip().replace(",", "") if cite_el else "0"
+                cite_count = int(cite_txt) if cite_txt.isdigit() else 0
+
+                papers.append({
+                    "title": title,
+                    "year": year_val,
+                    "citations": cite_count,
+                    "scholar_link": href or "",
+                })
+
+            browser.close()
+
+            print(f"  Playwright: parsed {citations_total} total citations, "
+                  f"h={h_index}, i10={i10_index}, {len(papers)} papers")
+
+            return {
+                "updated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                "user_id": user_id,
+                "citations_total": citations_total,
+                "citations_recent5y": citations_recent5y,
+                "h_index": h_index,
+                "i10_index": i10_index,
+                "citations_history": citations_history,
+                "papers": papers,
+                "_source": "playwright_scholar",
+            }
+    except Exception as exc:
+        print(f"  Playwright failed: {exc}")
+        return None
+
+
+# ---------------------------------------------------------------------------
+# Strategy 4: OpenAlex API (free, always works, no auth)
 # Resolves author -> fetches author summary stats + counts_by_year + works.
 # ---------------------------------------------------------------------------
 MAILTO = "scholar-bot@users.noreply.github.com"
@@ -434,6 +586,7 @@ def main() -> None:
     for name, fn in [
         ("SerpAPI", lambda: try_serpapi(user_id)),
         ("scholarly", lambda: try_scholarly(user_id)),
+        ("Playwright Scholar", lambda: try_playwright_scholar(user_id)),
         ("OpenAlex", lambda: try_openalex(author_name)),
     ]:
         print(f"Trying {name}...")
