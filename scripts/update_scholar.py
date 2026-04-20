@@ -571,6 +571,44 @@ def try_openalex(author_name: str) -> dict | None:
     return _aggregate_authors([author_id])
 
 
+# ---------------------------------------------------------------------------
+# Source-tier definitions (higher = more authoritative)
+# ---------------------------------------------------------------------------
+SOURCE_TIERS: dict[str, int] = {
+    "serpapi": 3,
+    "playwright_scholar": 2,
+    "scholarly": 1,
+    "openalex": 0,
+}
+
+STALENESS_DAYS = 14  # override tier protection if existing data is older
+
+
+def _get_source_tier(source: str) -> int:
+    """Return tier for a given _source value (default 0 for unknown)."""
+    return SOURCE_TIERS.get(source, 0)
+
+
+def _parse_updated_at(iso_str: str) -> float:
+    """Parse ISO-8601 timestamp to epoch seconds (stdlib only)."""
+    # Handles "2026-04-20T06:40:08Z" format
+    try:
+        return time.mktime(time.strptime(iso_str, "%Y-%m-%dT%H:%M:%SZ")) - time.timezone
+    except (ValueError, OverflowError):
+        return 0.0
+
+
+def _load_existing() -> dict | None:
+    """Load existing scholar_metrics.json if present."""
+    if not OUTPUT_PATH.exists():
+        return None
+    try:
+        return json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as exc:
+        print(f"Warning: could not read existing {OUTPUT_PATH}: {exc}")
+        return None
+
+
 def main() -> None:
     user_id = get_user_id()
     if not user_id:
@@ -579,6 +617,14 @@ def main() -> None:
 
     author_name = get_author_name()
     print(f"Fetching Scholar metrics for user_id={user_id}, name={author_name}")
+
+    # --- Load existing file for tier comparison ---
+    existing = _load_existing()
+    existing_source = (existing or {}).get("_source", "")
+    existing_tier = _get_source_tier(existing_source) if existing else -1
+    if existing:
+        print(f"Existing file: _source='{existing_source}' (tier {existing_tier}), "
+              f"updated_at={existing.get('updated_at', '?')}")
 
     result = None
 
@@ -599,6 +645,37 @@ def main() -> None:
     if not result:
         print("All strategies failed. Preserving existing scholar_metrics.json if present.")
         sys.exit(0)
+
+    # --- Source-tier preservation logic ---
+    new_source = result.get("_source", "")
+    new_tier = _get_source_tier(new_source)
+    print(f"New result: _source='{new_source}' (tier {new_tier})")
+
+    if existing and new_tier < existing_tier:
+        # Check staleness override
+        existing_updated = existing.get("updated_at", "")
+        existing_epoch = _parse_updated_at(existing_updated)
+        now_epoch = time.time()
+        age_days = (now_epoch - existing_epoch) / 86400 if existing_epoch > 0 else 0
+
+        if age_days > STALENESS_DAYS:
+            print(f"Staleness override: existing data is {age_days:.1f} days old "
+                  f"(>{STALENESS_DAYS}d threshold). Accepting lower-tier "
+                  f"'{new_source}' (tier {new_tier}) over stale "
+                  f"'{existing_source}' (tier {existing_tier}).")
+        else:
+            # Preserve existing — add diagnostic timestamp
+            existing["_updated_at_source"] = time.strftime(
+                "%Y-%m-%dT%H:%M:%SZ", time.gmtime()
+            )
+            OUTPUT_PATH.write_text(
+                json.dumps(existing, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
+            print(f"Existing source '{existing_source}' (tier {existing_tier}) "
+                  f"beats new '{new_source}' (tier {new_tier}); "
+                  f"preserving existing file.")
+            sys.exit(0)
 
     OUTPUT_PATH.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Wrote {len(result.get('papers', []))} papers, "
