@@ -175,51 +175,126 @@ def try_scholarly(user_id: str) -> dict | None:
 
 # ---------------------------------------------------------------------------
 # Strategy 3: OpenAlex API (free, always works, no auth)
+# Resolves author -> fetches author summary stats + counts_by_year + works.
 # ---------------------------------------------------------------------------
+MAILTO = "scholar-bot@users.noreply.github.com"
+
+
+def _openalex_get(url: str) -> dict | None:
+    req = urllib.request.Request(url, headers={"User-Agent": "scholar-bot/1.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except Exception as exc:
+        print(f"  OpenAlex GET failed ({url[:80]}…): {exc}")
+        return None
+
+
+def _resolve_openalex_author_id(author_name: str) -> str | None:
+    """Search authors by name and return the OpenAlex ID with the most works."""
+    encoded = urllib.parse.quote(author_name)
+    url = (
+        f"https://api.openalex.org/authors?"
+        f"search={encoded}&per-page=10&mailto={MAILTO}"
+    )
+    data = _openalex_get(url)
+    if not data:
+        return None
+    candidates = data.get("results", [])
+    if not candidates:
+        return None
+    # pick the most cited matching candidate
+    candidates.sort(key=lambda a: a.get("cited_by_count", 0), reverse=True)
+    chosen = candidates[0]
+    full_id = chosen.get("id", "")  # e.g. https://openalex.org/A1234567890
+    short_id = full_id.rsplit("/", 1)[-1] if full_id else None
+    if short_id:
+        print(f"  OpenAlex: resolved '{author_name}' -> {short_id} "
+              f"({chosen.get('display_name', '')}, "
+              f"{chosen.get('works_count', 0)} works, "
+              f"{chosen.get('cited_by_count', 0)} citations)")
+    return short_id
+
+
+def _fetch_openalex_works(author_id: str) -> list[dict]:
+    """Page through all works for the author."""
+    works: list[dict] = []
+    cursor = "*"
+    while cursor:
+        url = (
+            f"https://api.openalex.org/works?"
+            f"filter=author.id:{author_id}&per-page=200"
+            f"&cursor={cursor}&mailto={MAILTO}"
+        )
+        data = _openalex_get(url)
+        if not data:
+            break
+        works.extend(data.get("results", []))
+        cursor = (data.get("meta") or {}).get("next_cursor")
+        if cursor is None or not data.get("results"):
+            break
+    return works
+
+
 def try_openalex(author_name: str) -> dict | None:
     if not author_name:
         print("  OpenAlex: no author name available, skipping.")
         return None
 
-    try:
-        encoded = urllib.parse.quote(author_name)
-        url = (
-            f"https://api.openalex.org/works?"
-            f"per-page=200&filter=raw_author_name.search:{encoded}"
-            f"&mailto=scholar-bot@users.noreply.github.com"
-        )
-        req = urllib.request.Request(url, headers={"User-Agent": "scholar-bot/1.0"})
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-
-        results = data.get("results", [])
-        papers = [
-            {
-                "title": w.get("title") or w.get("display_name", ""),
-                "year": w.get("publication_year"),
-                "citations": w.get("cited_by_count", 0),
-                "scholar_link": "",
-            }
-            for w in results
-        ]
-
-        # Aggregate total citations from the results we have
-        total_citations = sum(p["citations"] for p in papers)
-
-        return {
-            "updated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-            "user_id": "",
-            "citations_total": total_citations,
-            "citations_recent5y": 0,
-            "h_index": 0,
-            "i10_index": 0,
-            "citations_history": [],
-            "papers": papers,
-            "_source": "openalex",
-        }
-    except Exception as exc:
-        print(f"  OpenAlex failed: {exc}")
+    author_id = _resolve_openalex_author_id(author_name)
+    if not author_id:
+        print(f"  OpenAlex: could not resolve author '{author_name}'.")
         return None
+
+    # Fetch author metadata for summary stats + per-year history
+    author = _openalex_get(
+        f"https://api.openalex.org/authors/{author_id}?mailto={MAILTO}"
+    )
+    if not author:
+        return None
+
+    summary = author.get("summary_stats") or {}
+    h_index = int(summary.get("h_index", 0) or 0)
+    i10_index = int(summary.get("i10_index", 0) or 0)
+    citations_total = int(author.get("cited_by_count", 0) or 0)
+
+    counts_by_year = author.get("counts_by_year") or []
+    citations_history = sorted(
+        ({"year": int(c["year"]), "count": int(c.get("cited_by_count", 0))}
+         for c in counts_by_year),
+        key=lambda x: x["year"],
+    )
+    current_year = time.gmtime().tm_year
+    citations_recent5y = sum(
+        h["count"] for h in citations_history
+        if h["year"] >= current_year - 4
+    )
+
+    works = _fetch_openalex_works(author_id)
+    papers = [
+        {
+            "title": w.get("title") or w.get("display_name", ""),
+            "year": w.get("publication_year"),
+            "citations": int(w.get("cited_by_count", 0) or 0),
+            "scholar_link": (w.get("doi") or "").replace(
+                "https://doi.org/", "https://doi.org/"
+            ),
+        }
+        for w in works
+    ]
+
+    return {
+        "updated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "user_id": "",
+        "openalex_id": author_id,
+        "citations_total": citations_total,
+        "citations_recent5y": citations_recent5y,
+        "h_index": h_index,
+        "i10_index": i10_index,
+        "citations_history": citations_history,
+        "papers": papers,
+        "_source": "openalex",
+    }
 
 
 def main() -> None:
