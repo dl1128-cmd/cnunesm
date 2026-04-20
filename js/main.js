@@ -114,7 +114,7 @@
     } catch {}
     try {
       const name = config.pi.name_en;
-      const url = `https://api.openalex.org/works?per-page=200&filter=author.search:${encodeURIComponent(name)}&mailto=scholar-bot@users.noreply.github.com`;
+      const url = `https://api.openalex.org/works?per-page=200&filter=raw_author_name.search:${encodeURIComponent(name)}&mailto=scholar-bot@users.noreply.github.com`;
       const res = await fetch(url);
       if (!res.ok) return;
       const data = await res.json();
