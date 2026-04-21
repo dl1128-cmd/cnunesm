@@ -11,8 +11,16 @@
     "email": "hryu@cnu.ac.kr",
     "summary_ko": "Ni-rich 층상 양극, 단결정 · 농도구배 양극, 차세대 이차전지 소재.",
     "summary_en": "Ni-rich layered cathodes, single-crystal and concentration-gradient architectures, next-generation battery materials.",
-    "tags_en": ["Ni-rich Cathode", "Single Crystal", "Next-gen Battery"],
-    "tags_ko": ["Ni-rich 양극", "단결정", "차세대 전지"],
+    "tags_en": [
+      "Ni-rich Cathode",
+      "Single Crystal",
+      "Next-gen Battery"
+    ],
+    "tags_ko": [
+      "Ni-rich 양극",
+      "단결정",
+      "차세대 전지"
+    ],
     "scholar_link": "https://scholar.google.com/citations?user=3pg8AjQAAAAJ&hl=ko"
   },
   {
@@ -23,7 +31,7 @@
     "title_en": "M.S. Student (2026.03 – )",
     "title_ko": "석사과정 (2026.03 – )",
     "joined": "2026.03",
-    "photo": "assets/images/members/jeong-eun-kim.jpg",
+    "photo": "",
     "email": "jeeuni@g.cnu.ac.kr",
     "summary_ko": "충남대학교 응용화학공학과",
     "summary_en": "Department of Applied Chemical Engineering, Chungnam National University",
@@ -38,7 +46,7 @@
     "title_en": "M.S. Student (2026.03 – )",
     "title_ko": "석사과정 (2026.03 – )",
     "joined": "2026.03",
-    "photo": "assets/images/members/geurin-kim.jpg",
+    "photo": "",
     "email": "green529@g.cnu.ac.kr",
     "summary_ko": "충남대학교 응용화학공학과",
     "summary_en": "Department of Applied Chemical Engineering, Chungnam National University",
@@ -53,7 +61,7 @@
     "title_en": "M.S. Student (2026.03 – )",
     "title_ko": "석사과정 (2026.03 – )",
     "joined": "2026.03",
-    "photo": "assets/images/members/hyeon-su-park.jpg",
+    "photo": "",
     "email": "gustn0043@gmail.com",
     "summary_ko": "충남대학교 응용화학공학과",
     "summary_en": "Department of Applied Chemical Engineering, Chungnam National University",
@@ -83,7 +91,7 @@
     "title_en": "Undergraduate Researcher (2026.03 – )",
     "title_ko": "학부연구원 (2026.03 – )",
     "joined": "2026.03",
-    "photo": "assets/images/members/somin-park.jpg",
+    "photo": "",
     "email": "ssomin@g.cnu.ac.kr",
     "summary_ko": "충남대학교 응용화학공학과",
     "summary_en": "Department of Applied Chemical Engineering, Chungnam National University",
