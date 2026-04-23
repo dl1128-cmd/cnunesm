@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-20T06:40:08Z",
+  "updated_at": "2026-04-23T18:52:18Z",
   "user_id": "3pg8AjQAAAAJ",
-  "citations_total": 8565,
-  "citations_recent5y": 7634,
+  "citations_total": 8567,
+  "citations_recent5y": 7636,
   "h_index": 34,
   "i10_index": 38,
   "citations_history": [
@@ -12,7 +12,7 @@
     },
     {
       "year": 2019,
-      "count": 255
+      "count": 254
     },
     {
       "year": 2020,
@@ -20,11 +20,11 @@
     },
     {
       "year": 2021,
-      "count": 867
+      "count": 868
     },
     {
       "year": 2022,
-      "count": 1233
+      "count": 1231
     },
     {
       "year": 2023,
@@ -36,18 +36,18 @@
     },
     {
       "year": 2025,
-      "count": 1820
+      "count": 1817
     },
     {
       "year": 2026,
-      "count": 599
+      "count": 605
     }
   ],
   "papers": [
     {
       "title": "Capacity Fading of Ni-Rich Li[NixCoyMn1–x–y]O2 (0.6 ≤ x ≤ 0.95) Cathodes for High-Energy-Density Lithium-Ion Batteries: Bulk or Surface Degradation?",
       "year": 2018,
-      "citations": 1733,
+      "citations": 1734,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:4TOpqqG69KYC"
     },
     {
@@ -89,7 +89,7 @@
     {
       "title": "Extracting maximum capacity from Ni-rich Li [Ni 0.95 Co 0.025 Mn 0.025] O 2 cathodes for high-energy-density lithium-ion batteries",
       "year": 2018,
-      "citations": 286,
+      "citations": 285,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:aqlVkmm33-oC"
     },
     {
@@ -131,13 +131,13 @@
     {
       "title": "Near-surface reconstruction in Ni-rich layered cathodes for high-performance lithium-ion batteries",
       "year": 2024,
-      "citations": 205,
+      "citations": 206,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:HDshCWvjkbEC"
     },
     {
       "title": "Hierarchical O3/P2 heterostructured cathode materials for advanced sodium-ion batteries",
       "year": 2022,
-      "citations": 193,
+      "citations": 192,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:8k81kl-MbHgC"
     },
     {
@@ -227,7 +227,7 @@
     {
       "title": "Nano-rods in Ni-rich layered cathodes for practical batteries",
       "year": 2024,
-      "citations": 70,
+      "citations": 71,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:R3hNpaxXUhUC"
     },
     {
@@ -257,7 +257,7 @@
     {
       "title": "Multi‐Physical Field Simulation: A Powerful Tool for Accelerating Exploration of High‐Energy‐Density Rechargeable Lithium Batteries",
       "year": 2023,
-      "citations": 28,
+      "citations": 29,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:hFOr9nPyWt4C"
     },
     {
@@ -375,6 +375,5 @@
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:UeHWp8X0CEIC"
     }
   ],
-  "_source": "playwright_scholar",
-  "_updated_at_source": "2026-04-22T18:55:36Z"
+  "_source": "playwright_scholar"
 }
