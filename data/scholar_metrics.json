@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-03T18:40:29Z",
+  "updated_at": "2026-05-05T19:02:42Z",
   "user_id": "3pg8AjQAAAAJ",
-  "citations_total": 8629,
-  "citations_recent5y": 7697,
+  "citations_total": 8643,
+  "citations_recent5y": 7711,
   "h_index": 34,
   "i10_index": 38,
   "citations_history": [
@@ -36,36 +36,36 @@
     },
     {
       "year": 2025,
-      "count": 1810
+      "count": 1812
     },
     {
       "year": 2026,
-      "count": 667
+      "count": 679
     }
   ],
   "papers": [
     {
       "title": "Capacity Fading of Ni-Rich Li[NixCoyMn1–x–y]O2 (0.6 ≤ x ≤ 0.95) Cathodes for High-Energy-Density Lithium-Ion Batteries: Bulk or Surface Degradation?",
       "year": 2018,
-      "citations": 1741,
+      "citations": 1744,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:4TOpqqG69KYC"
     },
     {
       "title": "Capacity fading mechanisms in Ni-rich single-crystal NCM cathodes",
       "year": 2021,
-      "citations": 590,
+      "citations": 593,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:M3ejUd6NZC8C"
     },
     {
       "title": "Beyond doping and coating: prospective strategies for stable high-capacity layered Ni-rich cathodes",
       "year": 2020,
-      "citations": 487,
+      "citations": 489,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:IjCSPb-OGe4C"
     },
     {
       "title": "Degradation mechanism of Ni-enriched NCA cathode for lithium batteries: are microcracks really critical?",
       "year": 2019,
-      "citations": 447,
+      "citations": 448,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:YsMSGLbcyi4C"
     },
     {
@@ -107,13 +107,13 @@
     {
       "title": "Li[Ni0.9Co0.09W0.01]O2: A New Type of Layered Oxide Cathode with High Cycling Stability",
       "year": 2019,
-      "citations": 264,
+      "citations": 265,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:eQOLeE2rZwMC"
     },
     {
       "title": "Ni-rich layered cathodes for lithium-ion batteries: From challenges to the future",
       "year": 2023,
-      "citations": 243,
+      "citations": 244,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:mB3voiENLucC"
     },
     {
@@ -135,16 +135,16 @@
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:HDshCWvjkbEC"
     },
     {
+      "title": "Understanding the Capacity Fading Mechanisms of O3‐Type Na[Ni0.5Mn0.5]O2 Cathode for Sodium‐Ion Batteries",
+      "year": 2020,
+      "citations": 196,
+      "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:Zph67rFs4hoC"
+    },
+    {
       "title": "Hierarchical O3/P2 heterostructured cathode materials for advanced sodium-ion batteries",
       "year": 2022,
       "citations": 195,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:8k81kl-MbHgC"
-    },
-    {
-      "title": "Understanding the Capacity Fading Mechanisms of O3‐Type Na[Ni0.5Mn0.5]O2 Cathode for Sodium‐Ion Batteries",
-      "year": 2020,
-      "citations": 195,
-      "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:Zph67rFs4hoC"
     },
     {
       "title": "New Class of Ni‐Rich Cathode Materials Li[NixCoyB1−x−y]O2 for Next Lithium Batteries",
@@ -245,7 +245,7 @@
     {
       "title": "Promoting grain growth in Ni-rich single-crystal cathodes for high-performance lithium-ion batteries through Ce doping",
       "year": 2022,
-      "citations": 40,
+      "citations": 41,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:dhFuZR0502QC"
     },
     {
@@ -269,7 +269,7 @@
     {
       "title": "Single-crystal vs polycrystalline cathodes for lithium-ion batteries",
       "year": 2025,
-      "citations": 26,
+      "citations": 27,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:4JMBOYKVnBMC"
     },
     {
@@ -375,6 +375,5 @@
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:UeHWp8X0CEIC"
     }
   ],
-  "_source": "playwright_scholar",
-  "_updated_at_source": "2026-05-04T19:10:40Z"
+  "_source": "playwright_scholar"
 }
