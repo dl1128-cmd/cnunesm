@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-13T19:28:06Z",
+  "updated_at": "2026-05-15T19:12:06Z",
   "user_id": "3pg8AjQAAAAJ",
-  "citations_total": 8698,
-  "citations_recent5y": 7765,
+  "citations_total": 8702,
+  "citations_recent5y": 7769,
   "h_index": 34,
   "i10_index": 38,
   "citations_history": [
@@ -40,7 +40,7 @@
     },
     {
       "year": 2026,
-      "count": 726
+      "count": 730
     }
   ],
   "papers": [
@@ -71,7 +71,7 @@
     {
       "title": "Reducing cobalt from lithium-ion batteries for the electric vehicle era",
       "year": 2021,
-      "citations": 350,
+      "citations": 351,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:W7OEmFMy1HYC"
     },
     {
@@ -89,7 +89,7 @@
     {
       "title": "Extracting maximum capacity from Ni-rich Li [Ni 0.95 Co 0.025 Mn 0.025] O 2 cathodes for high-energy-density lithium-ion batteries",
       "year": 2018,
-      "citations": 287,
+      "citations": 288,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:aqlVkmm33-oC"
     },
     {
@@ -107,13 +107,13 @@
     {
       "title": "Li[Ni0.9Co0.09W0.01]O2: A New Type of Layered Oxide Cathode with High Cycling Stability",
       "year": 2019,
-      "citations": 268,
+      "citations": 269,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:eQOLeE2rZwMC"
     },
     {
       "title": "Ni-rich layered cathodes for lithium-ion batteries: From challenges to the future",
       "year": 2023,
-      "citations": 245,
+      "citations": 246,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:mB3voiENLucC"
     },
     {
@@ -375,6 +375,5 @@
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:UeHWp8X0CEIC"
     }
   ],
-  "_source": "playwright_scholar",
-  "_updated_at_source": "2026-05-14T19:30:13Z"
+  "_source": "playwright_scholar"
 }
