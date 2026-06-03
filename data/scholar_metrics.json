@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-01T21:19:28Z",
+  "updated_at": "2026-06-03T20:44:32Z",
   "user_id": "3pg8AjQAAAAJ",
-  "citations_total": 8792,
-  "citations_recent5y": 7856,
+  "citations_total": 8789,
+  "citations_recent5y": 7853,
   "h_index": 35,
   "i10_index": 38,
   "citations_history": [
@@ -40,7 +40,7 @@
     },
     {
       "year": 2026,
-      "count": 810
+      "count": 807
     }
   ],
   "papers": [
@@ -77,7 +77,7 @@
     {
       "title": "Microstructure‐controlled Ni‐rich cathode material by microscale compositional partition for next‐generation electric vehicles",
       "year": 2019,
-      "citations": 342,
+      "citations": 341,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:KlAtU1dfN6UC"
     },
     {
@@ -125,7 +125,7 @@
     {
       "title": "Near-surface reconstruction in Ni-rich layered cathodes for high-performance lithium-ion batteries",
       "year": 2024,
-      "citations": 219,
+      "citations": 218,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:HDshCWvjkbEC"
     },
     {
@@ -173,7 +173,7 @@
     {
       "title": "Microstructure-optimized concentration-gradient NCM cathode for long-life Li-ion batteries",
       "year": 2022,
-      "citations": 129,
+      "citations": 128,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:ULOm3_A8WrAC"
     },
     {
@@ -191,7 +191,7 @@
     {
       "title": "High-energy cathodes via precision microstructure tailoring for next-generation electric vehicles",
       "year": 2021,
-      "citations": 106,
+      "citations": 105,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:hqOjcs7Dif8C"
     },
     {
@@ -275,7 +275,7 @@
     {
       "title": "Ni-Rich Li[NixMnyCo1–x–y]O2 Single Crystals as Superior Fast Charge Cathodes for Lithium-Ion Batteries",
       "year": 2025,
-      "citations": 7,
+      "citations": 8,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:RHpTSmoSYBkC"
     },
     {
@@ -375,6 +375,5 @@
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:UeHWp8X0CEIC"
     }
   ],
-  "_source": "playwright_scholar",
-  "_updated_at_source": "2026-06-02T20:32:36Z"
+  "_source": "playwright_scholar"
 }
