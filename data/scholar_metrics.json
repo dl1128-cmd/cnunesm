@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-29T19:29:53Z",
+  "updated_at": "2026-07-02T19:05:24Z",
   "user_id": "3pg8AjQAAAAJ",
-  "citations_total": 8946,
-  "citations_recent5y": 8008,
+  "citations_total": 8956,
+  "citations_recent5y": 8018,
   "h_index": 35,
   "i10_index": 38,
   "citations_history": [
@@ -32,22 +32,22 @@
     },
     {
       "year": 2024,
-      "count": 1633
+      "count": 1634
     },
     {
       "year": 2025,
-      "count": 1823
+      "count": 1825
     },
     {
       "year": 2026,
-      "count": 951
+      "count": 958
     }
   ],
   "papers": [
     {
       "title": "Capacity Fading of Ni-Rich Li[NixCoyMn1–x–y]O2 (0.6 ≤ x ≤ 0.95) Cathodes for High-Energy-Density Lithium-Ion Batteries: Bulk or Surface Degradation?",
       "year": 2018,
-      "citations": 1795,
+      "citations": 1797,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:4TOpqqG69KYC"
     },
     {
@@ -59,7 +59,7 @@
     {
       "title": "Beyond doping and coating: prospective strategies for stable high-capacity layered Ni-rich cathodes",
       "year": 2020,
-      "citations": 509,
+      "citations": 510,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:IjCSPb-OGe4C"
     },
     {
@@ -95,7 +95,7 @@
     {
       "title": "A highly stabilized Ni-rich NCA cathode for high-energy lithium-ion batteries",
       "year": 2020,
-      "citations": 279,
+      "citations": 280,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:d1gkVwhDpl0C"
     },
     {
@@ -119,7 +119,7 @@
     {
       "title": "Degradation Mechanism of Highly Ni-Rich Li[NixCoyMn1–x–y]O2 Cathodes with x > 0.9",
       "year": 2019,
-      "citations": 245,
+      "citations": 246,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:zYLM7Y9cAGgC"
     },
     {
@@ -185,7 +185,7 @@
     {
       "title": "Long-lasting Ni-rich NCMA cathodes via simultaneous microstructural refinement and surface modification",
       "year": 2023,
-      "citations": 124,
+      "citations": 125,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:IWHjjKOFINEC"
     },
     {
@@ -215,7 +215,7 @@
     {
       "title": "Optimization of molybdenum-doped Ni-rich layered cathodes for long-term cycling",
       "year": 2023,
-      "citations": 93,
+      "citations": 95,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:-f6ydRqryjwC"
     },
     {
@@ -227,7 +227,7 @@
     {
       "title": "Structural stability of single-crystalline Ni-rich layered cathode upon delithiation",
       "year": 2022,
-      "citations": 81,
+      "citations": 82,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:MXK_kJrjxJIC"
     },
     {
@@ -251,7 +251,7 @@
     {
       "title": "Promoting grain growth in Ni-rich single-crystal cathodes for high-performance lithium-ion batteries through Ce doping",
       "year": 2022,
-      "citations": 43,
+      "citations": 44,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:dhFuZR0502QC"
     },
     {
@@ -381,6 +381,5 @@
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:UeHWp8X0CEIC"
     }
   ],
-  "_source": "playwright_scholar",
-  "_updated_at_source": "2026-07-01T19:26:56Z"
+  "_source": "playwright_scholar"
 }
