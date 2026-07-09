@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-08T19:01:59Z",
+  "updated_at": "2026-07-09T19:16:57Z",
   "user_id": "3pg8AjQAAAAJ",
-  "citations_total": 8989,
-  "citations_recent5y": 8051,
+  "citations_total": 8991,
+  "citations_recent5y": 8053,
   "h_index": 35,
   "i10_index": 38,
   "citations_history": [
@@ -36,11 +36,11 @@
     },
     {
       "year": 2025,
-      "count": 1830
+      "count": 1834
     },
     {
       "year": 2026,
-      "count": 984
+      "count": 982
     }
   ],
   "papers": [
@@ -137,7 +137,7 @@
     {
       "title": "Understanding the Capacity Fading Mechanisms of O3‐Type Na[Ni0.5Mn0.5]O2 Cathode for Sodium‐Ion Batteries",
       "year": 2020,
-      "citations": 206,
+      "citations": 207,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:Zph67rFs4hoC"
     },
     {
@@ -203,7 +203,7 @@
     {
       "title": "High-performance Ni-rich Li [Ni 0.9–x Co 0.1 Al x] O 2 cathodes via multi-stage microstructural tailoring from hydroxide precursor to the lithiated oxide",
       "year": 2021,
-      "citations": 104,
+      "citations": 105,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:qjMakFHDy7sC"
     },
     {
