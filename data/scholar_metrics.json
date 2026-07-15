@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-09T19:16:57Z",
+  "updated_at": "2026-07-15T18:50:31Z",
   "user_id": "3pg8AjQAAAAJ",
-  "citations_total": 8991,
-  "citations_recent5y": 8053,
+  "citations_total": 9006,
+  "citations_recent5y": 8073,
   "h_index": 35,
   "i10_index": 38,
   "citations_history": [
@@ -24,11 +24,11 @@
     },
     {
       "year": 2022,
-      "count": 1233
+      "count": 1234
     },
     {
       "year": 2023,
-      "count": 1499
+      "count": 1502
     },
     {
       "year": 2024,
@@ -36,24 +36,24 @@
     },
     {
       "year": 2025,
-      "count": 1834
+      "count": 1829
     },
     {
       "year": 2026,
-      "count": 982
+      "count": 1003
     }
   ],
   "papers": [
     {
       "title": "Capacity Fading of Ni-Rich Li[NixCoyMn1–x–y]O2 (0.6 ≤ x ≤ 0.95) Cathodes for High-Energy-Density Lithium-Ion Batteries: Bulk or Surface Degradation?",
       "year": 2018,
-      "citations": 1802,
+      "citations": 1803,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:4TOpqqG69KYC"
     },
     {
       "title": "Capacity fading mechanisms in Ni-rich single-crystal NCM cathodes",
       "year": 2021,
-      "citations": 623,
+      "citations": 625,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:M3ejUd6NZC8C"
     },
     {
@@ -65,19 +65,19 @@
     {
       "title": "Degradation mechanism of Ni-enriched NCA cathode for lithium batteries: are microcracks really critical?",
       "year": 2019,
-      "citations": 458,
+      "citations": 460,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:YsMSGLbcyi4C"
     },
     {
       "title": "Reducing cobalt from lithium-ion batteries for the electric vehicle era",
       "year": 2021,
-      "citations": 360,
+      "citations": 361,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:W7OEmFMy1HYC"
     },
     {
       "title": "Microstructure‐controlled Ni‐rich cathode material by microscale compositional partition for next‐generation electric vehicles",
       "year": 2019,
-      "citations": 349,
+      "citations": 350,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:KlAtU1dfN6UC"
     },
     {
@@ -89,7 +89,7 @@
     {
       "title": "Extracting maximum capacity from Ni-rich Li [Ni 0.95 Co 0.025 Mn 0.025] O 2 cathodes for high-energy-density lithium-ion batteries",
       "year": 2018,
-      "citations": 292,
+      "citations": 293,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:aqlVkmm33-oC"
     },
     {
@@ -101,7 +101,7 @@
     {
       "title": "High-Energy Ni-Rich Li[NixCoyMn1–x–y]O2 Cathodes via Compositional Partitioning for Next-Generation Electric Vehicles",
       "year": 2017,
-      "citations": 277,
+      "citations": 276,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:ufrVoPGSRksC"
     },
     {
@@ -113,7 +113,7 @@
     {
       "title": "Ni-rich layered cathodes for lithium-ion batteries: From challenges to the future",
       "year": 2023,
-      "citations": 263,
+      "citations": 265,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:mB3voiENLucC"
     },
     {
@@ -125,7 +125,7 @@
     {
       "title": "Near-surface reconstruction in Ni-rich layered cathodes for high-performance lithium-ion batteries",
       "year": 2024,
-      "citations": 226,
+      "citations": 227,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:HDshCWvjkbEC"
     },
     {
@@ -155,7 +155,7 @@
     {
       "title": "Compositionally and structurally redesigned high-energy Ni-rich layered cathode for next-generation lithium batteries",
       "year": 2019,
-      "citations": 185,
+      "citations": 186,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:mVmsd5A6BfQC"
     },
     {
@@ -185,13 +185,13 @@
     {
       "title": "Long-lasting Ni-rich NCMA cathodes via simultaneous microstructural refinement and surface modification",
       "year": 2023,
-      "citations": 125,
+      "citations": 126,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:IWHjjKOFINEC"
     },
     {
       "title": "Morphology-dependent battery performance of Ni-rich layered cathodes: single-crystal versus refined polycrystal",
       "year": 2022,
-      "citations": 110,
+      "citations": 111,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:7PzlFSSx8tAC"
     },
     {
@@ -245,7 +245,7 @@
     {
       "title": "Single-crystal vs polycrystalline cathodes for lithium-ion batteries",
       "year": 2025,
-      "citations": 49,
+      "citations": 50,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:4JMBOYKVnBMC"
     },
     {
@@ -263,7 +263,7 @@
     {
       "title": "Multi‐Physical Field Simulation: A Powerful Tool for Accelerating Exploration of High‐Energy‐Density Rechargeable Lithium Batteries",
       "year": 2023,
-      "citations": 30,
+      "citations": 31,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:hFOr9nPyWt4C"
     },
     {
@@ -381,6 +381,5 @@
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:UeHWp8X0CEIC"
     }
   ],
-  "_source": "playwright_scholar",
-  "_updated_at_source": "2026-07-14T18:57:55Z"
+  "_source": "playwright_scholar"
 }
