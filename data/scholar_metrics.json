@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-08T18:18:27Z",
+  "updated_at": "2026-08-12T18:43:30Z",
   "user_id": "3pg8AjQAAAAJ",
-  "citations_total": 9179,
-  "citations_recent5y": 8237,
+  "citations_total": 9199,
+  "citations_recent5y": 8257,
   "h_index": 35,
   "i10_index": 39,
   "citations_history": [
     {
       "year": 2018,
-      "count": 64
+      "count": 63
     },
     {
       "year": 2019,
-      "count": 251
+      "count": 252
     },
     {
       "year": 2020,
@@ -20,19 +20,19 @@
     },
     {
       "year": 2021,
-      "count": 863
+      "count": 862
     },
     {
       "year": 2022,
-      "count": 1253
+      "count": 1254
     },
     {
       "year": 2023,
-      "count": 1495
+      "count": 1500
     },
     {
       "year": 2024,
-      "count": 1647
+      "count": 1646
     },
     {
       "year": 2025,
@@ -40,32 +40,32 @@
     },
     {
       "year": 2026,
-      "count": 1167
+      "count": 1184
     }
   ],
   "papers": [
     {
       "title": "Capacity Fading of Ni-Rich Li[NixCoyMn1–x–y]O2 (0.6 ≤ x ≤ 0.95) Cathodes for High-Energy-Density Lithium-Ion Batteries: Bulk or Surface Degradation?",
       "year": 2018,
-      "citations": 1823,
+      "citations": 1824,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:4TOpqqG69KYC"
     },
     {
       "title": "Capacity fading mechanisms in Ni-rich single-crystal NCM cathodes",
       "year": 2021,
-      "citations": 641,
+      "citations": 640,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:M3ejUd6NZC8C"
     },
     {
       "title": "Beyond doping and coating: prospective strategies for stable high-capacity layered Ni-rich cathodes",
       "year": 2020,
-      "citations": 518,
+      "citations": 520,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:IjCSPb-OGe4C"
     },
     {
       "title": "Degradation mechanism of Ni-enriched NCA cathode for lithium batteries: are microcracks really critical?",
       "year": 2019,
-      "citations": 481,
+      "citations": 482,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:YsMSGLbcyi4C"
     },
     {
@@ -83,19 +83,19 @@
     {
       "title": "Suppressing detrimental phase transitions via tungsten doping of LiNiO2 cathode for next-generation lithium-ion batteries",
       "year": 2019,
-      "citations": 301,
+      "citations": 302,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:4DMP91E08xMC"
     },
     {
       "title": "Extracting maximum capacity from Ni-rich Li [Ni0. 95Co0. 025Mn0. 025] O2 cathodes for high-energy-density lithium-ion batteries",
       "year": 2018,
-      "citations": 295,
+      "citations": 296,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:aqlVkmm33-oC"
     },
     {
       "title": "A highly stabilized Ni-rich NCA cathode for high-energy lithium-ion batteries",
       "year": 2020,
-      "citations": 285,
+      "citations": 287,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:d1gkVwhDpl0C"
     },
     {
@@ -117,27 +117,27 @@
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:mB3voiENLucC"
     },
     {
+      "title": "Near-surface reconstruction in Ni-rich layered cathodes for high-performance lithium-ion batteries",
+      "year": 2024,
+      "citations": 240,
+      "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:HDshCWvjkbEC"
+    },
+    {
       "title": "Degradation mechanism of highly Ni-rich Li [NixCoyMn1–x–y] O2 cathodes with x> 0.9",
       "year": 2019,
       "citations": 239,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:zYLM7Y9cAGgC"
     },
     {
-      "title": "Near-surface reconstruction in Ni-rich layered cathodes for high-performance lithium-ion batteries",
-      "year": 2024,
-      "citations": 237,
-      "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:HDshCWvjkbEC"
-    },
-    {
       "title": "Tungsten doping for stabilization of Li [Ni0. 90Co0. 05Mn0. 05] O2 cathode for Li-ion battery at high voltage",
       "year": 2019,
-      "citations": 219,
+      "citations": 220,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:Se3iqnhoufwC"
     },
     {
       "title": "Understanding the Capacity Fading Mechanisms of O3‐Type Na[Ni0.5Mn0.5]O2 Cathode for Sodium‐Ion Batteries",
       "year": 2020,
-      "citations": 209,
+      "citations": 210,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:Zph67rFs4hoC"
     },
     {
@@ -161,25 +161,25 @@
     {
       "title": "Microstructural Degradation of Ni‐Rich Li[NixCoyMn1−x−y]O2 Cathodes During Accelerated Calendar Aging",
       "year": 2018,
-      "citations": 186,
+      "citations": 187,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:WF5omc3nYNoC"
     },
     {
       "title": "Optimized Ni‐rich NCMA cathode for electric vehicle batteries",
       "year": 2021,
-      "citations": 151,
+      "citations": 152,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:2osOgNQ5qMEC"
     },
     {
       "title": "Microstructure-optimized concentration-gradient NCM cathode for long-life Li-ion batteries",
       "year": 2022,
-      "citations": 133,
+      "citations": 134,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:ULOm3_A8WrAC"
     },
     {
       "title": "Microstrain alleviation in high-energy Ni-rich NCMA cathode for long battery life",
       "year": 2020,
-      "citations": 133,
+      "citations": 134,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:QIV2ME_5wuYC"
     },
     {
@@ -191,7 +191,7 @@
     {
       "title": "Morphology-dependent battery performance of Ni-rich layered cathodes: single-crystal versus refined polycrystal",
       "year": 2022,
-      "citations": 113,
+      "citations": 114,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:7PzlFSSx8tAC"
     },
     {
@@ -215,7 +215,7 @@
     {
       "title": "Optimization of molybdenum-doped Ni-rich layered cathodes for long-term cycling",
       "year": 2023,
-      "citations": 99,
+      "citations": 100,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:-f6ydRqryjwC"
     },
     {
@@ -239,13 +239,13 @@
     {
       "title": "High-Performance LiNiO2 Cathodes with Practical Loading Cycled with Li metal Anodes in Fluoroethylene Carbonate-Based Electrolyte Solution",
       "year": 2018,
-      "citations": 58,
+      "citations": 59,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:u5HHmVD_uO8C"
     },
     {
       "title": "Intrinsic weaknesses of Co-free Ni–Mn layered cathodes for electric vehicles",
       "year": 2022,
-      "citations": 57,
+      "citations": 58,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:3fE2CSJIrl8C"
     },
     {
@@ -387,6 +387,5 @@
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:UeHWp8X0CEIC"
     }
   ],
-  "_source": "playwright_scholar",
-  "_updated_at_source": "2026-08-11T18:42:26Z"
+  "_source": "playwright_scholar"
 }
