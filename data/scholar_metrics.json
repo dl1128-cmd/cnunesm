@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25T18:20:18Z",
+  "updated_at": "2026-08-26T19:27:25Z",
   "user_id": "3pg8AjQAAAAJ",
   "citations_total": 9283,
   "citations_recent5y": 8347,
@@ -24,11 +24,11 @@
     },
     {
       "year": 2022,
-      "count": 1256
+      "count": 1251
     },
     {
       "year": 2023,
-      "count": 1502
+      "count": 1507
     },
     {
       "year": 2024,
@@ -53,7 +53,7 @@
     {
       "title": "Capacity fading mechanisms in Ni-rich single-crystal NCM cathodes",
       "year": 2021,
-      "citations": 652,
+      "citations": 651,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:M3ejUd6NZC8C"
     },
     {
@@ -65,7 +65,7 @@
     {
       "title": "Degradation mechanism of Ni-enriched NCA cathode for lithium batteries: are microcracks really critical?",
       "year": 2019,
-      "citations": 483,
+      "citations": 484,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:YsMSGLbcyi4C"
     },
     {
@@ -119,7 +119,7 @@
     {
       "title": "Near-surface reconstruction in Ni-rich layered cathodes for high-performance lithium-ion batteries",
       "year": 2024,
-      "citations": 248,
+      "citations": 247,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:HDshCWvjkbEC"
     },
     {
@@ -191,7 +191,7 @@
     {
       "title": "Morphology-dependent battery performance of Ni-rich layered cathodes: single-crystal versus refined polycrystal",
       "year": 2022,
-      "citations": 115,
+      "citations": 116,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:7PzlFSSx8tAC"
     },
     {
