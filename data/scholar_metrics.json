@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-04T19:58:25Z",
+  "updated_at": "2026-09-05T19:38:03Z",
   "user_id": "3pg8AjQAAAAJ",
-  "citations_total": 9335,
-  "citations_recent5y": 8400,
+  "citations_total": 9343,
+  "citations_recent5y": 8409,
   "h_index": 36,
   "i10_index": 39,
   "citations_history": [
@@ -20,7 +20,7 @@
     },
     {
       "year": 2021,
-      "count": 863
+      "count": 865
     },
     {
       "year": 2022,
@@ -40,20 +40,20 @@
     },
     {
       "year": 2026,
-      "count": 1316
+      "count": 1323
     }
   ],
   "papers": [
     {
       "title": "Capacity Fading of Ni-Rich Li[NixCoyMn1–x–y]O2 (0.6 ≤ x ≤ 0.95) Cathodes for High-Energy-Density Lithium-Ion Batteries: Bulk or Surface Degradation?",
       "year": 2018,
-      "citations": 1847,
+      "citations": 1848,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:4TOpqqG69KYC"
     },
     {
       "title": "Capacity fading mechanisms in Ni-rich single-crystal NCM cathodes",
       "year": 2021,
-      "citations": 656,
+      "citations": 658,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:M3ejUd6NZC8C"
     },
     {
@@ -89,7 +89,7 @@
     {
       "title": "Extracting maximum capacity from Ni-rich Li [Ni0. 95Co0. 025Mn0. 025] O2 cathodes for high-energy-density lithium-ion batteries",
       "year": 2018,
-      "citations": 298,
+      "citations": 299,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:aqlVkmm33-oC"
     },
     {
@@ -177,16 +177,16 @@
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:QIV2ME_5wuYC"
     },
     {
+      "title": "Long-lasting Ni-rich NCMA cathodes via simultaneous microstructural refinement and surface modification",
+      "year": 2023,
+      "citations": 134,
+      "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:IWHjjKOFINEC"
+    },
+    {
       "title": "Microstructure-optimized concentration-gradient NCM cathode for long-life Li-ion batteries",
       "year": 2022,
       "citations": 134,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:ULOm3_A8WrAC"
-    },
-    {
-      "title": "Long-lasting Ni-rich NCMA cathodes via simultaneous microstructural refinement and surface modification",
-      "year": 2023,
-      "citations": 133,
-      "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:IWHjjKOFINEC"
     },
     {
       "title": "Morphology-dependent battery performance of Ni-rich layered cathodes: single-crystal versus refined polycrystal",
@@ -233,7 +233,7 @@
     {
       "title": "Single-crystal vs polycrystalline cathodes for lithium-ion batteries",
       "year": 2025,
-      "citations": 75,
+      "citations": 77,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:4JMBOYKVnBMC"
     },
     {
@@ -275,7 +275,7 @@
     {
       "title": "Ni-Rich Li [NixMnyCo1–x–y] O2 Single Crystals as Superior Fast Charge Cathodes for Lithium-Ion Batteries",
       "year": 2025,
-      "citations": 15,
+      "citations": 16,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:RHpTSmoSYBkC"
     },
     {
