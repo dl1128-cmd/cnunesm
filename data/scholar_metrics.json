@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-20T19:54:01Z",
+  "updated_at": "2026-09-21T21:17:42Z",
   "user_id": "3pg8AjQAAAAJ",
-  "citations_total": 9445,
-  "citations_recent5y": 8512,
+  "citations_total": 9447,
+  "citations_recent5y": 8514,
   "h_index": 36,
   "i10_index": 39,
   "citations_history": [
@@ -40,7 +40,7 @@
     },
     {
       "year": 2026,
-      "count": 1418
+      "count": 1420
     }
   ],
   "papers": [
@@ -59,13 +59,13 @@
     {
       "title": "Beyond doping and coating: prospective strategies for stable high-capacity layered Ni-rich cathodes",
       "year": 2020,
-      "citations": 521,
+      "citations": 522,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:IjCSPb-OGe4C"
     },
     {
       "title": "Degradation mechanism of Ni-enriched NCA cathode for lithium batteries: are microcracks really critical?",
       "year": 2019,
-      "citations": 489,
+      "citations": 490,
       "scholar_link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=3pg8AjQAAAAJ&pagesize=100&citation_for_view=3pg8AjQAAAAJ:YsMSGLbcyi4C"
     },
     {
