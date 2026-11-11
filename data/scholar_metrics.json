@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-10T22:36:12Z",
+  "updated_at": "2026-11-11T23:45:48Z",
   "user_id": "",
   "openalex_id": "A5112620578,A5035439306",
-  "citations_total": 8568,
-  "citations_recent5y": 6822,
+  "citations_total": 8570,
+  "citations_recent5y": 6824,
   "h_index": 35,
   "i10_index": 39,
   "citations_history": [
@@ -45,7 +45,7 @@
     },
     {
       "year": 2026,
-      "count": 1271
+      "count": 1273
     }
   ],
   "papers": [
@@ -244,7 +244,7 @@
     {
       "title": "Beyond Doping and Coating: Prospective Strategies for Stable High-Capacity Layered Ni-Rich Cathodes",
       "year": 2020,
-      "citations": 501,
+      "citations": 502,
       "scholar_link": "https://doi.org/10.1021/acsenergylett.0c00191"
     },
     {
@@ -358,7 +358,7 @@
     {
       "title": "Capacity Fading of Ni-Rich Li[Ni x Co y Mn 1– x – y ]O 2 (0.6 ≤ x ≤ 0.95) Cathodes for High-Energy-Density Lithium-Ion Batteries: Bulk or Surface Degradation?",
       "year": 2018,
-      "citations": 1662,
+      "citations": 1663,
       "scholar_link": "https://doi.org/10.1021/acs.chemmater.7b05269"
     },
     {
