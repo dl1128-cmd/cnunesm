@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-11T23:45:48Z",
+  "updated_at": "2026-11-12T22:55:48Z",
   "user_id": "",
   "openalex_id": "A5112620578,A5035439306",
-  "citations_total": 8570,
-  "citations_recent5y": 6824,
+  "citations_total": 8575,
+  "citations_recent5y": 6829,
   "h_index": 35,
   "i10_index": 39,
   "citations_history": [
@@ -45,7 +45,7 @@
     },
     {
       "year": 2026,
-      "count": 1273
+      "count": 1278
     }
   ],
   "papers": [
@@ -130,7 +130,7 @@
     {
       "title": "Long-Lasting Ni-Rich NCMA Cathodes via Simultaneous Microstructural Refinement and Surface Modification",
       "year": 2023,
-      "citations": 138,
+      "citations": 139,
       "scholar_link": "https://doi.org/10.1021/acsenergylett.3c00083"
     },
     {
@@ -358,13 +358,13 @@
     {
       "title": "Capacity Fading of Ni-Rich Li[Ni x Co y Mn 1– x – y ]O 2 (0.6 ≤ x ≤ 0.95) Cathodes for High-Energy-Density Lithium-Ion Batteries: Bulk or Surface Degradation?",
       "year": 2018,
-      "citations": 1663,
+      "citations": 1664,
       "scholar_link": "https://doi.org/10.1021/acs.chemmater.7b05269"
     },
     {
       "title": "Extracting maximum capacity from Ni-rich Li[Ni 0.95 Co 0.025 Mn 0.025 ]O 2 cathodes for high-energy-density lithium-ion batteries",
       "year": 2018,
-      "citations": 264,
+      "citations": 265,
       "scholar_link": "https://doi.org/10.1039/c7ta11346c"
     },
     {
@@ -376,7 +376,7 @@
     {
       "title": "Microstructural Degradation of Ni‐Rich Li[Ni x Co y Mn 1 −x−y ]O 2 Cathodes During Accelerated Calendar Aging",
       "year": 2018,
-      "citations": 131,
+      "citations": 133,
       "scholar_link": "https://doi.org/10.1002/smll.201803179"
     },
     {
