@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-12T22:55:48Z",
+  "updated_at": "2026-11-13T22:57:41Z",
   "user_id": "",
   "openalex_id": "A5112620578,A5035439306",
-  "citations_total": 8575,
-  "citations_recent5y": 6829,
+  "citations_total": 8576,
+  "citations_recent5y": 6830,
   "h_index": 35,
   "i10_index": 39,
   "citations_history": [
@@ -45,7 +45,7 @@
     },
     {
       "year": 2026,
-      "count": 1278
+      "count": 1279
     }
   ],
   "papers": [
@@ -196,7 +196,7 @@
     {
       "title": "Capacity Fading Mechanisms in Ni-Rich Single-Crystal NCM Cathodes",
       "year": 2021,
-      "citations": 646,
+      "citations": 647,
       "scholar_link": "https://doi.org/10.1021/acsenergylett.1c01089"
     },
     {
