@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-13T22:57:41Z",
+  "updated_at": "2026-11-14T21:44:06Z",
   "user_id": "",
   "openalex_id": "A5112620578,A5035439306",
-  "citations_total": 8576,
-  "citations_recent5y": 6830,
+  "citations_total": 8578,
+  "citations_recent5y": 6832,
   "h_index": 35,
   "i10_index": 39,
   "citations_history": [
@@ -45,7 +45,7 @@
     },
     {
       "year": 2026,
-      "count": 1279
+      "count": 1281
     }
   ],
   "papers": [
@@ -124,7 +124,7 @@
     {
       "title": "Ni-rich layered cathodes for lithium-ion batteries: From challenges to the future",
       "year": 2023,
-      "citations": 249,
+      "citations": 250,
       "scholar_link": "https://doi.org/10.1016/j.ensm.2023.102969"
     },
     {
@@ -358,7 +358,7 @@
     {
       "title": "Capacity Fading of Ni-Rich Li[Ni x Co y Mn 1– x – y ]O 2 (0.6 ≤ x ≤ 0.95) Cathodes for High-Energy-Density Lithium-Ion Batteries: Bulk or Surface Degradation?",
       "year": 2018,
-      "citations": 1664,
+      "citations": 1665,
       "scholar_link": "https://doi.org/10.1021/acs.chemmater.7b05269"
     },
     {
