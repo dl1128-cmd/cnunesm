@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-14T21:44:06Z",
+  "updated_at": "2026-11-15T22:10:12Z",
   "user_id": "",
   "openalex_id": "A5112620578,A5035439306",
-  "citations_total": 8578,
-  "citations_recent5y": 6832,
+  "citations_total": 8583,
+  "citations_recent5y": 6836,
   "h_index": 35,
   "i10_index": 39,
   "citations_history": [
@@ -25,7 +25,7 @@
     },
     {
       "year": 2021,
-      "count": 846
+      "count": 847
     },
     {
       "year": 2022,
@@ -45,7 +45,7 @@
     },
     {
       "year": 2026,
-      "count": 1281
+      "count": 1285
     }
   ],
   "papers": [
@@ -106,7 +106,7 @@
     {
       "title": "Nano-rods in Ni-rich layered cathodes for practical batteries",
       "year": 2024,
-      "citations": 112,
+      "citations": 113,
       "scholar_link": "https://doi.org/10.1039/d3cs01110k"
     },
     {
@@ -118,7 +118,7 @@
     {
       "title": "Near-surface reconstruction in Ni-rich layered cathodes for high-performance lithium-ion batteries",
       "year": 2023,
-      "citations": 281,
+      "citations": 282,
       "scholar_link": "https://doi.org/10.1038/s41560-023-01403-8"
     },
     {
@@ -154,7 +154,7 @@
     {
       "title": "Morphology-Dependent Battery Performance of Ni-Rich Layered Cathodes: Single-Crystal versus Refined Polycrystal",
       "year": 2022,
-      "citations": 113,
+      "citations": 114,
       "scholar_link": "https://doi.org/10.1021/acsenergylett.2c01670"
     },
     {
@@ -292,7 +292,7 @@
     {
       "title": "Degradation Mechanism of Ni-Enriched NCA Cathode for Lithium Batteries: Are Microcracks Really Critical?",
       "year": 2019,
-      "citations": 427,
+      "citations": 428,
       "scholar_link": "https://doi.org/10.1021/acsenergylett.9b00733"
     },
     {
@@ -358,7 +358,7 @@
     {
       "title": "Capacity Fading of Ni-Rich Li[Ni x Co y Mn 1– x – y ]O 2 (0.6 ≤ x ≤ 0.95) Cathodes for High-Energy-Density Lithium-Ion Batteries: Bulk or Surface Degradation?",
       "year": 2018,
-      "citations": 1665,
+      "citations": 1666,
       "scholar_link": "https://doi.org/10.1021/acs.chemmater.7b05269"
     },
     {
