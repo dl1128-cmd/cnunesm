@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-18T00:05:56Z",
+  "updated_at": "2026-11-18T23:39:35Z",
   "user_id": "",
   "openalex_id": "A5112620578,A5035439306",
-  "citations_total": 8872,
-  "citations_recent5y": 7116,
+  "citations_total": 8875,
+  "citations_recent5y": 7119,
   "h_index": 36,
   "i10_index": 39,
   "citations_history": [
@@ -45,14 +45,14 @@
     },
     {
       "year": 2026,
-      "count": 1399
+      "count": 1402
     }
   ],
   "papers": [
     {
       "title": "Practical direct recycling of lithium-ion batteries via the state of recoverability",
       "year": 2026,
-      "citations": 3,
+      "citations": 4,
       "scholar_link": "https://doi.org/10.1016/j.esen.2026.100114"
     },
     {
@@ -244,7 +244,7 @@
     {
       "title": "Beyond Doping and Coating: Prospective Strategies for Stable High-Capacity Layered Ni-Rich Cathodes",
       "year": 2020,
-      "citations": 509,
+      "citations": 510,
       "scholar_link": "https://doi.org/10.1021/acsenergylett.0c00191"
     },
     {
@@ -406,7 +406,7 @@
     {
       "title": "High-Energy Ni-Rich Li[Ni x Co y Mn 1 –x–y ]O 2 Cathodes via Compositional Partitioning for Next-Generation Electric Vehicles",
       "year": 2017,
-      "citations": 254,
+      "citations": 255,
       "scholar_link": "https://doi.org/10.1021/acs.chemmater.7b04047"
     },
     {
