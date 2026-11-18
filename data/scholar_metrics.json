@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-17T01:10:52Z",
+  "updated_at": "2026-11-18T00:05:56Z",
   "user_id": "",
   "openalex_id": "A5112620578,A5035439306",
-  "citations_total": 8864,
-  "citations_recent5y": 7108,
+  "citations_total": 8872,
+  "citations_recent5y": 7116,
   "h_index": 36,
   "i10_index": 39,
   "citations_history": [
@@ -45,7 +45,7 @@
     },
     {
       "year": 2026,
-      "count": 1391
+      "count": 1399
     }
   ],
   "papers": [
@@ -88,7 +88,7 @@
     {
       "title": "Single-Crystal vs Polycrystalline Cathodes for Lithium-Ion Batteries",
       "year": 2025,
-      "citations": 106,
+      "citations": 107,
       "scholar_link": "https://doi.org/10.1021/acs.chemrev.5c00441"
     },
     {
@@ -118,13 +118,13 @@
     {
       "title": "Ni-rich layered cathodes for lithium-ion batteries: From challenges to the future",
       "year": 2023,
-      "citations": 290,
+      "citations": 291,
       "scholar_link": "https://doi.org/10.1016/j.ensm.2023.102969"
     },
     {
       "title": "Near-surface reconstruction in Ni-rich layered cathodes for high-performance lithium-ion batteries",
       "year": 2023,
-      "citations": 286,
+      "citations": 288,
       "scholar_link": "https://doi.org/10.1038/s41560-023-01403-8"
     },
     {
@@ -202,7 +202,7 @@
     {
       "title": "Reducing cobalt from lithium-ion batteries for the electric vehicle era",
       "year": 2021,
-      "citations": 345,
+      "citations": 346,
       "scholar_link": "https://doi.org/10.1039/d0ee03581e"
     },
     {
@@ -358,7 +358,7 @@
     {
       "title": "Capacity Fading of Ni-Rich Li[Ni x Co y Mn 1– x – y ]O 2 (0.6 ≤ x ≤ 0.95) Cathodes for High-Energy-Density Lithium-Ion Batteries: Bulk or Surface Degradation?",
       "year": 2018,
-      "citations": 1701,
+      "citations": 1703,
       "scholar_link": "https://doi.org/10.1021/acs.chemmater.7b05269"
     },
     {
@@ -376,7 +376,7 @@
     {
       "title": "Microstructural Degradation of Ni‐Rich Li[Ni x Co y Mn 1 −x−y ]O 2 Cathodes During Accelerated Calendar Aging",
       "year": 2018,
-      "citations": 159,
+      "citations": 160,
       "scholar_link": "https://doi.org/10.1002/smll.201803179"
     },
     {
