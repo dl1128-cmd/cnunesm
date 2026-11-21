@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-20T23:26:44Z",
+  "updated_at": "2026-11-21T22:30:17Z",
   "user_id": "",
   "openalex_id": "A5112620578,A5035439306",
-  "citations_total": 8893,
-  "citations_recent5y": 7134,
+  "citations_total": 17812,
+  "citations_recent5y": 14322,
   "h_index": 36,
   "i10_index": 39,
   "citations_history": [
@@ -13,39 +13,39 @@
     },
     {
       "year": 2018,
-      "count": 70
+      "count": 136
     },
     {
       "year": 2019,
-      "count": 271
+      "count": 540
     },
     {
       "year": 2020,
-      "count": 565
+      "count": 1108
     },
     {
       "year": 2021,
-      "count": 853
+      "count": 1706
     },
     {
       "year": 2022,
-      "count": 1116
+      "count": 2258
     },
     {
       "year": 2023,
-      "count": 1327
+      "count": 2660
     },
     {
       "year": 2024,
-      "count": 1588
+      "count": 3156
     },
     {
       "year": 2025,
-      "count": 1682
+      "count": 3360
     },
     {
       "year": 2026,
-      "count": 1421
+      "count": 2888
     }
   ],
   "papers": [
@@ -196,13 +196,13 @@
     {
       "title": "Capacity Fading Mechanisms in Ni-Rich Single-Crystal NCM Cathodes",
       "year": 2021,
-      "citations": 654,
+      "citations": 655,
       "scholar_link": "https://doi.org/10.1021/acsenergylett.1c01089"
     },
     {
       "title": "Reducing cobalt from lithium-ion batteries for the electric vehicle era",
       "year": 2021,
-      "citations": 347,
+      "citations": 348,
       "scholar_link": "https://doi.org/10.1039/d0ee03581e"
     },
     {
@@ -256,7 +256,7 @@
     {
       "title": "Understanding the Capacity Fading Mechanisms of O3‐Type Na[Ni0.5Mn0.5]O2 Cathode for Sodium‐Ion Batteries",
       "year": 2020,
-      "citations": 201,
+      "citations": 202,
       "scholar_link": "https://doi.org/10.1002/aenm.202001609"
     },
     {
@@ -292,25 +292,25 @@
     {
       "title": "Degradation Mechanism of Ni-Enriched NCA Cathode for Lithium Batteries: Are Microcracks Really Critical?",
       "year": 2019,
-      "citations": 433,
+      "citations": 434,
       "scholar_link": "https://doi.org/10.1021/acsenergylett.9b00733"
     },
     {
       "title": "Microstructure‐Controlled Ni‐Rich Cathode Material by Microscale Compositional Partition for Next‐Generation Electric Vehicles",
       "year": 2019,
-      "citations": 325,
+      "citations": 326,
       "scholar_link": "https://doi.org/10.1002/aenm.201803902"
     },
     {
       "title": "Suppressing detrimental phase transitions via tungsten doping of LiNiO 2 cathode for next-generation lithium-ion batteries",
       "year": 2019,
-      "citations": 277,
+      "citations": 278,
       "scholar_link": "https://doi.org/10.1039/c9ta06402h"
     },
     {
       "title": "Degradation Mechanism of Highly Ni-Rich Li[Ni x Co y Mn 1– x – y ]O 2 Cathodes with x > 0.9",
       "year": 2019,
-      "citations": 241,
+      "citations": 242,
       "scholar_link": "https://doi.org/10.1021/acsami.9b09754"
     },
     {
@@ -358,7 +358,7 @@
     {
       "title": "Capacity Fading of Ni-Rich Li[Ni x Co y Mn 1– x – y ]O 2 (0.6 ≤ x ≤ 0.95) Cathodes for High-Energy-Density Lithium-Ion Batteries: Bulk or Surface Degradation?",
       "year": 2018,
-      "citations": 1705,
+      "citations": 1708,
       "scholar_link": "https://doi.org/10.1021/acs.chemmater.7b05269"
     },
     {
@@ -388,7 +388,7 @@
     {
       "title": "High-Performance LiNiO2 Cathodes with Practical Loading Cycled with Li metal Anodes in Fluoroethylene Carbonate-Based Electrolyte Solution",
       "year": 2018,
-      "citations": 53,
+      "citations": 54,
       "scholar_link": "https://doi.org/10.1021/acsaem.8b00304"
     },
     {
@@ -406,7 +406,7 @@
     {
       "title": "High-Energy Ni-Rich Li[Ni x Co y Mn 1 –x–y ]O 2 Cathodes via Compositional Partitioning for Next-Generation Electric Vehicles",
       "year": 2017,
-      "citations": 255,
+      "citations": 257,
       "scholar_link": "https://doi.org/10.1021/acs.chemmater.7b04047"
     },
     {
