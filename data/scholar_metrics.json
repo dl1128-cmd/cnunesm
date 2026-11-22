@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T22:30:17Z",
+  "updated_at": "2026-11-22T22:53:54Z",
   "user_id": "",
   "openalex_id": "A5112620578,A5035439306",
   "citations_total": 17812,
@@ -118,13 +118,13 @@
     {
       "title": "Ni-rich layered cathodes for lithium-ion batteries: From challenges to the future",
       "year": 2023,
-      "citations": 291,
+      "citations": 293,
       "scholar_link": "https://doi.org/10.1016/j.ensm.2023.102969"
     },
     {
       "title": "Near-surface reconstruction in Ni-rich layered cathodes for high-performance lithium-ion batteries",
       "year": 2023,
-      "citations": 288,
+      "citations": 289,
       "scholar_link": "https://doi.org/10.1038/s41560-023-01403-8"
     },
     {
@@ -160,7 +160,7 @@
     {
       "title": "Structural Stability of Single-Crystalline Ni-Rich Layered Cathode upon Delithiation",
       "year": 2022,
-      "citations": 91,
+      "citations": 92,
       "scholar_link": "https://doi.org/10.1021/acsenergylett.2c01521"
     },
     {
@@ -220,7 +220,7 @@
     {
       "title": "High-performance Ni-rich Li[Ni 0.9– x Co 0.1 Al x ]O 2 cathodes via multi-stage microstructural tailoring from hydroxide precursor to the lithiated oxide",
       "year": 2021,
-      "citations": 112,
+      "citations": 113,
       "scholar_link": "https://doi.org/10.1039/d1ee01773j"
     },
     {
@@ -292,7 +292,7 @@
     {
       "title": "Degradation Mechanism of Ni-Enriched NCA Cathode for Lithium Batteries: Are Microcracks Really Critical?",
       "year": 2019,
-      "citations": 434,
+      "citations": 435,
       "scholar_link": "https://doi.org/10.1021/acsenergylett.9b00733"
     },
     {
@@ -316,7 +316,7 @@
     {
       "title": "Tungsten doping for stabilization of Li[Ni0.90Co0.05Mn0.05]O2 cathode for Li-ion battery at high voltage",
       "year": 2019,
-      "citations": 200,
+      "citations": 201,
       "scholar_link": "https://doi.org/10.1016/j.jpowsour.2019.227242"
     },
     {
@@ -358,7 +358,7 @@
     {
       "title": "Capacity Fading of Ni-Rich Li[Ni x Co y Mn 1– x – y ]O 2 (0.6 ≤ x ≤ 0.95) Cathodes for High-Energy-Density Lithium-Ion Batteries: Bulk or Surface Degradation?",
       "year": 2018,
-      "citations": 1708,
+      "citations": 1711,
       "scholar_link": "https://doi.org/10.1021/acs.chemmater.7b05269"
     },
     {
@@ -406,7 +406,7 @@
     {
       "title": "High-Energy Ni-Rich Li[Ni x Co y Mn 1 –x–y ]O 2 Cathodes via Compositional Partitioning for Next-Generation Electric Vehicles",
       "year": 2017,
-      "citations": 257,
+      "citations": 258,
       "scholar_link": "https://doi.org/10.1021/acs.chemmater.7b04047"
     },
     {
