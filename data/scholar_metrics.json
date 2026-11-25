@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-24T03:31:24Z",
+  "updated_at": "2026-11-25T01:40:28Z",
   "user_id": "",
   "openalex_id": "A5112620578,A5035439306",
-  "citations_total": 17834,
-  "citations_recent5y": 14344,
+  "citations_total": 17874,
+  "citations_recent5y": 14378,
   "h_index": 36,
   "i10_index": 39,
   "citations_history": [
@@ -25,11 +25,11 @@
     },
     {
       "year": 2021,
-      "count": 1706
+      "count": 1712
     },
     {
       "year": 2022,
-      "count": 2258
+      "count": 2282
     },
     {
       "year": 2023,
@@ -41,11 +41,11 @@
     },
     {
       "year": 2025,
-      "count": 3364
+      "count": 3366
     },
     {
       "year": 2026,
-      "count": 2896
+      "count": 2904
     }
   ],
   "papers": [
@@ -88,7 +88,7 @@
     {
       "title": "Single-Crystal vs Polycrystalline Cathodes for Lithium-Ion Batteries",
       "year": 2025,
-      "citations": 109,
+      "citations": 110,
       "scholar_link": "https://doi.org/10.1021/acs.chemrev.5c00441"
     },
     {
@@ -124,7 +124,7 @@
     {
       "title": "Near-surface reconstruction in Ni-rich layered cathodes for high-performance lithium-ion batteries",
       "year": 2023,
-      "citations": 289,
+      "citations": 292,
       "scholar_link": "https://doi.org/10.1038/s41560-023-01403-8"
     },
     {
@@ -154,7 +154,7 @@
     {
       "title": "Morphology-Dependent Battery Performance of Ni-Rich Layered Cathodes: Single-Crystal versus Refined Polycrystal",
       "year": 2022,
-      "citations": 116,
+      "citations": 117,
       "scholar_link": "https://doi.org/10.1021/acsenergylett.2c01670"
     },
     {
@@ -196,7 +196,7 @@
     {
       "title": "Capacity Fading Mechanisms in Ni-Rich Single-Crystal NCM Cathodes",
       "year": 2021,
-      "citations": 657,
+      "citations": 661,
       "scholar_link": "https://doi.org/10.1021/acsenergylett.1c01089"
     },
     {
@@ -244,7 +244,7 @@
     {
       "title": "Beyond Doping and Coating: Prospective Strategies for Stable High-Capacity Layered Ni-Rich Cathodes",
       "year": 2020,
-      "citations": 512,
+      "citations": 514,
       "scholar_link": "https://doi.org/10.1021/acsenergylett.0c00191"
     },
     {
@@ -292,7 +292,7 @@
     {
       "title": "Degradation Mechanism of Ni-Enriched NCA Cathode for Lithium Batteries: Are Microcracks Really Critical?",
       "year": 2019,
-      "citations": 437,
+      "citations": 441,
       "scholar_link": "https://doi.org/10.1021/acsenergylett.9b00733"
     },
     {
@@ -304,13 +304,13 @@
     {
       "title": "Suppressing detrimental phase transitions via tungsten doping of LiNiO 2 cathode for next-generation lithium-ion batteries",
       "year": 2019,
-      "citations": 279,
+      "citations": 277,
       "scholar_link": "https://doi.org/10.1039/c9ta06402h"
     },
     {
       "title": "Degradation Mechanism of Highly Ni-Rich Li[Ni x Co y Mn 1– x – y ]O 2 Cathodes with x > 0.9",
       "year": 2019,
-      "citations": 243,
+      "citations": 242,
       "scholar_link": "https://doi.org/10.1021/acsami.9b09754"
     },
     {
@@ -358,13 +358,13 @@
     {
       "title": "Capacity Fading of Ni-Rich Li[Ni x Co y Mn 1– x – y ]O 2 (0.6 ≤ x ≤ 0.95) Cathodes for High-Energy-Density Lithium-Ion Batteries: Bulk or Surface Degradation?",
       "year": 2018,
-      "citations": 1714,
+      "citations": 1716,
       "scholar_link": "https://doi.org/10.1021/acs.chemmater.7b05269"
     },
     {
       "title": "Extracting maximum capacity from Ni-rich Li[Ni 0.95 Co 0.025 Mn 0.025 ]O 2 cathodes for high-energy-density lithium-ion batteries",
       "year": 2018,
-      "citations": 270,
+      "citations": 271,
       "scholar_link": "https://doi.org/10.1039/c7ta11346c"
     },
     {
