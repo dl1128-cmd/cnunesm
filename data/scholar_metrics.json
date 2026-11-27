@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-26T01:13:43Z",
+  "updated_at": "2026-11-27T01:12:16Z",
   "user_id": "",
   "openalex_id": "A5112620578,A5035439306",
-  "citations_total": 17868,
-  "citations_recent5y": 14412,
+  "citations_total": 17894,
+  "citations_recent5y": 14438,
   "h_index": 36,
   "i10_index": 39,
   "citations_history": [
@@ -33,7 +33,7 @@
     },
     {
       "year": 2023,
-      "count": 2666
+      "count": 2668
     },
     {
       "year": 2024,
@@ -41,11 +41,11 @@
     },
     {
       "year": 2025,
-      "count": 3362
+      "count": 3364
     },
     {
       "year": 2026,
-      "count": 2942
+      "count": 2964
     }
   ],
   "papers": [
@@ -88,7 +88,7 @@
     {
       "title": "Single-Crystal vs Polycrystalline Cathodes for Lithium-Ion Batteries",
       "year": 2025,
-      "citations": 112,
+      "citations": 113,
       "scholar_link": "https://doi.org/10.1021/acs.chemrev.5c00441"
     },
     {
@@ -154,7 +154,7 @@
     {
       "title": "Morphology-Dependent Battery Performance of Ni-Rich Layered Cathodes: Single-Crystal versus Refined Polycrystal",
       "year": 2022,
-      "citations": 118,
+      "citations": 120,
       "scholar_link": "https://doi.org/10.1021/acsenergylett.2c01670"
     },
     {
@@ -196,13 +196,13 @@
     {
       "title": "Capacity Fading Mechanisms in Ni-Rich Single-Crystal NCM Cathodes",
       "year": 2021,
-      "citations": 661,
+      "citations": 662,
       "scholar_link": "https://doi.org/10.1021/acsenergylett.1c01089"
     },
     {
       "title": "Reducing cobalt from lithium-ion batteries for the electric vehicle era",
       "year": 2021,
-      "citations": 350,
+      "citations": 351,
       "scholar_link": "https://doi.org/10.1039/d0ee03581e"
     },
     {
@@ -232,7 +232,7 @@
     {
       "title": "Enhanced Cycling Stability of O3-Type Na[Ni 0.5 Mn 0.5]O 2 Cathode through Sn Addition for Sodium-Ion Batteries",
       "year": 2021,
-      "citations": 32,
+      "citations": 33,
       "scholar_link": "https://doi.org/10.1021/acs.jpcc.1c00522"
     },
     {
@@ -250,7 +250,7 @@
     {
       "title": "A highly stabilized Ni-rich NCA cathode for high-energy lithium-ion batteries",
       "year": 2020,
-      "citations": 271,
+      "citations": 272,
       "scholar_link": "https://doi.org/10.1016/j.mattod.2020.01.019"
     },
     {
@@ -358,7 +358,7 @@
     {
       "title": "Capacity Fading of Ni-Rich Li[Ni x Co y Mn 1– x – y]O 2 (0.6 ≤ x ≤ 0.95) Cathodes for High-Energy-Density Lithium-Ion Batteries: Bulk or Surface Degradation?",
       "year": 2018,
-      "citations": 1717,
+      "citations": 1722,
       "scholar_link": "https://doi.org/10.1021/acs.chemmater.7b05269"
     },
     {
@@ -370,7 +370,7 @@
     {
       "title": "Compositionally and structurally redesigned high-energy Ni-rich layered cathode for next-generation lithium batteries",
       "year": 2018,
-      "citations": 180,
+      "citations": 181,
       "scholar_link": "https://doi.org/10.1016/j.mattod.2018.12.004"
     },
     {
