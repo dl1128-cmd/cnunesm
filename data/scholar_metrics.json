@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-27T01:12:16Z",
+  "updated_at": "2026-11-28T00:45:05Z",
   "user_id": "",
   "openalex_id": "A5112620578,A5035439306",
-  "citations_total": 17894,
-  "citations_recent5y": 14438,
+  "citations_total": 17898,
+  "citations_recent5y": 14442,
   "h_index": 36,
   "i10_index": 39,
   "citations_history": [
@@ -45,7 +45,7 @@
     },
     {
       "year": 2026,
-      "count": 2964
+      "count": 2968
     }
   ],
   "papers": [
@@ -116,16 +116,16 @@
       "scholar_link": "https://doi.org/10.1149/ma2024-012231mtgabs"
     },
     {
+      "title": "Near-surface reconstruction in Ni-rich layered cathodes for high-performance lithium-ion batteries",
+      "year": 2023,
+      "citations": 294,
+      "scholar_link": "https://doi.org/10.1038/s41560-023-01403-8"
+    },
+    {
       "title": "Ni-rich layered cathodes for lithium-ion batteries: From challenges to the future",
       "year": 2023,
       "citations": 293,
       "scholar_link": "https://doi.org/10.1016/j.ensm.2023.102969"
-    },
-    {
-      "title": "Near-surface reconstruction in Ni-rich layered cathodes for high-performance lithium-ion batteries",
-      "year": 2023,
-      "citations": 293,
-      "scholar_link": "https://doi.org/10.1038/s41560-023-01403-8"
     },
     {
       "title": "Long-Lasting Ni-Rich NCMA Cathodes via Simultaneous Microstructural Refinement and Surface Modification",
@@ -202,7 +202,7 @@
     {
       "title": "Reducing cobalt from lithium-ion batteries for the electric vehicle era",
       "year": 2021,
-      "citations": 351,
+      "citations": 352,
       "scholar_link": "https://doi.org/10.1039/d0ee03581e"
     },
     {
